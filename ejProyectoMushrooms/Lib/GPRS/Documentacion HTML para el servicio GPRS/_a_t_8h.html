@@ -1,0 +1,1792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GPRS Library: Referencia del Archivo C:/Users/Usuario/Dropbox/STM32F401RE-Nucleo64ARM/ejProyectoMushrooms/Lib/GPRS/inc/AT.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GPRS Library
+   </div>
+   <div id="projectbrief">GPRS and AT Commands for fibocoom and SIM800L</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_ff752323f068676eb8e6a95cb65e1d48.html">GPRS</a></li><li class="navelem"><a class="el" href="dir_0d4cbae7a67dcc1985195ef59250eafe.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo AT.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+</div>
+<p><a href="_a_t_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_command__t.html">Command_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Union para comando enviado, argumentos recibidos y contador.  <a href="union_command__t.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cmd_handler__t.html">CmdHandler_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura que guarda un arreglo char para los comandos, una variable de 32 bits para el timeout y el hash.  <a href="struct_cmd_handler__t.html#details">Más...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a60b05fe8e2dc395ae1bb1db27b169ede"><td class="memItemLeft" align="right" valign="top">typedef char(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a60b05fe8e2dc395ae1bb1db27b169ede">at_cmd_cb</a>) (<a class="el" href="union_command__t.html">Command_t</a> *response)</td></tr>
+<tr class="separator:a60b05fe8e2dc395ae1bb1db27b169ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a919963a11d4aa3fc1bb50b49b268b4aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a919963a11d4aa3fc1bb50b49b268b4aa">ParseAt</a> (char *_str, <a class="el" href="union_command__t.html">Command_t</a> *_Command)</td></tr>
+<tr class="memdesc:a919963a11d4aa3fc1bb50b49b268b4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ParseAt realiza el parseo de los comandos AT.  <a href="#a919963a11d4aa3fc1bb50b49b268b4aa">Más...</a><br /></td></tr>
+<tr class="separator:a919963a11d4aa3fc1bb50b49b268b4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac08b21310444a590bf5418c7b8549310"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ac08b21310444a590bf5418c7b8549310">CheckATResponse</a> (char *_str)</td></tr>
+<tr class="memdesc:ac08b21310444a590bf5418c7b8549310"><td class="mdescLeft">&#160;</td><td class="mdescRight">CheckATResponse revisa la respuesta AT.  <a href="#ac08b21310444a590bf5418c7b8549310">Más...</a><br /></td></tr>
+<tr class="separator:ac08b21310444a590bf5418c7b8549310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6925f8b935f9bd64285cd4fbb2fc6bf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a6925f8b935f9bd64285cd4fbb2fc6bf7">at_parser_store</a> (char *command, uint32_t timeout, <a class="el" href="_a_t_8h.html#a60b05fe8e2dc395ae1bb1db27b169ede">at_cmd_cb</a> event)</td></tr>
+<tr class="memdesc:a6925f8b935f9bd64285cd4fbb2fc6bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">at_parser_store almacena el parseo de los comandos AT  <a href="#a6925f8b935f9bd64285cd4fbb2fc6bf7">Más...</a><br /></td></tr>
+<tr class="separator:a6925f8b935f9bd64285cd4fbb2fc6bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e582697e3a255469a6415236525bbd"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aa1e582697e3a255469a6415236525bbd">AT_tramaParse</a> (uint8_t *Buff, uint8_t chr)</td></tr>
+<tr class="memdesc:aa1e582697e3a255469a6415236525bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">AT_tramaParse Parseo de trama de los comandos AT.  <a href="#aa1e582697e3a255469a6415236525bbd">Más...</a><br /></td></tr>
+<tr class="separator:aa1e582697e3a255469a6415236525bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac278a206cde7fc3903b57bd00be8d859"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ac278a206cde7fc3903b57bd00be8d859">Cmd_AT</a> (void)</td></tr>
+<tr class="memdesc:ac278a206cde7fc3903b57bd00be8d859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cmd_AT Envío de comando AT.  <a href="#ac278a206cde7fc3903b57bd00be8d859">Más...</a><br /></td></tr>
+<tr class="separator:ac278a206cde7fc3903b57bd00be8d859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7029aa654d2701543706e75c3ae83cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#af7029aa654d2701543706e75c3ae83cf">Cmd_ATI</a> (void)</td></tr>
+<tr class="memdesc:af7029aa654d2701543706e75c3ae83cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cmd_ATI Envío de comando ATI (Display Product Identification Information)  <a href="#af7029aa654d2701543706e75c3ae83cf">Más...</a><br /></td></tr>
+<tr class="separator:af7029aa654d2701543706e75c3ae83cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a0a081dc42fa54d2bb036d7f7ccd08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#af1a0a081dc42fa54d2bb036d7f7ccd08">Cmd_ATE</a> (char *_arg)</td></tr>
+<tr class="memdesc:af1a0a081dc42fa54d2bb036d7f7ccd08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cmd_ATE Envío de comando ATE (Set Command Echo Mode)  <a href="#af1a0a081dc42fa54d2bb036d7f7ccd08">Más...</a><br /></td></tr>
+<tr class="separator:af1a0a081dc42fa54d2bb036d7f7ccd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917e7ea1d66cee5a99ed8f64a49ecad6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a917e7ea1d66cee5a99ed8f64a49ecad6">Cmd_ATW</a> (char *_arg)</td></tr>
+<tr class="memdesc:a917e7ea1d66cee5a99ed8f64a49ecad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cmd_ATW Envío de comando ATW.  <a href="#a917e7ea1d66cee5a99ed8f64a49ecad6">Más...</a><br /></td></tr>
+<tr class="separator:a917e7ea1d66cee5a99ed8f64a49ecad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0def115f9583b8964465cb5e26ac2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a0d0def115f9583b8964465cb5e26ac2a">GSV</a> (void)</td></tr>
+<tr class="memdesc:a0d0def115f9583b8964465cb5e26ac2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GSV Envío de comando AT+GSV (Display Product Identification Information)  <a href="#a0d0def115f9583b8964465cb5e26ac2a">Más...</a><br /></td></tr>
+<tr class="separator:a0d0def115f9583b8964465cb5e26ac2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8682d667c4d50c2042e7963a1c487650"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a8682d667c4d50c2042e7963a1c487650">IPR</a> (char *_arg)</td></tr>
+<tr class="memdesc:a8682d667c4d50c2042e7963a1c487650"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPR Envío de comando AT+IPR (Set TE-TA Fixed Local Rate)  <a href="#a8682d667c4d50c2042e7963a1c487650">Más...</a><br /></td></tr>
+<tr class="separator:a8682d667c4d50c2042e7963a1c487650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679ab1d7671b08405ce77b3c603c664d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a679ab1d7671b08405ce77b3c603c664d">CPIN</a> (char *_arg)</td></tr>
+<tr class="memdesc:a679ab1d7671b08405ce77b3c603c664d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPIN Envío de comando AT+CPIN (Enter PIN of the SIM)  <a href="#a679ab1d7671b08405ce77b3c603c664d">Más...</a><br /></td></tr>
+<tr class="separator:a679ab1d7671b08405ce77b3c603c664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a85b9cc4bbdf90b368efae782594f20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a9a85b9cc4bbdf90b368efae782594f20">CBC</a> (void)</td></tr>
+<tr class="memdesc:a9a85b9cc4bbdf90b368efae782594f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">CBC Envío de comando AT+CBC (Battery charge)  <a href="#a9a85b9cc4bbdf90b368efae782594f20">Más...</a><br /></td></tr>
+<tr class="separator:a9a85b9cc4bbdf90b368efae782594f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7212056eaa0f019959292ef72baa26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ac7212056eaa0f019959292ef72baa26a">CSQ</a> (void)</td></tr>
+<tr class="memdesc:ac7212056eaa0f019959292ef72baa26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSQ Envío de comando AT+CSQ (Signal quality report)  <a href="#ac7212056eaa0f019959292ef72baa26a">Más...</a><br /></td></tr>
+<tr class="separator:ac7212056eaa0f019959292ef72baa26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1faaaab7588c5cf0bd07cf77d69b4020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a1faaaab7588c5cf0bd07cf77d69b4020">CGSN</a> (void)</td></tr>
+<tr class="memdesc:a1faaaab7588c5cf0bd07cf77d69b4020"><td class="mdescLeft">&#160;</td><td class="mdescRight">CGSN Envío de comando AT+CGSN (Request Product Serial Number Identification)  <a href="#a1faaaab7588c5cf0bd07cf77d69b4020">Más...</a><br /></td></tr>
+<tr class="separator:a1faaaab7588c5cf0bd07cf77d69b4020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3205a1d1d501a4605b2be5be885430c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a3205a1d1d501a4605b2be5be885430c1">CCLK</a> (char *_arg)</td></tr>
+<tr class="memdesc:a3205a1d1d501a4605b2be5be885430c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CCLK Envío de comando AT+CCLK (Clock of the module)  <a href="#a3205a1d1d501a4605b2be5be885430c1">Más...</a><br /></td></tr>
+<tr class="separator:a3205a1d1d501a4605b2be5be885430c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a783e0cf772222a241054048070c5d792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a783e0cf772222a241054048070c5d792">CPOWD</a> (char *_arg)</td></tr>
+<tr class="memdesc:a783e0cf772222a241054048070c5d792"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPOWD Envío de comando AT+CPOWD (Power Off the module)  <a href="#a783e0cf772222a241054048070c5d792">Más...</a><br /></td></tr>
+<tr class="separator:a783e0cf772222a241054048070c5d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff241c5d921dd5f297830c59f8d64e82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aff241c5d921dd5f297830c59f8d64e82">CMTE</a> (char *_arg)</td></tr>
+<tr class="memdesc:aff241c5d921dd5f297830c59f8d64e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMTE Envío de comando AT+CMTE (Set critical temperature operating mode or query temperature)  <a href="#aff241c5d921dd5f297830c59f8d64e82">Más...</a><br /></td></tr>
+<tr class="separator:aff241c5d921dd5f297830c59f8d64e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebdf0ed9bec4c8d00cfbb37d9e7730a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aebdf0ed9bec4c8d00cfbb37d9e7730a9">CREG</a> (char *_arg)</td></tr>
+<tr class="memdesc:aebdf0ed9bec4c8d00cfbb37d9e7730a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CREG Envío de comando AT+CREG (Network Registration)  <a href="#aebdf0ed9bec4c8d00cfbb37d9e7730a9">Más...</a><br /></td></tr>
+<tr class="separator:aebdf0ed9bec4c8d00cfbb37d9e7730a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4ceee2c7bd26fe35e1575d15e85a5d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ae4ceee2c7bd26fe35e1575d15e85a5d5">COPS</a> (char *_arg)</td></tr>
+<tr class="memdesc:ae4ceee2c7bd26fe35e1575d15e85a5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">COPS Envío de comando AT+COPS (Operator selection)  <a href="#ae4ceee2c7bd26fe35e1575d15e85a5d5">Más...</a><br /></td></tr>
+<tr class="separator:ae4ceee2c7bd26fe35e1575d15e85a5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65944213be746a0e73cdcaba8fdb3705"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a65944213be746a0e73cdcaba8fdb3705">CBAND</a> (char *_arg)</td></tr>
+<tr class="memdesc:a65944213be746a0e73cdcaba8fdb3705"><td class="mdescLeft">&#160;</td><td class="mdescRight">CBAND Envío de comando AT+CBAND (Get and set mobile operation band)  <a href="#a65944213be746a0e73cdcaba8fdb3705">Más...</a><br /></td></tr>
+<tr class="separator:a65944213be746a0e73cdcaba8fdb3705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d46fc51ec040cc0ab093b4c8f5f73b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aa4d46fc51ec040cc0ab093b4c8f5f73b">CFUN</a> (char *_arg)</td></tr>
+<tr class="memdesc:aa4d46fc51ec040cc0ab093b4c8f5f73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CFUN Envío de comando AT+CFUN (Set Phone Functionality)  <a href="#aa4d46fc51ec040cc0ab093b4c8f5f73b">Más...</a><br /></td></tr>
+<tr class="separator:aa4d46fc51ec040cc0ab093b4c8f5f73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1362e6897d78b3cb15bdfc345814f54d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a1362e6897d78b3cb15bdfc345814f54d">CPMS</a> (char *_arg)</td></tr>
+<tr class="memdesc:a1362e6897d78b3cb15bdfc345814f54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CPMS Envío de comando AT+CPMS (Preferred SMS message storage)  <a href="#a1362e6897d78b3cb15bdfc345814f54d">Más...</a><br /></td></tr>
+<tr class="separator:a1362e6897d78b3cb15bdfc345814f54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a0da62ca6e82298a224de46f8beb8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ab5a0da62ca6e82298a224de46f8beb8d">CMGF</a> (char *_arg)</td></tr>
+<tr class="memdesc:ab5a0da62ca6e82298a224de46f8beb8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMGF Envío de comando AT+CMGF (Select SMS message format)  <a href="#ab5a0da62ca6e82298a224de46f8beb8d">Más...</a><br /></td></tr>
+<tr class="separator:ab5a0da62ca6e82298a224de46f8beb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d55317f5cb745ecb4e6da803c46b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a23d55317f5cb745ecb4e6da803c46b57">CSCS</a> (char *_arg)</td></tr>
+<tr class="memdesc:a23d55317f5cb745ecb4e6da803c46b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSCS Envío de comando AT+CSCS (Select TE character Set)  <a href="#a23d55317f5cb745ecb4e6da803c46b57">Más...</a><br /></td></tr>
+<tr class="separator:a23d55317f5cb745ecb4e6da803c46b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae489c83344c6539a67d434a88144ba2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ae489c83344c6539a67d434a88144ba2c">CMGS</a> (char *_arg)</td></tr>
+<tr class="memdesc:ae489c83344c6539a67d434a88144ba2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMGS Envío de comando AT+CMGS (Send SMS message)  <a href="#ae489c83344c6539a67d434a88144ba2c">Más...</a><br /></td></tr>
+<tr class="separator:ae489c83344c6539a67d434a88144ba2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2f326a4df4956908584c0dd24a013c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ade2f326a4df4956908584c0dd24a013c">MSJ</a> (char *_arg)</td></tr>
+<tr class="memdesc:ade2f326a4df4956908584c0dd24a013c"><td class="mdescLeft">&#160;</td><td class="mdescRight">MSJ Envío del mensaje.  <a href="#ade2f326a4df4956908584c0dd24a013c">Más...</a><br /></td></tr>
+<tr class="separator:ade2f326a4df4956908584c0dd24a013c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4473af97eff92c2414852f87729535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a6d4473af97eff92c2414852f87729535">CMGD</a> (char *_Index, char *_Delflag)</td></tr>
+<tr class="memdesc:a6d4473af97eff92c2414852f87729535"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMGD Envío de comando AT+CMGD (Delete SMS message)  <a href="#a6d4473af97eff92c2414852f87729535">Más...</a><br /></td></tr>
+<tr class="separator:a6d4473af97eff92c2414852f87729535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c9257f6cf4a50b1c3c63a5b8c74c18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a94c9257f6cf4a50b1c3c63a5b8c74c18">CMGR</a> (char *_Index)</td></tr>
+<tr class="memdesc:a94c9257f6cf4a50b1c3c63a5b8c74c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMGR Envío de comando AT+CMGR (Read SMS message)  <a href="#a94c9257f6cf4a50b1c3c63a5b8c74c18">Más...</a><br /></td></tr>
+<tr class="separator:a94c9257f6cf4a50b1c3c63a5b8c74c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8166b765f58b6db1c4b5a743f78fcf3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a8166b765f58b6db1c4b5a743f78fcf3c">CSDH</a> (char *_Arg)</td></tr>
+<tr class="memdesc:a8166b765f58b6db1c4b5a743f78fcf3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSDH Envío de comando AT+CSDH (Show SMS text mode parameters)  <a href="#a8166b765f58b6db1c4b5a743f78fcf3c">Más...</a><br /></td></tr>
+<tr class="separator:a8166b765f58b6db1c4b5a743f78fcf3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e94bb4e871bad52012499533ba82aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a5e94bb4e871bad52012499533ba82aec">CMGL</a> (char *_Arg)</td></tr>
+<tr class="memdesc:a5e94bb4e871bad52012499533ba82aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">CMGL Envío de comando AT+CSDH (List SMS messages from preferred store)  <a href="#a5e94bb4e871bad52012499533ba82aec">Más...</a><br /></td></tr>
+<tr class="separator:a5e94bb4e871bad52012499533ba82aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a5f82d042efef529c48e18bf8807aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a58a5f82d042efef529c48e18bf8807aa">CGREG</a> (char *_arg)</td></tr>
+<tr class="memdesc:a58a5f82d042efef529c48e18bf8807aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">CGREG Envío de comando AT+CGREG (Network registration status)  <a href="#a58a5f82d042efef529c48e18bf8807aa">Más...</a><br /></td></tr>
+<tr class="separator:a58a5f82d042efef529c48e18bf8807aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ebbef8a289da48e6c47c55f6026709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a88ebbef8a289da48e6c47c55f6026709">CGATT</a> (char *_State)</td></tr>
+<tr class="memdesc:a88ebbef8a289da48e6c47c55f6026709"><td class="mdescLeft">&#160;</td><td class="mdescRight">CGATT Envío de comando AT+CGATT (Attach or Dettach from GPRS service)  <a href="#a88ebbef8a289da48e6c47c55f6026709">Más...</a><br /></td></tr>
+<tr class="separator:a88ebbef8a289da48e6c47c55f6026709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9d0a5f0e5a0453d3a2a253c8a0fbe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a2f9d0a5f0e5a0453d3a2a253c8a0fbe2">MIPCALL</a> (char *_Operation, char *_APN, char *_UserName, char *_Password)</td></tr>
+<tr class="separator:a2f9d0a5f0e5a0453d3a2a253c8a0fbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31629d2e5c212166513e05fca679a1f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a31629d2e5c212166513e05fca679a1f1">CSTT</a> (char *_arg)</td></tr>
+<tr class="memdesc:a31629d2e5c212166513e05fca679a1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSTT Envío de comando AT+CSTT (Start task and set APN, user name, password)  <a href="#a31629d2e5c212166513e05fca679a1f1">Más...</a><br /></td></tr>
+<tr class="separator:a31629d2e5c212166513e05fca679a1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f85b953d80bd14e3c913a1c2cb8092e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a5f85b953d80bd14e3c913a1c2cb8092e">CSTT2</a> (char *_APN, char *_UserName, char *_Password)</td></tr>
+<tr class="memdesc:a5f85b953d80bd14e3c913a1c2cb8092e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSTT Envío de comando AT+CSTT (Start task and set APN, user name, password)  <a href="#a5f85b953d80bd14e3c913a1c2cb8092e">Más...</a><br /></td></tr>
+<tr class="separator:a5f85b953d80bd14e3c913a1c2cb8092e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b214d441149799eb2d2ce2c6ca730ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a3b214d441149799eb2d2ce2c6ca730ae">CIICR</a> (void)</td></tr>
+<tr class="memdesc:a3b214d441149799eb2d2ce2c6ca730ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">CIICR Envío de comando AT+CIICR (Bring up Wireless connection with GPRS or CSD)  <a href="#a3b214d441149799eb2d2ce2c6ca730ae">Más...</a><br /></td></tr>
+<tr class="separator:a3b214d441149799eb2d2ce2c6ca730ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e7c0570292496b2c20bad48997387d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a0e7c0570292496b2c20bad48997387d9">CIFSR</a> (void)</td></tr>
+<tr class="memdesc:a0e7c0570292496b2c20bad48997387d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">CIFSR Envío de comando AT+CIFSR (Get local IP Address)  <a href="#a0e7c0570292496b2c20bad48997387d9">Más...</a><br /></td></tr>
+<tr class="separator:a0e7c0570292496b2c20bad48997387d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd7c24a62bd11812629dc4ebdffe9ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#adfd7c24a62bd11812629dc4ebdffe9ba">CIPPING</a> (char *HOST)</td></tr>
+<tr class="memdesc:adfd7c24a62bd11812629dc4ebdffe9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">CIPPING Envío de comando AT+CIPPING (Ping Request)  <a href="#adfd7c24a62bd11812629dc4ebdffe9ba">Más...</a><br /></td></tr>
+<tr class="separator:adfd7c24a62bd11812629dc4ebdffe9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92a4712205718b45ef13003677a0d6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#ac92a4712205718b45ef13003677a0d6f">FTPOPEN</a> (char *_IpUrl, char *_Username, char *_Password)</td></tr>
+<tr class="separator:ac92a4712205718b45ef13003677a0d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda9678ce5ba8b2648949e3777f42237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aeda9678ce5ba8b2648949e3777f42237">FTPCLOSE</a> (void)</td></tr>
+<tr class="separator:aeda9678ce5ba8b2648949e3777f42237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705a62309e0e00820c92a136fc929521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a705a62309e0e00820c92a136fc929521">FTPCWD</a> (char *_Directory)</td></tr>
+<tr class="separator:a705a62309e0e00820c92a136fc929521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13127166713a5dc1ad8b2dff991da0a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a13127166713a5dc1ad8b2dff991da0a0">FTPSTOR</a> (char *_FileName, char *_FileType)</td></tr>
+<tr class="separator:a13127166713a5dc1ad8b2dff991da0a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af55f4ae101382afb10baf486d0cf4bfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#af55f4ae101382afb10baf486d0cf4bfc">FTPRETR</a> (char *_FileName, char *_FileType)</td></tr>
+<tr class="separator:af55f4ae101382afb10baf486d0cf4bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d31e23f753fc0dc5c02603d531b7a16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a3d31e23f753fc0dc5c02603d531b7a16">FTPDEL</a> (char *_FileName)</td></tr>
+<tr class="separator:a3d31e23f753fc0dc5c02603d531b7a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118230e35cb68c17621f7ab2b10cc0cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a118230e35cb68c17621f7ab2b10cc0cc">SAPBR</a> (char *cmdType, char *cid)</td></tr>
+<tr class="memdesc:a118230e35cb68c17621f7ab2b10cc0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">SAPBR Envío de comando AT+SAPBR (Bearer settings for applications based on IP)  <a href="#a118230e35cb68c17621f7ab2b10cc0cc">Más...</a><br /></td></tr>
+<tr class="separator:a118230e35cb68c17621f7ab2b10cc0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa60557c4eb5c6301d6aaf2977366e305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aa60557c4eb5c6301d6aaf2977366e305">SAPBRCONFG</a> (char *cmdType, char *cid, char *ConParamTag, char *ConParamValue)</td></tr>
+<tr class="memdesc:aa60557c4eb5c6301d6aaf2977366e305"><td class="mdescLeft">&#160;</td><td class="mdescRight">SAPBRCONFIG Envío de comando AT+SAPBR (Bearer settings for applications based on IP)  <a href="#aa60557c4eb5c6301d6aaf2977366e305">Más...</a><br /></td></tr>
+<tr class="separator:aa60557c4eb5c6301d6aaf2977366e305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb2915ad3958b0a5d007c8945ec37e35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#aeb2915ad3958b0a5d007c8945ec37e35">CIPGSMLOC</a> (char *type, char *cid)</td></tr>
+<tr class="memdesc:aeb2915ad3958b0a5d007c8945ec37e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">CIPGSMLOC Envío de comando AT+CIPGSMLOC (GSM Location and Time)  <a href="#aeb2915ad3958b0a5d007c8945ec37e35">Más...</a><br /></td></tr>
+<tr class="separator:aeb2915ad3958b0a5d007c8945ec37e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b0aa13a3131574cabc3e802c57ed0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a36b0aa13a3131574cabc3e802c57ed0b">MIPOPEN</a> (char *Socket_ID, char *Source_Port, char *Remote_IP, char *Remote_Port, char *Protocol)</td></tr>
+<tr class="separator:a36b0aa13a3131574cabc3e802c57ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac36477bb617634e341184aa5e4d42e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a2ac36477bb617634e341184aa5e4d42e">MIPSEND</a> (char *Socket_ID, char *DataLen)</td></tr>
+<tr class="separator:a2ac36477bb617634e341184aa5e4d42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f04a8791ac607fe49e0e62309e6411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a01f04a8791ac607fe49e0e62309e6411">MIPCLOSE</a> (char *Socket_ID)</td></tr>
+<tr class="separator:a01f04a8791ac607fe49e0e62309e6411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0387b742958f0596493064b42f1c428a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a0387b742958f0596493064b42f1c428a">MIPSETS</a> (char *Socket_ID, char *Socket_Size)</td></tr>
+<tr class="separator:a0387b742958f0596493064b42f1c428a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d2a9bad5e9417e539103394dd6838d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_t_8h.html#a97d2a9bad5e9417e539103394dd6838d">MPING</a> (char *host, char *TimeOut)</td></tr>
+<tr class="separator:a97d2a9bad5e9417e539103394dd6838d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="a60b05fe8e2dc395ae1bb1db27b169ede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b05fe8e2dc395ae1bb1db27b169ede">&#9670;&nbsp;</a></span>at_cmd_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char( * at_cmd_cb) (<a class="el" href="union_command__t.html">Command_t</a> *response)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a6925f8b935f9bd64285cd4fbb2fc6bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6925f8b935f9bd64285cd4fbb2fc6bf7">&#9670;&nbsp;</a></span>at_parser_store()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void at_parser_store </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_a_t_8h.html#a60b05fe8e2dc395ae1bb1db27b169ede">at_cmd_cb</a>&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>at_parser_store almacena el parseo de los comandos AT </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>comando </td></tr>
+    <tr><td class="paramname">timeout</td><td>tiempo de espera </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aa1e582697e3a255469a6415236525bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e582697e3a255469a6415236525bbd">&#9670;&nbsp;</a></span>AT_tramaParse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t AT_tramaParse </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>Buff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>chr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>AT_tramaParse Parseo de trama de los comandos AT. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Buff</td><td>Buffer </td></tr>
+    <tr><td class="paramname">chr</td><td>caracter </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>uint8_t Entero sin signo de 8 bits </dd></dl>
+
+</div>
+</div>
+<a id="a65944213be746a0e73cdcaba8fdb3705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65944213be746a0e73cdcaba8fdb3705">&#9670;&nbsp;</a></span>CBAND()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CBAND </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CBAND Envío de comando AT+CBAND (Get and set mobile operation band) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (A string parameter which indicate the operation band) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a9a85b9cc4bbdf90b368efae782594f20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a85b9cc4bbdf90b368efae782594f20">&#9670;&nbsp;</a></span>CBC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CBC </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CBC Envío de comando AT+CBC (Battery charge) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a3205a1d1d501a4605b2be5be885430c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3205a1d1d501a4605b2be5be885430c1">&#9670;&nbsp;</a></span>CCLK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCLK </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CCLK Envío de comando AT+CCLK (Clock of the module) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aa4d46fc51ec040cc0ab093b4c8f5f73b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d46fc51ec040cc0ab093b4c8f5f73b">&#9670;&nbsp;</a></span>CFUN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFUN </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CFUN Envío de comando AT+CFUN (Set Phone Functionality) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (0&mdash;&gt; Minimum Functionality, 1&mdash;&gt; Full Functionality, 4&mdash;&gt; Flight Mode) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a88ebbef8a289da48e6c47c55f6026709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ebbef8a289da48e6c47c55f6026709">&#9670;&nbsp;</a></span>CGATT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGATT </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_State</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CGATT Envío de comando AT+CGATT (Attach or Dettach from GPRS service) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_State</td><td>(0&mdash;&gt; Detached, 1&mdash;&gt;Attached) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a58a5f82d042efef529c48e18bf8807aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58a5f82d042efef529c48e18bf8807aa">&#9670;&nbsp;</a></span>CGREG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGREG </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CGREG Envío de comando AT+CGREG (Network registration status) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (0&mdash;&gt; Disable network registration, 1&mdash;&gt; Enable network registration, 2&mdash;&gt; Enable network registration with location information) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a1faaaab7588c5cf0bd07cf77d69b4020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1faaaab7588c5cf0bd07cf77d69b4020">&#9670;&nbsp;</a></span>CGSN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CGSN </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CGSN Envío de comando AT+CGSN (Request Product Serial Number Identification) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ac08b21310444a590bf5418c7b8549310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac08b21310444a590bf5418c7b8549310">&#9670;&nbsp;</a></span>CheckATResponse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CheckATResponse </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CheckATResponse revisa la respuesta AT. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_str</td><td>Donde se almacena la respuesta del modulo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a0e7c0570292496b2c20bad48997387d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7c0570292496b2c20bad48997387d9">&#9670;&nbsp;</a></span>CIFSR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CIFSR </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CIFSR Envío de comando AT+CIFSR (Get local IP Address) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a3b214d441149799eb2d2ce2c6ca730ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b214d441149799eb2d2ce2c6ca730ae">&#9670;&nbsp;</a></span>CIICR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CIICR </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CIICR Envío de comando AT+CIICR (Bring up Wireless connection with GPRS or CSD) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aeb2915ad3958b0a5d007c8945ec37e35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2915ad3958b0a5d007c8945ec37e35">&#9670;&nbsp;</a></span>CIPGSMLOC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CIPGSMLOC </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CIPGSMLOC Envío de comando AT+CIPGSMLOC (GSM Location and Time) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdType</td><td>Configuracion del bearer </td></tr>
+    <tr><td class="paramname">cid</td><td>Identificador del perfil bearer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="adfd7c24a62bd11812629dc4ebdffe9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd7c24a62bd11812629dc4ebdffe9ba">&#9670;&nbsp;</a></span>CIPPING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CIPPING </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>HOST</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CIPPING Envío de comando AT+CIPPING (Ping Request) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">HOST</td><td>Servidor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ac278a206cde7fc3903b57bd00be8d859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac278a206cde7fc3903b57bd00be8d859">&#9670;&nbsp;</a></span>Cmd_AT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cmd_AT </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cmd_AT Envío de comando AT. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="af1a0a081dc42fa54d2bb036d7f7ccd08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a0a081dc42fa54d2bb036d7f7ccd08">&#9670;&nbsp;</a></span>Cmd_ATE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cmd_ATE </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cmd_ATE Envío de comando ATE (Set Command Echo Mode) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando ( 0&mdash;&gt; Echo Off. 1&mdash;&gt; Echo On ) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="af7029aa654d2701543706e75c3ae83cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7029aa654d2701543706e75c3ae83cf">&#9670;&nbsp;</a></span>Cmd_ATI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cmd_ATI </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cmd_ATI Envío de comando ATI (Display Product Identification Information) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a917e7ea1d66cee5a99ed8f64a49ecad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a917e7ea1d66cee5a99ed8f64a49ecad6">&#9670;&nbsp;</a></span>Cmd_ATW()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cmd_ATW </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cmd_ATW Envío de comando ATW. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a6d4473af97eff92c2414852f87729535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4473af97eff92c2414852f87729535">&#9670;&nbsp;</a></span>CMGD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMGD </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Delflag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CMGD Envío de comando AT+CMGD (Delete SMS message) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_Index</td><td>Indice que indica que mensaje sera eliminado </td></tr>
+    <tr><td class="paramname">_Delflag</td><td>Eliminar mensaje (especificado por el indice, los leidos, los no leidos, todos) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ab5a0da62ca6e82298a224de46f8beb8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a0da62ca6e82298a224de46f8beb8d">&#9670;&nbsp;</a></span>CMGF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMGF </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CMGF Envío de comando AT+CMGF (Select SMS message format) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (0&mdash;&gt; PDU mode, 1&mdash;&gt; Text mode) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a5e94bb4e871bad52012499533ba82aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e94bb4e871bad52012499533ba82aec">&#9670;&nbsp;</a></span>CMGL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMGL </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CMGL Envío de comando AT+CSDH (List SMS messages from preferred store) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_Arg</td><td>Argumento del comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a94c9257f6cf4a50b1c3c63a5b8c74c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c9257f6cf4a50b1c3c63a5b8c74c18">&#9670;&nbsp;</a></span>CMGR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMGR </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CMGR Envío de comando AT+CMGR (Read SMS message) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_Index</td><td>Indice que indica que mensaje sera leido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ae489c83344c6539a67d434a88144ba2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae489c83344c6539a67d434a88144ba2c">&#9670;&nbsp;</a></span>CMGS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMGS </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CMGS Envío de comando AT+CMGS (Send SMS message) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (Mensaje) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aff241c5d921dd5f297830c59f8d64e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff241c5d921dd5f297830c59f8d64e82">&#9670;&nbsp;</a></span>CMTE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CMTE </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CMTE Envío de comando AT+CMTE (Set critical temperature operating mode or query temperature) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (0&mdash;&gt; Disable detection, 1&mdash;&gt; Enable detection) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ae4ceee2c7bd26fe35e1575d15e85a5d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4ceee2c7bd26fe35e1575d15e85a5d5">&#9670;&nbsp;</a></span>COPS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void COPS </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>COPS Envío de comando AT+COPS (Operator selection) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a679ab1d7671b08405ce77b3c603c664d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679ab1d7671b08405ce77b3c603c664d">&#9670;&nbsp;</a></span>CPIN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPIN </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CPIN Envío de comando AT+CPIN (Enter PIN of the SIM) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (PIN) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a1362e6897d78b3cb15bdfc345814f54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1362e6897d78b3cb15bdfc345814f54d">&#9670;&nbsp;</a></span>CPMS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPMS </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CPMS Envío de comando AT+CPMS (Preferred SMS message storage) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (mem1, mem2, mem3) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a783e0cf772222a241054048070c5d792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783e0cf772222a241054048070c5d792">&#9670;&nbsp;</a></span>CPOWD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPOWD </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CPOWD Envío de comando AT+CPOWD (Power Off the module) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (0&mdash;&gt; Power Off urgently, 1&mdash;&gt; Normal Power Off) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aebdf0ed9bec4c8d00cfbb37d9e7730a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebdf0ed9bec4c8d00cfbb37d9e7730a9">&#9670;&nbsp;</a></span>CREG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CREG </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CREG Envío de comando AT+CREG (Network Registration) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (0&mdash;&gt; Disable registratio, 1&mdash;&gt; Enable registration, 2&mdash;&gt; Enable registration with location information) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a23d55317f5cb745ecb4e6da803c46b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d55317f5cb745ecb4e6da803c46b57">&#9670;&nbsp;</a></span>CSCS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSCS </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CSCS Envío de comando AT+CSCS (Select TE character Set) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a8166b765f58b6db1c4b5a743f78fcf3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8166b765f58b6db1c4b5a743f78fcf3c">&#9670;&nbsp;</a></span>CSDH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSDH </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CSDH Envío de comando AT+CSDH (Show SMS text mode parameters) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_Arg</td><td>Argumento del comando (0&mdash;&gt; Don't show, 1&mdash;&gt; Show the values) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ac7212056eaa0f019959292ef72baa26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7212056eaa0f019959292ef72baa26a">&#9670;&nbsp;</a></span>CSQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSQ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CSQ Envío de comando AT+CSQ (Signal quality report) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a31629d2e5c212166513e05fca679a1f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31629d2e5c212166513e05fca679a1f1">&#9670;&nbsp;</a></span>CSTT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSTT </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CSTT Envío de comando AT+CSTT (Start task and set APN, user name, password) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a5f85b953d80bd14e3c913a1c2cb8092e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f85b953d80bd14e3c913a1c2cb8092e">&#9670;&nbsp;</a></span>CSTT2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSTT2 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_APN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_UserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CSTT Envío de comando AT+CSTT (Start task and set APN, user name, password) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_APN</td><td>APN del servicio de red movil </td></tr>
+    <tr><td class="paramname">_UserName</td><td>nombre de usuario del servicio de red movil </td></tr>
+    <tr><td class="paramname">_Password</td><td>contraseña del servicio de red movil </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aeda9678ce5ba8b2648949e3777f42237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda9678ce5ba8b2648949e3777f42237">&#9670;&nbsp;</a></span>FTPCLOSE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FTPCLOSE </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a705a62309e0e00820c92a136fc929521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a705a62309e0e00820c92a136fc929521">&#9670;&nbsp;</a></span>FTPCWD()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FTPCWD </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Directory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d31e23f753fc0dc5c02603d531b7a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d31e23f753fc0dc5c02603d531b7a16">&#9670;&nbsp;</a></span>FTPDEL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FTPDEL </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_FileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac92a4712205718b45ef13003677a0d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92a4712205718b45ef13003677a0d6f">&#9670;&nbsp;</a></span>FTPOPEN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FTPOPEN </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_IpUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af55f4ae101382afb10baf486d0cf4bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af55f4ae101382afb10baf486d0cf4bfc">&#9670;&nbsp;</a></span>FTPRETR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FTPRETR </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_FileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_FileType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13127166713a5dc1ad8b2dff991da0a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13127166713a5dc1ad8b2dff991da0a0">&#9670;&nbsp;</a></span>FTPSTOR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FTPSTOR </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_FileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_FileType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d0def115f9583b8964465cb5e26ac2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d0def115f9583b8964465cb5e26ac2a">&#9670;&nbsp;</a></span>GSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GSV </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GSV Envío de comando AT+GSV (Display Product Identification Information) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a8682d667c4d50c2042e7963a1c487650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8682d667c4d50c2042e7963a1c487650">&#9670;&nbsp;</a></span>IPR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IPR </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IPR Envío de comando AT+IPR (Set TE-TA Fixed Local Rate) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Argumento del comando (Baud rate) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a2f9d0a5f0e5a0453d3a2a253c8a0fbe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9d0a5f0e5a0453d3a2a253c8a0fbe2">&#9670;&nbsp;</a></span>MIPCALL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPCALL </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Operation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_APN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_UserName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_Password</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01f04a8791ac607fe49e0e62309e6411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f04a8791ac607fe49e0e62309e6411">&#9670;&nbsp;</a></span>MIPCLOSE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPCLOSE </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Socket_ID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36b0aa13a3131574cabc3e802c57ed0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b0aa13a3131574cabc3e802c57ed0b">&#9670;&nbsp;</a></span>MIPOPEN()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPOPEN </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Socket_ID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Source_Port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Remote_IP</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Remote_Port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Protocol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ac36477bb617634e341184aa5e4d42e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ac36477bb617634e341184aa5e4d42e">&#9670;&nbsp;</a></span>MIPSEND()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPSEND </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Socket_ID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>DataLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0387b742958f0596493064b42f1c428a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0387b742958f0596493064b42f1c428a">&#9670;&nbsp;</a></span>MIPSETS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MIPSETS </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Socket_ID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Socket_Size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97d2a9bad5e9417e539103394dd6838d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d2a9bad5e9417e539103394dd6838d">&#9670;&nbsp;</a></span>MPING()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MPING </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>TimeOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade2f326a4df4956908584c0dd24a013c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2f326a4df4956908584c0dd24a013c">&#9670;&nbsp;</a></span>MSJ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MSJ </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_arg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MSJ Envío del mensaje. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_arg</td><td>Mensaje </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="a919963a11d4aa3fc1bb50b49b268b4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a919963a11d4aa3fc1bb50b49b268b4aa">&#9670;&nbsp;</a></span>ParseAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ParseAt </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="union_command__t.html">Command_t</a> *&#160;</td>
+          <td class="paramname"><em>_Command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ParseAt realiza el parseo de los comandos AT. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_str</td><td>Donde se almacena la respuesta del modulo </td></tr>
+    <tr><td class="paramname">Command</td><td>Estructora donde se almacena la descompocicion de la respuesta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>bool Valor booleano </dd></dl>
+
+</div>
+</div>
+<a id="a118230e35cb68c17621f7ab2b10cc0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a118230e35cb68c17621f7ab2b10cc0cc">&#9670;&nbsp;</a></span>SAPBR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SAPBR </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cmdType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SAPBR Envío de comando AT+SAPBR (Bearer settings for applications based on IP) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdType</td><td>Configuracion del bearer </td></tr>
+    <tr><td class="paramname">cid</td><td>Identificador del perfil bearer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="aa60557c4eb5c6301d6aaf2977366e305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60557c4eb5c6301d6aaf2977366e305">&#9670;&nbsp;</a></span>SAPBRCONFG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SAPBRCONFG </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cmdType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ConParamTag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ConParamValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SAPBRCONFIG Envío de comando AT+SAPBR (Bearer settings for applications based on IP) </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdType</td><td>Configuracion del bearer </td></tr>
+    <tr><td class="paramname">cid</td><td>Identificador del perfil bearer </td></tr>
+    <tr><td class="paramname">ConParamTag</td><td>Parametro del bearer </td></tr>
+    <tr><td class="paramname">ConParamValue</td><td>Parametro de valor del bearer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

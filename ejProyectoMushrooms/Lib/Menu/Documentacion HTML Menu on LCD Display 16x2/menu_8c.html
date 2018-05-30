@@ -1,0 +1,1937 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Menu Library: Referencia del Archivo menu.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Menu Library
+   </div>
+   <div id="projectbrief">Library for used the menu on a display LCD 16x2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo menu.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
+<code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &quot;STM_MY_LCD16X2.h&quot;</code><br />
+<code>#include &quot;light.h&quot;</code><br />
+<code>#include &quot;DHT11.h&quot;</code><br />
+<code>#include &quot;humTemp.h&quot;</code><br />
+<code>#include &quot;soilHumidity.h&quot;</code><br />
+<code>#include &quot;fase.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a69bcfd09c5066c4ab87bc6c02ef4a256"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a69bcfd09c5066c4ab87bc6c02ef4a256">BARRIDO_CONTINUO</a></td></tr>
+<tr class="separator:a69bcfd09c5066c4ab87bc6c02ef4a256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9311ca964eec0cc8ec44d58062251601"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a9311ca964eec0cc8ec44d58062251601">SUBMENU_CLAVE</a></td></tr>
+<tr class="separator:a9311ca964eec0cc8ec44d58062251601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccad09b4a2a06ae178418fdccf5940d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6ccad09b4a2a06ae178418fdccf5940d">FLAGS</a></td></tr>
+<tr class="separator:a6ccad09b4a2a06ae178418fdccf5940d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:aa7662378af00c554a224aea5560d3d97"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97">eSystem</a> { <a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97aac132f2982b98bcaa3445e535a03ff75">OFF</a>, 
+<a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97a977d478dacaae531f95695750d1e9d03">ON</a>, 
+<a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97a439c688a4e9ed31638d5922a50680a8e">RUN</a>
+ }</td></tr>
+<tr class="separator:aa7662378af00c554a224aea5560d3d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a161b3f1aa38441faac36fc88d0666019"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019">eButton</a> { <a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019acfe24a7b308a82835c8a9a9a89bc4ca2">NOTHING</a>, 
+<a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019a4689c7c1111af4d4926a815bf8043046">ARRIBA</a>, 
+<a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019a2e79fafefa5f90467b10994b36284590">ABAJO</a>, 
+<a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a>
+ }</td></tr>
+<tr class="separator:a161b3f1aa38441faac36fc88d0666019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db3b525975f4d7be6a00f842a1b059e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a> { <a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059eadb31f5ef7acca5e1131fcc0fbfa6911d">VOID</a> = 0, 
+<a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059ea5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a>, 
+<a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059ead08f8ac0aa8dfb59589824359772459e">FULL</a>, 
+<a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059eaa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>
+ }</td></tr>
+<tr class="separator:a3db3b525975f4d7be6a00f842a1b059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ab8af3e2af8055cc661fcc2689696d9f9"><td class="memItemLeft" align="right" valign="top">eCase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ab8af3e2af8055cc661fcc2689696d9f9">getHumTemp</a> (uint8_t x)</td></tr>
+<tr class="separator:ab8af3e2af8055cc661fcc2689696d9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2818f72cc0dd1b49bfb0aed6aaaf0bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a2818f72cc0dd1b49bfb0aed6aaaf0bb6">OneWire_Init</a> (void)</td></tr>
+<tr class="separator:a2818f72cc0dd1b49bfb0aed6aaaf0bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23db7933cc9f813bbabe2a6e73035c2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a> (char *text, int linea)</td></tr>
+<tr class="separator:a23db7933cc9f813bbabe2a6e73035c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6995964ba1c326be705353fcfe10115a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6995964ba1c326be705353fcfe10115a">ReportTemperature</a> (void)</td></tr>
+<tr class="separator:a6995964ba1c326be705353fcfe10115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8c25c62bb01adeadfffeba6001f57b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6b8c25c62bb01adeadfffeba6001f57b">mnu_mostrar_menu_anterior</a> (void)</td></tr>
+<tr class="separator:a6b8c25c62bb01adeadfffeba6001f57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98912e0f7165b7abde483a2c4e19b7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ad98912e0f7165b7abde483a2c4e19b7a">mnu_salir</a> (void)</td></tr>
+<tr class="separator:ad98912e0f7165b7abde483a2c4e19b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c1f9b6e764d26d595e289641acf91d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a7c1f9b6e764d26d595e289641acf91d1">mnu_dummy_function</a> (void)</td></tr>
+<tr class="separator:a7c1f9b6e764d26d595e289641acf91d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd1ea7579234dd04d770fc14b0bf62e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#afdd1ea7579234dd04d770fc14b0bf62e">mnu_dummy_function_ger</a> (void)</td></tr>
+<tr class="separator:afdd1ea7579234dd04d770fc14b0bf62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa41234113e1f9acdc77cbe5cf426fba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#afa41234113e1f9acdc77cbe5cf426fba">mnu_dummy_function_pfruct</a> (void)</td></tr>
+<tr class="separator:afa41234113e1f9acdc77cbe5cf426fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49974fa543715547757b2eee5ca1769f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a49974fa543715547757b2eee5ca1769f">mnu_dummy_function_indfruct</a> (void)</td></tr>
+<tr class="separator:a49974fa543715547757b2eee5ca1769f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e25e36289ed48c2f61a2cf7c3765aa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6e25e36289ed48c2f61a2cf7c3765aa3">mnu_dummy_function_plfruct</a> (void)</td></tr>
+<tr class="separator:a6e25e36289ed48c2f61a2cf7c3765aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2204b859fc7ddb04c947d40dbc790b99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a2204b859fc7ddb04c947d40dbc790b99">mnu_dummy_function_restfruct</a> (void)</td></tr>
+<tr class="separator:a2204b859fc7ddb04c947d40dbc790b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5949efa514ad78d16c2857a03d5dcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a4b5949efa514ad78d16c2857a03d5dcf">mnu_dummy_function_no</a> (void)</td></tr>
+<tr class="separator:a4b5949efa514ad78d16c2857a03d5dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97f1b403775e60caeb5c00da808486c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ab97f1b403775e60caeb5c00da808486c">mnu_HumTemp_periodica</a> (void)</td></tr>
+<tr class="separator:ab97f1b403775e60caeb5c00da808486c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5c5a9ebfa3ba365b3b996ad42e1b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6d5c5a9ebfa3ba365b3b996ad42e1b7b">mnu_dummy_function_temp</a> (void)</td></tr>
+<tr class="separator:a6d5c5a9ebfa3ba365b3b996ad42e1b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1f7a98dc9da07c6fd035a20087070b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6f1f7a98dc9da07c6fd035a20087070b">mnu_SoilHumidity_periodica</a> (void)</td></tr>
+<tr class="separator:a6f1f7a98dc9da07c6fd035a20087070b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87426775223ce8bde6fd9d665d8accc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a87426775223ce8bde6fd9d665d8accc2">mnu_dummy_function_hum</a> (void)</td></tr>
+<tr class="separator:a87426775223ce8bde6fd9d665d8accc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d792515983bfeea588327c2fb39fdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a38d792515983bfeea588327c2fb39fdc">mnu_levelTank_periodica</a> (void)</td></tr>
+<tr class="separator:a38d792515983bfeea588327c2fb39fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560306ecc2f94ba220c4092a123d18af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a560306ecc2f94ba220c4092a123d18af">mnu_dummy_function_tank</a> (void)</td></tr>
+<tr class="separator:a560306ecc2f94ba220c4092a123d18af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777804a191085efcefa88d0b392fa91f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a777804a191085efcefa88d0b392fa91f">mnu_light_periodica</a> (void)</td></tr>
+<tr class="separator:a777804a191085efcefa88d0b392fa91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d875d313cdfb7496625bd46065374f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ab7d875d313cdfb7496625bd46065374f">mnu_dummy_function_light</a> (void)</td></tr>
+<tr class="separator:ab7d875d313cdfb7496625bd46065374f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acea515e3b5cd765896967eae26c2f032"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#acea515e3b5cd765896967eae26c2f032">mnu_establecer_funcion_ejecutar</a> (void(*PtrNuevaFuncion)(unsigned char))</td></tr>
+<tr class="memdesc:acea515e3b5cd765896967eae26c2f032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototypes.  <a href="#acea515e3b5cd765896967eae26c2f032">Más...</a><br /></td></tr>
+<tr class="separator:acea515e3b5cd765896967eae26c2f032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c200dde8602fd8783985181b3d829b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a5c200dde8602fd8783985181b3d829b6">mnu_ejecutar_funcion</a> (unsigned char Evento)</td></tr>
+<tr class="memdesc:a5c200dde8602fd8783985181b3d829b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototypes.  <a href="#a5c200dde8602fd8783985181b3d829b6">Más...</a><br /></td></tr>
+<tr class="separator:a5c200dde8602fd8783985181b3d829b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f0bc932215e15d888d3d9c1c823a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a59f0bc932215e15d888d3d9c1c823a3f">mnu_establecer_funcion_periodica_ejecutar</a> (void(*PtrNuevaFuncion)(void))</td></tr>
+<tr class="memdesc:a59f0bc932215e15d888d3d9c1c823a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototypes.  <a href="#a59f0bc932215e15d888d3d9c1c823a3f">Más...</a><br /></td></tr>
+<tr class="separator:a59f0bc932215e15d888d3d9c1c823a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b6c3fb34c45d66cd705c927769f7381"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a7b6c3fb34c45d66cd705c927769f7381">mnu_ejecutar_funcion_periodica</a> (void)</td></tr>
+<tr class="memdesc:a7b6c3fb34c45d66cd705c927769f7381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototypes.  <a href="#a7b6c3fb34c45d66cd705c927769f7381">Más...</a><br /></td></tr>
+<tr class="separator:a7b6c3fb34c45d66cd705c927769f7381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76603674f646c6c57e2ced29343bf89a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a76603674f646c6c57e2ced29343bf89a">mnu_efectos_elemento_menu</a> (void)</td></tr>
+<tr class="separator:a76603674f646c6c57e2ced29343bf89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd59e54167350e4b77a8426fd883147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#acbd59e54167350e4b77a8426fd883147">mnu_dibujar_elemento_menu</a> (int NElemento)</td></tr>
+<tr class="separator:acbd59e54167350e4b77a8426fd883147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f198154626718d012ecbe7a3622829"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ab3f198154626718d012ecbe7a3622829">mnu_cambio_seleccion</a> (int NuevoElementoSeleccion)</td></tr>
+<tr class="separator:ab3f198154626718d012ecbe7a3622829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9958c34540bf8431c20ba5e6f575656d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a9958c34540bf8431c20ba5e6f575656d">mnu_eventos_submenu</a> (unsigned char Evento)</td></tr>
+<tr class="separator:a9958c34540bf8431c20ba5e6f575656d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08648bdf623c3cd940495f0a7d8e026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#aa08648bdf623c3cd940495f0a7d8e026">mnu_mostrar_menu</a> (<a class="el" href="struct_m_e_n_u.html">MENU</a> *Menu, int ElementoMenuSeleccion, int LineaElemSel)</td></tr>
+<tr class="memdesc:aa08648bdf623c3cd940495f0a7d8e026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototypes.  <a href="#aa08648bdf623c3cd940495f0a7d8e026">Más...</a><br /></td></tr>
+<tr class="separator:aa08648bdf623c3cd940495f0a7d8e026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182a1c1c3a50eccd8b3637a13caf68cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a182a1c1c3a50eccd8b3637a13caf68cf">mnu_eventos_clave</a> (unsigned char Evento)</td></tr>
+<tr class="separator:a182a1c1c3a50eccd8b3637a13caf68cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdb18089f904d1ddfc6cde7fbccc3e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a0cdb18089f904d1ddfc6cde7fbccc3e5">mnu_efectos_clave</a> (void)</td></tr>
+<tr class="separator:a0cdb18089f904d1ddfc6cde7fbccc3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fecb44fbe55ab6e903b19ea907b03d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a26fecb44fbe55ab6e903b19ea907b03d">mnu_dibujar_numero_clave</a> (bool parpadea, char seleccion, char *numero)</td></tr>
+<tr class="separator:a26fecb44fbe55ab6e903b19ea907b03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcca3c1fc3ad82c8e12ca24ee2f6cf78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#adcca3c1fc3ad82c8e12ca24ee2f6cf78">mnu_procesar_clave</a> (void)</td></tr>
+<tr class="separator:adcca3c1fc3ad82c8e12ca24ee2f6cf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af876059c3ab50fb41024d24e0ba4ca52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#af876059c3ab50fb41024d24e0ba4ca52">mnu_fijar_clave</a> (void)</td></tr>
+<tr class="separator:af876059c3ab50fb41024d24e0ba4ca52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f63c0bf975b306ec031adce2cd8db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a73f63c0bf975b306ec031adce2cd8db0">mnu_fijar_clave_init</a> (void)</td></tr>
+<tr class="separator:a73f63c0bf975b306ec031adce2cd8db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f837507260174a91b0de1ab882a9a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a31f837507260174a91b0de1ab882a9a0">mnu_eventos_confirmar_clave</a> (unsigned char Evento)</td></tr>
+<tr class="separator:a31f837507260174a91b0de1ab882a9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263ad189cc31f87d5b66cca10aa5b306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a263ad189cc31f87d5b66cca10aa5b306">mnu_confirmar_clave</a> (void)</td></tr>
+<tr class="separator:a263ad189cc31f87d5b66cca10aa5b306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f1d01a3b08c87770f4511c5f4fbbad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ad9f1d01a3b08c87770f4511c5f4fbbad">mnu_eventos_mostrar_msj</a> (unsigned char Evento)</td></tr>
+<tr class="separator:ad9f1d01a3b08c87770f4511c5f4fbbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd1727fb4b91371435de14d69fe4d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#acbd1727fb4b91371435de14d69fe4d81">mnu_efectos_mostrar_msj</a> (void)</td></tr>
+<tr class="separator:acbd1727fb4b91371435de14d69fe4d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b2a076b34accb135425da916684990"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a21b2a076b34accb135425da916684990">mnu_mostrar_msj</a> (char *mensaje1, char *mensaje2, int tiempo)</td></tr>
+<tr class="memdesc:a21b2a076b34accb135425da916684990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function prototypes.  <a href="#a21b2a076b34accb135425da916684990">Más...</a><br /></td></tr>
+<tr class="separator:a21b2a076b34accb135425da916684990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3f28a964ab0b4323f2cb3ea09c97ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a4e3f28a964ab0b4323f2cb3ea09c97ee">mnu_guardar_flag</a> (void)</td></tr>
+<tr class="separator:a4e3f28a964ab0b4323f2cb3ea09c97ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82fb998188053c201160cc3eb6a94c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a82fb998188053c201160cc3eb6a94c9f">mnu_eventos_confirmar_guardar_flag</a> (unsigned char Evento)</td></tr>
+<tr class="separator:a82fb998188053c201160cc3eb6a94c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05de3283463601d6db74943f27fe036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ae05de3283463601d6db74943f27fe036">mnu_confirmar_guardar_flag</a> (void)</td></tr>
+<tr class="separator:ae05de3283463601d6db74943f27fe036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68430e400a58adcd9b03f43c5c86cbd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a68430e400a58adcd9b03f43c5c86cbd4">mnu_dibujar_flag</a> (bool parpadea, char seleccion, int flag, int flagValor)</td></tr>
+<tr class="separator:a68430e400a58adcd9b03f43c5c86cbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2beb0b25dab906b24a3cf222e05a48aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a2beb0b25dab906b24a3cf222e05a48aa">mnu_eventos_fijar_flag</a> (unsigned char Evento)</td></tr>
+<tr class="separator:a2beb0b25dab906b24a3cf222e05a48aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd93313d5c5dadfed764bee5050c405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#afdd93313d5c5dadfed764bee5050c405">mnu_efectos_fijar_flag</a> (void)</td></tr>
+<tr class="separator:afdd93313d5c5dadfed764bee5050c405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea4519e17fad15afb121a736db8ee39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#adea4519e17fad15afb121a736db8ee39">mnu_fijar_flag</a> (void)</td></tr>
+<tr class="separator:adea4519e17fad15afb121a736db8ee39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa37e0ce8f49f93858a1bed99a2c79da7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#aa37e0ce8f49f93858a1bed99a2c79da7">CampoAEstablecer</a> = <a class="el" href="menu_8h.html#a6018b386e6bcfc165774ba2f6ef8eb2f">HORA</a></td></tr>
+<tr class="separator:aa37e0ce8f49f93858a1bed99a2c79da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af118ecd7c71e37f667537fe0daf3baad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#af118ecd7c71e37f667537fe0daf3baad">auxFlag</a></td></tr>
+<tr class="separator:af118ecd7c71e37f667537fe0daf3baad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9709a0090655b66c9b6c68dd91d579e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ab9709a0090655b66c9b6c68dd91d579e">auxFlagValor</a></td></tr>
+<tr class="separator:ab9709a0090655b66c9b6c68dd91d579e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7e765e73f04c2435b3da76bba7846e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a3e7e765e73f04c2435b3da76bba7846e">confirmar</a> = false</td></tr>
+<tr class="separator:a3e7e765e73f04c2435b3da76bba7846e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d2b21cc7f7621603dc0885cbb2773ef"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a9d2b21cc7f7621603dc0885cbb2773ef">sPassword</a> [64]</td></tr>
+<tr class="separator:a9d2b21cc7f7621603dc0885cbb2773ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad657b023bae02ecb943fd15bb943fdce"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ad657b023bae02ecb943fd15bb943fdce">sPassword2</a> [64]</td></tr>
+<tr class="separator:ad657b023bae02ecb943fd15bb943fdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d8666bfd3ee134954bdcabdb50fd56b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a9d8666bfd3ee134954bdcabdb50fd56b">cambiar_clave</a></td></tr>
+<tr class="separator:a9d8666bfd3ee134954bdcabdb50fd56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33af07eb92ab1fdd59f1b50e1100d3ac"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a33af07eb92ab1fdd59f1b50e1100d3ac">intento_clave</a></td></tr>
+<tr class="separator:a33af07eb92ab1fdd59f1b50e1100d3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114bcc7b7b025063d70deb7bc853d6e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a114bcc7b7b025063d70deb7bc853d6e9">tiempoMensaje</a></td></tr>
+<tr class="separator:a114bcc7b7b025063d70deb7bc853d6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a853790540dbad6adc2bc506177277"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a22a853790540dbad6adc2bc506177277">menuElemIndex</a></td></tr>
+<tr class="separator:a22a853790540dbad6adc2bc506177277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d91eed381a92318a3e6fdde65cdfe73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a3d91eed381a92318a3e6fdde65cdfe73">MenuActual</a> = NULL</td></tr>
+<tr class="separator:a3d91eed381a92318a3e6fdde65cdfe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ef9a82f787ad3149b13941952523bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#af1ef9a82f787ad3149b13941952523bc">MenuAuxClave</a> = NULL</td></tr>
+<tr class="separator:af1ef9a82f787ad3149b13941952523bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b60f0e2563a4f1d73d5a7ed306442e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a5b60f0e2563a4f1d73d5a7ed306442e5">ElementoSeleccionActual</a> = 1</td></tr>
+<tr class="separator:a5b60f0e2563a4f1d73d5a7ed306442e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa256a74a8feb6cf528d8bc9acc3e49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#acaa256a74a8feb6cf528d8bc9acc3e49">LineaElemSeleccion</a> = 0</td></tr>
+<tr class="separator:acaa256a74a8feb6cf528d8bc9acc3e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbf4a3d023567545b6bd60ba6e9a559b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#abbf4a3d023567545b6bd60ba6e9a559b">NumeroElemMenuActual</a> = 0</td></tr>
+<tr class="separator:abbf4a3d023567545b6bd60ba6e9a559b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4838609b1587b21df547518dfd8016a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97">eSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ad4838609b1587b21df547518dfd8016a">system</a></td></tr>
+<tr class="separator:ad4838609b1587b21df547518dfd8016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc975884939c6f9ccdb78deb23ba878a"><td class="memItemLeft" align="right" valign="top">eFase&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#afc975884939c6f9ccdb78deb23ba878a">date</a></td></tr>
+<tr class="separator:afc975884939c6f9ccdb78deb23ba878a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09fee6eb9c9d689f518440e26e34392f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019">eButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a09fee6eb9c9d689f518440e26e34392f">msj</a></td></tr>
+<tr class="separator:a09fee6eb9c9d689f518440e26e34392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537af39c0a60695dd82029e973016753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a537af39c0a60695dd82029e973016753">sensorOptic</a></td></tr>
+<tr class="separator:a537af39c0a60695dd82029e973016753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae78e7ff0dbdef80be170a495c465ea59"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ae78e7ff0dbdef80be170a495c465ea59">DHT11_1</a></td></tr>
+<tr class="separator:ae78e7ff0dbdef80be170a495c465ea59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0fcdd5541aec05155127ad51ff1eec"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a7a0fcdd5541aec05155127ad51ff1eec">DHT11_2</a></td></tr>
+<tr class="separator:a7a0fcdd5541aec05155127ad51ff1eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cde3ef15fa8b3d553ee72335d453a86"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a6cde3ef15fa8b3d553ee72335d453a86">cntHMI2</a></td></tr>
+<tr class="separator:a6cde3ef15fa8b3d553ee72335d453a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150b3035430f30e301e45782cb727c36"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a150b3035430f30e301e45782cb727c36">cntHMI</a></td></tr>
+<tr class="separator:a150b3035430f30e301e45782cb727c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97eec2c0a1145095bcc959160eb1ad7f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a97eec2c0a1145095bcc959160eb1ad7f">tempComp1</a></td></tr>
+<tr class="separator:a97eec2c0a1145095bcc959160eb1ad7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e4d7bed953f481c3de6e2db5990e55"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a19e4d7bed953f481c3de6e2db5990e55">tempComp2</a></td></tr>
+<tr class="separator:a19e4d7bed953f481c3de6e2db5990e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e92b01cbe67f8552982144dab953f22"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a4e92b01cbe67f8552982144dab953f22">tempComp3</a></td></tr>
+<tr class="separator:a4e92b01cbe67f8552982144dab953f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9779a5667c5f7b25a6252129cb811c4b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a9779a5667c5f7b25a6252129cb811c4b">hum1</a></td></tr>
+<tr class="separator:a9779a5667c5f7b25a6252129cb811c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b7f8b23230c88d36bb0538591823a2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ad7b7f8b23230c88d36bb0538591823a2">hum2</a></td></tr>
+<tr class="separator:ad7b7f8b23230c88d36bb0538591823a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0db1c3301e10b6ab15cf1d20a75ff8f1"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a0db1c3301e10b6ab15cf1d20a75ff8f1">FuncionActualEjecucion</a> )(unsigned char)</td></tr>
+<tr class="separator:a0db1c3301e10b6ab15cf1d20a75ff8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f055c0097ea962d4824b053cc39530"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a39f055c0097ea962d4824b053cc39530">FuncionPeriodica</a> )(void)</td></tr>
+<tr class="separator:a39f055c0097ea962d4824b053cc39530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff80e6dc58f2f1de2c2c20e85a7fc02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a7ff80e6dc58f2f1de2c2c20e85a7fc02">SubMenu1</a> []</td></tr>
+<tr class="separator:a7ff80e6dc58f2f1de2c2c20e85a7fc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2b1ce720eff1fe27b846c861723581"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a4a2b1ce720eff1fe27b846c861723581">SubMenu2</a> []</td></tr>
+<tr class="separator:a4a2b1ce720eff1fe27b846c861723581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2f1a6d7ec158b5f06e3fb810be6ee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a1b2f1a6d7ec158b5f06e3fb810be6ee0">SubMenu3</a> []</td></tr>
+<tr class="separator:a1b2f1a6d7ec158b5f06e3fb810be6ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c832dfd08486114ce46af2f9baaa71d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a> []</td></tr>
+<tr class="memdesc:a0c832dfd08486114ce46af2f9baaa71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">External Struct.  <a href="#a0c832dfd08486114ce46af2f9baaa71d">Más...</a><br /></td></tr>
+<tr class="separator:a0c832dfd08486114ce46af2f9baaa71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cc54ef77739b4b69166f97e08bc918"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_m_e_n_u.html">MENU</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu_8c.html#ae2cc54ef77739b4b69166f97e08bc918">MenuPrincipal2</a> []</td></tr>
+<tr class="memdesc:ae2cc54ef77739b4b69166f97e08bc918"><td class="mdescLeft">&#160;</td><td class="mdescRight">External Struct.  <a href="#ae2cc54ef77739b4b69166f97e08bc918">Más...</a><br /></td></tr>
+<tr class="separator:ae2cc54ef77739b4b69166f97e08bc918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a69bcfd09c5066c4ab87bc6c02ef4a256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69bcfd09c5066c4ab87bc6c02ef4a256">&#9670;&nbsp;</a></span>BARRIDO_CONTINUO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BARRIDO_CONTINUO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ccad09b4a2a06ae178418fdccf5940d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ccad09b4a2a06ae178418fdccf5940d">&#9670;&nbsp;</a></span>FLAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FLAGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9311ca964eec0cc8ec44d58062251601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9311ca964eec0cc8ec44d58062251601">&#9670;&nbsp;</a></span>SUBMENU_CLAVE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUBMENU_CLAVE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a161b3f1aa38441faac36fc88d0666019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a161b3f1aa38441faac36fc88d0666019">&#9670;&nbsp;</a></span>eButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019">eButton</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a161b3f1aa38441faac36fc88d0666019acfe24a7b308a82835c8a9a9a89bc4ca2"></a>NOTHING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a161b3f1aa38441faac36fc88d0666019a4689c7c1111af4d4926a815bf8043046"></a>ARRIBA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a161b3f1aa38441faac36fc88d0666019a2e79fafefa5f90467b10994b36284590"></a>ABAJO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a161b3f1aa38441faac36fc88d0666019a2bc49ec37d6a5715dd23e85f1ff5bb59"></a>OK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3db3b525975f4d7be6a00f842a1b059e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db3b525975f4d7be6a00f842a1b059e">&#9670;&nbsp;</a></span>eLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059eadb31f5ef7acca5e1131fcc0fbfa6911d"></a>VOID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea5340ec7ecef6cc3886684a3bd3450d64"></a>MEDIUM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ead08f8ac0aa8dfb59589824359772459e"></a>FULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059eaa1e095cc966dbecf6a0d8aad75348d1a"></a>FALSE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa7662378af00c554a224aea5560d3d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7662378af00c554a224aea5560d3d97">&#9670;&nbsp;</a></span>eSystem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97">eSystem</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="aa7662378af00c554a224aea5560d3d97aac132f2982b98bcaa3445e535a03ff75"></a>OFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa7662378af00c554a224aea5560d3d97a977d478dacaae531f95695750d1e9d03"></a>ON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa7662378af00c554a224aea5560d3d97a439c688a4e9ed31638d5922a50680a8e"></a>RUN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a23db7933cc9f813bbabe2a6e73035c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23db7933cc9f813bbabe2a6e73035c2a">&#9670;&nbsp;</a></span>disp_enviar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disp_enviar </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8af3e2af8055cc661fcc2689696d9f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8af3e2af8055cc661fcc2689696d9f9">&#9670;&nbsp;</a></span>getHumTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">eCase getHumTemp </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3f198154626718d012ecbe7a3622829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f198154626718d012ecbe7a3622829">&#9670;&nbsp;</a></span>mnu_cambio_seleccion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_cambio_seleccion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>NuevoElementoSeleccion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a263ad189cc31f87d5b66cca10aa5b306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263ad189cc31f87d5b66cca10aa5b306">&#9670;&nbsp;</a></span>mnu_confirmar_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_confirmar_clave </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae05de3283463601d6db74943f27fe036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05de3283463601d6db74943f27fe036">&#9670;&nbsp;</a></span>mnu_confirmar_guardar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_confirmar_guardar_flag </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbd59e54167350e4b77a8426fd883147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd59e54167350e4b77a8426fd883147">&#9670;&nbsp;</a></span>mnu_dibujar_elemento_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dibujar_elemento_menu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>NElemento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68430e400a58adcd9b03f43c5c86cbd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68430e400a58adcd9b03f43c5c86cbd4">&#9670;&nbsp;</a></span>mnu_dibujar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dibujar_flag </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parpadea</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>seleccion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flagValor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26fecb44fbe55ab6e903b19ea907b03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fecb44fbe55ab6e903b19ea907b03d">&#9670;&nbsp;</a></span>mnu_dibujar_numero_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dibujar_numero_clave </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parpadea</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>seleccion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>numero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c1f9b6e764d26d595e289641acf91d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c1f9b6e764d26d595e289641acf91d1">&#9670;&nbsp;</a></span>mnu_dummy_function()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdd1ea7579234dd04d770fc14b0bf62e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd1ea7579234dd04d770fc14b0bf62e">&#9670;&nbsp;</a></span>mnu_dummy_function_ger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_ger </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87426775223ce8bde6fd9d665d8accc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87426775223ce8bde6fd9d665d8accc2">&#9670;&nbsp;</a></span>mnu_dummy_function_hum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_hum </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49974fa543715547757b2eee5ca1769f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49974fa543715547757b2eee5ca1769f">&#9670;&nbsp;</a></span>mnu_dummy_function_indfruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_indfruct </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7d875d313cdfb7496625bd46065374f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d875d313cdfb7496625bd46065374f">&#9670;&nbsp;</a></span>mnu_dummy_function_light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_light </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b5949efa514ad78d16c2857a03d5dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5949efa514ad78d16c2857a03d5dcf">&#9670;&nbsp;</a></span>mnu_dummy_function_no()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_no </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa41234113e1f9acdc77cbe5cf426fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa41234113e1f9acdc77cbe5cf426fba">&#9670;&nbsp;</a></span>mnu_dummy_function_pfruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_pfruct </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e25e36289ed48c2f61a2cf7c3765aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e25e36289ed48c2f61a2cf7c3765aa3">&#9670;&nbsp;</a></span>mnu_dummy_function_plfruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_plfruct </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2204b859fc7ddb04c947d40dbc790b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2204b859fc7ddb04c947d40dbc790b99">&#9670;&nbsp;</a></span>mnu_dummy_function_restfruct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_restfruct </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a560306ecc2f94ba220c4092a123d18af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560306ecc2f94ba220c4092a123d18af">&#9670;&nbsp;</a></span>mnu_dummy_function_tank()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_tank </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d5c5a9ebfa3ba365b3b996ad42e1b7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d5c5a9ebfa3ba365b3b996ad42e1b7b">&#9670;&nbsp;</a></span>mnu_dummy_function_temp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_dummy_function_temp </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cdb18089f904d1ddfc6cde7fbccc3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cdb18089f904d1ddfc6cde7fbccc3e5">&#9670;&nbsp;</a></span>mnu_efectos_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_efectos_clave </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76603674f646c6c57e2ced29343bf89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76603674f646c6c57e2ced29343bf89a">&#9670;&nbsp;</a></span>mnu_efectos_elemento_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_efectos_elemento_menu </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdd93313d5c5dadfed764bee5050c405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdd93313d5c5dadfed764bee5050c405">&#9670;&nbsp;</a></span>mnu_efectos_fijar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_efectos_fijar_flag </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acbd1727fb4b91371435de14d69fe4d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbd1727fb4b91371435de14d69fe4d81">&#9670;&nbsp;</a></span>mnu_efectos_mostrar_msj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_efectos_mostrar_msj </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c200dde8602fd8783985181b3d829b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c200dde8602fd8783985181b3d829b6">&#9670;&nbsp;</a></span>mnu_ejecutar_funcion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_ejecutar_funcion </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function prototypes. </p>
+<p>mnu_ejecutar_funcion Function to execute the menu with an event </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>char Event to execute the menu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a7b6c3fb34c45d66cd705c927769f7381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b6c3fb34c45d66cd705c927769f7381">&#9670;&nbsp;</a></span>mnu_ejecutar_funcion_periodica()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_ejecutar_funcion_periodica </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function prototypes. </p>
+<p>mnu_ejecutar_funcion_periodica Function to execute the menu Periodically </p><dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="acea515e3b5cd765896967eae26c2f032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acea515e3b5cd765896967eae26c2f032">&#9670;&nbsp;</a></span>mnu_establecer_funcion_ejecutar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_establecer_funcion_ejecutar </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(unsigned char)&#160;</td>
+          <td class="paramname"><em>PtrNuevaFuncion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function prototypes. </p>
+<p>mnu_establecer_funcion_ejecutar Function to stablish the function to execute </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>char Pointer to function PtrNuevaFuncion with a void returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a59f0bc932215e15d888d3d9c1c823a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f0bc932215e15d888d3d9c1c823a3f">&#9670;&nbsp;</a></span>mnu_establecer_funcion_periodica_ejecutar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_establecer_funcion_periodica_ejecutar </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void)&#160;</td>
+          <td class="paramname"><em>PtrNuevaFuncion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function prototypes. </p>
+<p>mnu_establecer_funcion_periodica_ejecutar Function to stablish the function to execute </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unsigned</td><td>char Pointer to function PtrNuevaFuncion with a void returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a182a1c1c3a50eccd8b3637a13caf68cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182a1c1c3a50eccd8b3637a13caf68cf">&#9670;&nbsp;</a></span>mnu_eventos_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_eventos_clave </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31f837507260174a91b0de1ab882a9a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f837507260174a91b0de1ab882a9a0">&#9670;&nbsp;</a></span>mnu_eventos_confirmar_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_eventos_confirmar_clave </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82fb998188053c201160cc3eb6a94c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fb998188053c201160cc3eb6a94c9f">&#9670;&nbsp;</a></span>mnu_eventos_confirmar_guardar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_eventos_confirmar_guardar_flag </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2beb0b25dab906b24a3cf222e05a48aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2beb0b25dab906b24a3cf222e05a48aa">&#9670;&nbsp;</a></span>mnu_eventos_fijar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_eventos_fijar_flag </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9f1d01a3b08c87770f4511c5f4fbbad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f1d01a3b08c87770f4511c5f4fbbad">&#9670;&nbsp;</a></span>mnu_eventos_mostrar_msj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_eventos_mostrar_msj </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9958c34540bf8431c20ba5e6f575656d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9958c34540bf8431c20ba5e6f575656d">&#9670;&nbsp;</a></span>mnu_eventos_submenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_eventos_submenu </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>Evento</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af876059c3ab50fb41024d24e0ba4ca52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af876059c3ab50fb41024d24e0ba4ca52">&#9670;&nbsp;</a></span>mnu_fijar_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_fijar_clave </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73f63c0bf975b306ec031adce2cd8db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f63c0bf975b306ec031adce2cd8db0">&#9670;&nbsp;</a></span>mnu_fijar_clave_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_fijar_clave_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adea4519e17fad15afb121a736db8ee39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea4519e17fad15afb121a736db8ee39">&#9670;&nbsp;</a></span>mnu_fijar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_fijar_flag </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e3f28a964ab0b4323f2cb3ea09c97ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3f28a964ab0b4323f2cb3ea09c97ee">&#9670;&nbsp;</a></span>mnu_guardar_flag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_guardar_flag </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab97f1b403775e60caeb5c00da808486c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab97f1b403775e60caeb5c00da808486c">&#9670;&nbsp;</a></span>mnu_HumTemp_periodica()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_HumTemp_periodica </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38d792515983bfeea588327c2fb39fdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d792515983bfeea588327c2fb39fdc">&#9670;&nbsp;</a></span>mnu_levelTank_periodica()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_levelTank_periodica </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a777804a191085efcefa88d0b392fa91f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a777804a191085efcefa88d0b392fa91f">&#9670;&nbsp;</a></span>mnu_light_periodica()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_light_periodica </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa08648bdf623c3cd940495f0a7d8e026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08648bdf623c3cd940495f0a7d8e026">&#9670;&nbsp;</a></span>mnu_mostrar_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_mostrar_menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_m_e_n_u.html">MENU</a> *&#160;</td>
+          <td class="paramname"><em>Menu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ElementoMenuSeleccion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>LineaElemSel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function prototypes. </p>
+<p>mnu_mostrar_menu Function to show the menu in that line the user prefered </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="struct_m_e_n_u.html" title="Struct enum MENU that contains 2 types of variable (char, char*) and 1 pointer. ">MENU</a></td><td>*Menu </td></tr>
+    <tr><td class="paramname">int</td><td>Element to choose </td></tr>
+    <tr><td class="paramname">int</td><td>Line to choose </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a6b8c25c62bb01adeadfffeba6001f57b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8c25c62bb01adeadfffeba6001f57b">&#9670;&nbsp;</a></span>mnu_mostrar_menu_anterior()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_mostrar_menu_anterior </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21b2a076b34accb135425da916684990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b2a076b34accb135425da916684990">&#9670;&nbsp;</a></span>mnu_mostrar_msj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_mostrar_msj </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mensaje1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>mensaje2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tiempo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function prototypes. </p>
+<p>mnu_mostrar_msj Function to show the menu in that line the user prefered </p><dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">char</td><td>Message 1 to show at the lcd display </td></tr>
+    <tr><td class="paramname">char</td><td>Message 2 to show at the lcd display </td></tr>
+    <tr><td class="paramname">int</td><td>Time to show it </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="adcca3c1fc3ad82c8e12ca24ee2f6cf78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcca3c1fc3ad82c8e12ca24ee2f6cf78">&#9670;&nbsp;</a></span>mnu_procesar_clave()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_procesar_clave </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad98912e0f7165b7abde483a2c4e19b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98912e0f7165b7abde483a2c4e19b7a">&#9670;&nbsp;</a></span>mnu_salir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_salir </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f1f7a98dc9da07c6fd035a20087070b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f1f7a98dc9da07c6fd035a20087070b">&#9670;&nbsp;</a></span>mnu_SoilHumidity_periodica()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mnu_SoilHumidity_periodica </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2818f72cc0dd1b49bfb0aed6aaaf0bb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2818f72cc0dd1b49bfb0aed6aaaf0bb6">&#9670;&nbsp;</a></span>OneWire_Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OneWire_Init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6995964ba1c326be705353fcfe10115a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6995964ba1c326be705353fcfe10115a">&#9670;&nbsp;</a></span>ReportTemperature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ReportTemperature </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="af118ecd7c71e37f667537fe0daf3baad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af118ecd7c71e37f667537fe0daf3baad">&#9670;&nbsp;</a></span>auxFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int auxFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9709a0090655b66c9b6c68dd91d579e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9709a0090655b66c9b6c68dd91d579e">&#9670;&nbsp;</a></span>auxFlagValor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int auxFlagValor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d8666bfd3ee134954bdcabdb50fd56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d8666bfd3ee134954bdcabdb50fd56b">&#9670;&nbsp;</a></span>cambiar_clave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cambiar_clave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa37e0ce8f49f93858a1bed99a2c79da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37e0ce8f49f93858a1bed99a2c79da7">&#9670;&nbsp;</a></span>CampoAEstablecer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CampoAEstablecer = <a class="el" href="menu_8h.html#a6018b386e6bcfc165774ba2f6ef8eb2f">HORA</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a150b3035430f30e301e45782cb727c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150b3035430f30e301e45782cb727c36">&#9670;&nbsp;</a></span>cntHMI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t cntHMI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cde3ef15fa8b3d553ee72335d453a86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cde3ef15fa8b3d553ee72335d453a86">&#9670;&nbsp;</a></span>cntHMI2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t cntHMI2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e7e765e73f04c2435b3da76bba7846e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7e765e73f04c2435b3da76bba7846e">&#9670;&nbsp;</a></span>confirmar</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool confirmar = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc975884939c6f9ccdb78deb23ba878a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc975884939c6f9ccdb78deb23ba878a">&#9670;&nbsp;</a></span>date</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">eFase date</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae78e7ff0dbdef80be170a495c465ea59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae78e7ff0dbdef80be170a495c465ea59">&#9670;&nbsp;</a></span>DHT11_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DHT11_1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a0fcdd5541aec05155127ad51ff1eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0fcdd5541aec05155127ad51ff1eec">&#9670;&nbsp;</a></span>DHT11_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t DHT11_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b60f0e2563a4f1d73d5a7ed306442e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b60f0e2563a4f1d73d5a7ed306442e5">&#9670;&nbsp;</a></span>ElementoSeleccionActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ElementoSeleccionActual = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0db1c3301e10b6ab15cf1d20a75ff8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0db1c3301e10b6ab15cf1d20a75ff8f1">&#9670;&nbsp;</a></span>FuncionActualEjecucion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* FuncionActualEjecucion) (unsigned char)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39f055c0097ea962d4824b053cc39530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f055c0097ea962d4824b053cc39530">&#9670;&nbsp;</a></span>FuncionPeriodica</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* FuncionPeriodica) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9779a5667c5f7b25a6252129cb811c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9779a5667c5f7b25a6252129cb811c4b">&#9670;&nbsp;</a></span>hum1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hum1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7b7f8b23230c88d36bb0538591823a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b7f8b23230c88d36bb0538591823a2">&#9670;&nbsp;</a></span>hum2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hum2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a33af07eb92ab1fdd59f1b50e1100d3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33af07eb92ab1fdd59f1b50e1100d3ac">&#9670;&nbsp;</a></span>intento_clave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char intento_clave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acaa256a74a8feb6cf528d8bc9acc3e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa256a74a8feb6cf528d8bc9acc3e49">&#9670;&nbsp;</a></span>LineaElemSeleccion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int LineaElemSeleccion = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d91eed381a92318a3e6fdde65cdfe73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d91eed381a92318a3e6fdde65cdfe73">&#9670;&nbsp;</a></span>MenuActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a>* MenuActual = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af1ef9a82f787ad3149b13941952523bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ef9a82f787ad3149b13941952523bc">&#9670;&nbsp;</a></span>MenuAuxClave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a>* MenuAuxClave = NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22a853790540dbad6adc2bc506177277"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a853790540dbad6adc2bc506177277">&#9670;&nbsp;</a></span>menuElemIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int menuElemIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c832dfd08486114ce46af2f9baaa71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c832dfd08486114ce46af2f9baaa71d">&#9670;&nbsp;</a></span>MenuPrincipal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a> MenuPrincipal[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1ffe14584858fba0fb59c4098ed9d30e">MENU_MAIN</a>,            <span class="stringliteral">&quot;MENU PRINCIPAL&quot;</span>,       &amp;<a class="code" href="menu_8c.html#ad98912e0f7165b7abde483a2c4e19b7a">mnu_salir</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a>,         <span class="stringliteral">&quot;Ver parametros&quot;</span>,       &amp;<a class="code" href="menu_8c.html#a7ff80e6dc58f2f1de2c2c20e85a7fc02">SubMenu1</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba13cf6e8bc27e894d8dc20747d072ecc0">MENU_SUBMNU_CLAVE6</a>,   <span class="stringliteral">&quot;Configuraciones&quot;</span>,      &amp;<a class="code" href="menu_8c.html#a4a2b1ce720eff1fe27b846c861723581">SubMenu2</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Salir&quot;</span>,                &amp;mnu_salir },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a>,<span class="stringliteral">&quot;&quot;</span>,0 }</div><div class="line">}</div><div class="ttc" id="menu_8c_html_ad98912e0f7165b7abde483a2c4e19b7a"><div class="ttname"><a href="menu_8c.html#ad98912e0f7165b7abde483a2c4e19b7a">mnu_salir</a></div><div class="ttdeci">void mnu_salir(void)</div><div class="ttdef"><b>Definition:</b> menu.c:823</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a></div><div class="ttdef"><b>Definition:</b> menu.h:115</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a></div><div class="ttdef"><b>Definition:</b> menu.h:113</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba1ffe14584858fba0fb59c4098ed9d30e"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1ffe14584858fba0fb59c4098ed9d30e">MENU_MAIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:117</div></div>
+<div class="ttc" id="menu_8c_html_a4a2b1ce720eff1fe27b846c861723581"><div class="ttname"><a href="menu_8c.html#a4a2b1ce720eff1fe27b846c861723581">SubMenu2</a></div><div class="ttdeci">MENU SubMenu2[]</div><div class="ttdef"><b>Definition:</b> menu.c:1027</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:112</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba13cf6e8bc27e894d8dc20747d072ecc0"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba13cf6e8bc27e894d8dc20747d072ecc0">MENU_SUBMNU_CLAVE6</a></div><div class="ttdef"><b>Definition:</b> menu.h:114</div></div>
+<div class="ttc" id="menu_8c_html_a7ff80e6dc58f2f1de2c2c20e85a7fc02"><div class="ttname"><a href="menu_8c.html#a7ff80e6dc58f2f1de2c2c20e85a7fc02">SubMenu1</a></div><div class="ttdeci">MENU SubMenu1[]</div><div class="ttdef"><b>Definition:</b> menu.c:1026</div></div>
+</div><!-- fragment -->
+<p>External Struct. </p>
+
+</div>
+</div>
+<a id="ae2cc54ef77739b4b69166f97e08bc918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2cc54ef77739b4b69166f97e08bc918">&#9670;&nbsp;</a></span>MenuPrincipal2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a> MenuPrincipal2[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1ffe14584858fba0fb59c4098ed9d30e">MENU_MAIN</a>,            <span class="stringliteral">&quot;PERIODO CULTIVO&quot;</span>,      &amp;<a class="code" href="menu_8c.html#ad98912e0f7165b7abde483a2c4e19b7a">mnu_salir</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a>,         <span class="stringliteral">&quot; CONFIGURAR: SI &quot;</span>,     &amp;<a class="code" href="menu_8c.html#a1b2f1a6d7ec158b5f06e3fb810be6ee0">SubMenu3</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>, <span class="stringliteral">&quot; CONFIGURAR: NO &quot;</span>, &amp;<a class="code" href="menu_8c.html#a4b5949efa514ad78d16c2857a03d5dcf">mnu_dummy_function_no</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Salir&quot;</span>,                &amp;mnu_salir },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a>,<span class="stringliteral">&quot;&quot;</span>,0 }</div><div class="line">}</div><div class="ttc" id="menu_8c_html_ad98912e0f7165b7abde483a2c4e19b7a"><div class="ttname"><a href="menu_8c.html#ad98912e0f7165b7abde483a2c4e19b7a">mnu_salir</a></div><div class="ttdeci">void mnu_salir(void)</div><div class="ttdef"><b>Definition:</b> menu.c:823</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a></div><div class="ttdef"><b>Definition:</b> menu.h:115</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a></div><div class="ttdef"><b>Definition:</b> menu.h:113</div></div>
+<div class="ttc" id="menu_8c_html_a1b2f1a6d7ec158b5f06e3fb810be6ee0"><div class="ttname"><a href="menu_8c.html#a1b2f1a6d7ec158b5f06e3fb810be6ee0">SubMenu3</a></div><div class="ttdeci">MENU SubMenu3[]</div><div class="ttdef"><b>Definition:</b> menu.c:1028</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba1ffe14584858fba0fb59c4098ed9d30e"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1ffe14584858fba0fb59c4098ed9d30e">MENU_MAIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:117</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:112</div></div>
+<div class="ttc" id="menu_8c_html_a4b5949efa514ad78d16c2857a03d5dcf"><div class="ttname"><a href="menu_8c.html#a4b5949efa514ad78d16c2857a03d5dcf">mnu_dummy_function_no</a></div><div class="ttdeci">void mnu_dummy_function_no(void)</div><div class="ttdef"><b>Definition:</b> menu.c:141</div></div>
+</div><!-- fragment -->
+<p>External Struct. </p>
+
+</div>
+</div>
+<a id="a09fee6eb9c9d689f518440e26e34392f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09fee6eb9c9d689f518440e26e34392f">&#9670;&nbsp;</a></span>msj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="menu_8c.html#a161b3f1aa38441faac36fc88d0666019">eButton</a> msj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbf4a3d023567545b6bd60ba6e9a559b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbf4a3d023567545b6bd60ba6e9a559b">&#9670;&nbsp;</a></span>NumeroElemMenuActual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int NumeroElemMenuActual = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a537af39c0a60695dd82029e973016753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537af39c0a60695dd82029e973016753">&#9670;&nbsp;</a></span>sensorOptic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="menu_8c.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a> sensorOptic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d2b21cc7f7621603dc0885cbb2773ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d2b21cc7f7621603dc0885cbb2773ef">&#9670;&nbsp;</a></span>sPassword</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char sPassword[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad657b023bae02ecb943fd15bb943fdce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad657b023bae02ecb943fd15bb943fdce">&#9670;&nbsp;</a></span>sPassword2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char sPassword2[64]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ff80e6dc58f2f1de2c2c20e85a7fc02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff80e6dc58f2f1de2c2c20e85a7fc02">&#9670;&nbsp;</a></span>SubMenu1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a> SubMenu1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6">SUBMENU_ANTERIOR</a>,     <span class="stringliteral">&quot;TITULO MENU&quot;</span>,          &amp;<a class="code" href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Temperatura&quot;</span>,          &amp;<a class="code" href="menu_8c.html#a6d5c5a9ebfa3ba365b3b996ad42e1b7b">mnu_dummy_function_temp</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Humedad&quot;</span>,              &amp;<a class="code" href="menu_8c.html#a87426775223ce8bde6fd9d665d8accc2">mnu_dummy_function_hum</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Nivel del Tanque&quot;</span>,     &amp;<a class="code" href="menu_8c.html#a560306ecc2f94ba220c4092a123d18af">mnu_dummy_function_tank</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Iluminacion&quot;</span>,          &amp;<a class="code" href="menu_8c.html#ab7d875d313cdfb7496625bd46065374f">mnu_dummy_function_light</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a>,         <span class="stringliteral">&quot;Regresar&quot;</span>,             &amp;MenuPrincipal },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a>,<span class="stringliteral">&quot;&quot;</span>,0 }</div><div class="line">}</div><div class="ttc" id="menu_8c_html_a0c832dfd08486114ce46af2f9baaa71d"><div class="ttname"><a href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a></div><div class="ttdeci">MENU MenuPrincipal[]</div><div class="ttdoc">External Struct. </div><div class="ttdef"><b>Definition:</b> menu.c:1030</div></div>
+<div class="ttc" id="menu_8c_html_a6d5c5a9ebfa3ba365b3b996ad42e1b7b"><div class="ttname"><a href="menu_8c.html#a6d5c5a9ebfa3ba365b3b996ad42e1b7b">mnu_dummy_function_temp</a></div><div class="ttdeci">void mnu_dummy_function_temp(void)</div><div class="ttdef"><b>Definition:</b> menu.c:185</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a></div><div class="ttdef"><b>Definition:</b> menu.h:115</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a></div><div class="ttdef"><b>Definition:</b> menu.h:113</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6">SUBMENU_ANTERIOR</a></div><div class="ttdef"><b>Definition:</b> menu.h:116</div></div>
+<div class="ttc" id="menu_8c_html_ab7d875d313cdfb7496625bd46065374f"><div class="ttname"><a href="menu_8c.html#ab7d875d313cdfb7496625bd46065374f">mnu_dummy_function_light</a></div><div class="ttdeci">void mnu_dummy_function_light(void)</div><div class="ttdef"><b>Definition:</b> menu.c:321</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:112</div></div>
+<div class="ttc" id="menu_8c_html_a560306ecc2f94ba220c4092a123d18af"><div class="ttname"><a href="menu_8c.html#a560306ecc2f94ba220c4092a123d18af">mnu_dummy_function_tank</a></div><div class="ttdeci">void mnu_dummy_function_tank(void)</div><div class="ttdef"><b>Definition:</b> menu.c:275</div></div>
+<div class="ttc" id="menu_8c_html_a87426775223ce8bde6fd9d665d8accc2"><div class="ttname"><a href="menu_8c.html#a87426775223ce8bde6fd9d665d8accc2">mnu_dummy_function_hum</a></div><div class="ttdeci">void mnu_dummy_function_hum(void)</div><div class="ttdef"><b>Definition:</b> menu.c:228</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4a2b1ce720eff1fe27b846c861723581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a2b1ce720eff1fe27b846c861723581">&#9670;&nbsp;</a></span>SubMenu2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a> SubMenu2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6">SUBMENU_ANTERIOR</a>,     <span class="stringliteral">&quot;TITULO MENU&quot;</span>,          &amp;<a class="code" href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Operacion 1&quot;</span>,          &amp;<a class="code" href="menu_8c.html#a7c1f9b6e764d26d595e289641acf91d1">mnu_dummy_function</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Configurar algo&quot;</span>,      &amp;<a class="code" href="menu_8c.html#adea4519e17fad15afb121a736db8ee39">mnu_fijar_flag</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;Cambiar Clave&quot;</span>,        &amp;<a class="code" href="menu_8c.html#a73f63c0bf975b306ec031adce2cd8db0">mnu_fijar_clave_init</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a>,         <span class="stringliteral">&quot;Regresar&quot;</span>,             &amp;MenuPrincipal },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a>,<span class="stringliteral">&quot;&quot;</span>,0 }</div><div class="line">}</div><div class="ttc" id="menu_8c_html_a0c832dfd08486114ce46af2f9baaa71d"><div class="ttname"><a href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a></div><div class="ttdeci">MENU MenuPrincipal[]</div><div class="ttdoc">External Struct. </div><div class="ttdef"><b>Definition:</b> menu.c:1030</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a></div><div class="ttdef"><b>Definition:</b> menu.h:115</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a></div><div class="ttdef"><b>Definition:</b> menu.h:113</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6">SUBMENU_ANTERIOR</a></div><div class="ttdef"><b>Definition:</b> menu.h:116</div></div>
+<div class="ttc" id="menu_8c_html_a7c1f9b6e764d26d595e289641acf91d1"><div class="ttname"><a href="menu_8c.html#a7c1f9b6e764d26d595e289641acf91d1">mnu_dummy_function</a></div><div class="ttdeci">void mnu_dummy_function(void)</div><div class="ttdef"><b>Definition:</b> menu.c:97</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:112</div></div>
+<div class="ttc" id="menu_8c_html_adea4519e17fad15afb121a736db8ee39"><div class="ttname"><a href="menu_8c.html#adea4519e17fad15afb121a736db8ee39">mnu_fijar_flag</a></div><div class="ttdeci">void mnu_fijar_flag(void)</div><div class="ttdef"><b>Definition:</b> menu.c:1005</div></div>
+<div class="ttc" id="menu_8c_html_a73f63c0bf975b306ec031adce2cd8db0"><div class="ttname"><a href="menu_8c.html#a73f63c0bf975b306ec031adce2cd8db0">mnu_fijar_clave_init</a></div><div class="ttdeci">void mnu_fijar_clave_init(void)</div><div class="ttdef"><b>Definition:</b> menu.c:697</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1b2f1a6d7ec158b5f06e3fb810be6ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2f1a6d7ec158b5f06e3fb810be6ee0">&#9670;&nbsp;</a></span>SubMenu3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_m_e_n_u.html">MENU</a> SubMenu3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">=</div><div class="line">{</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6">SUBMENU_ANTERIOR</a>,     <span class="stringliteral">&quot;TITULO MENU&quot;</span>,          &amp;<a class="code" href="menu_8c.html#ae2cc54ef77739b4b69166f97e08bc918">MenuPrincipal2</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;1Germinacion&quot;</span>,         &amp;<a class="code" href="menu_8c.html#afdd1ea7579234dd04d770fc14b0bf62e">mnu_dummy_function_ger</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;2PFructificacion&quot;</span>,     &amp;<a class="code" href="menu_8c.html#afa41234113e1f9acdc77cbe5cf426fba">mnu_dummy_function_pfruct</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;3IFructificacion&quot;</span>,     &amp;<a class="code" href="menu_8c.html#a49974fa543715547757b2eee5ca1769f">mnu_dummy_function_indfruct</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;4PFructificacion&quot;</span>,     &amp;<a class="code" href="menu_8c.html#a6e25e36289ed48c2f61a2cf7c3765aa3">mnu_dummy_function_plfruct</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a>,         <span class="stringliteral">&quot;5RFructificacion&quot;</span>,     &amp;<a class="code" href="menu_8c.html#a2204b859fc7ddb04c947d40dbc790b99">mnu_dummy_function_restfruct</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a>,         <span class="stringliteral">&quot;Regresar&quot;</span>,             &amp;<a class="code" href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a> },</div><div class="line">    { <a class="code" href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a>,<span class="stringliteral">&quot;&quot;</span>,0 }</div><div class="line">}</div><div class="ttc" id="menu_8c_html_a0c832dfd08486114ce46af2f9baaa71d"><div class="ttname"><a href="menu_8c.html#a0c832dfd08486114ce46af2f9baaa71d">MenuPrincipal</a></div><div class="ttdeci">MENU MenuPrincipal[]</div><div class="ttdoc">External Struct. </div><div class="ttdef"><b>Definition:</b> menu.c:1030</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba4eec12d9adc28b260fe26c94d26c112d">MENU_SUBMENU</a></div><div class="ttdef"><b>Definition:</b> menu.h:115</div></div>
+<div class="ttc" id="menu_8c_html_a2204b859fc7ddb04c947d40dbc790b99"><div class="ttname"><a href="menu_8c.html#a2204b859fc7ddb04c947d40dbc790b99">mnu_dummy_function_restfruct</a></div><div class="ttdeci">void mnu_dummy_function_restfruct(void)</div><div class="ttdef"><b>Definition:</b> menu.c:133</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba027b336f37565770ad316f8cc8b1268a">MENU_COMANDO</a></div><div class="ttdef"><b>Definition:</b> menu.h:113</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55bae13821e3ca685e2f4f1915e43c323ea6">SUBMENU_ANTERIOR</a></div><div class="ttdef"><b>Definition:</b> menu.h:116</div></div>
+<div class="ttc" id="menu_8h_html_a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d"><div class="ttname"><a href="menu_8h.html#a06fc87d81c62e9abb8790b6e5713c55baecce2d109de859476badca4abea0c04d">MENU_FIN</a></div><div class="ttdef"><b>Definition:</b> menu.h:112</div></div>
+<div class="ttc" id="menu_8c_html_a6e25e36289ed48c2f61a2cf7c3765aa3"><div class="ttname"><a href="menu_8c.html#a6e25e36289ed48c2f61a2cf7c3765aa3">mnu_dummy_function_plfruct</a></div><div class="ttdeci">void mnu_dummy_function_plfruct(void)</div><div class="ttdef"><b>Definition:</b> menu.c:125</div></div>
+<div class="ttc" id="menu_8c_html_afa41234113e1f9acdc77cbe5cf426fba"><div class="ttname"><a href="menu_8c.html#afa41234113e1f9acdc77cbe5cf426fba">mnu_dummy_function_pfruct</a></div><div class="ttdeci">void mnu_dummy_function_pfruct(void)</div><div class="ttdef"><b>Definition:</b> menu.c:109</div></div>
+<div class="ttc" id="menu_8c_html_afdd1ea7579234dd04d770fc14b0bf62e"><div class="ttname"><a href="menu_8c.html#afdd1ea7579234dd04d770fc14b0bf62e">mnu_dummy_function_ger</a></div><div class="ttdeci">void mnu_dummy_function_ger(void)</div><div class="ttdef"><b>Definition:</b> menu.c:101</div></div>
+<div class="ttc" id="menu_8c_html_a49974fa543715547757b2eee5ca1769f"><div class="ttname"><a href="menu_8c.html#a49974fa543715547757b2eee5ca1769f">mnu_dummy_function_indfruct</a></div><div class="ttdeci">void mnu_dummy_function_indfruct(void)</div><div class="ttdef"><b>Definition:</b> menu.c:117</div></div>
+<div class="ttc" id="menu_8c_html_ae2cc54ef77739b4b69166f97e08bc918"><div class="ttname"><a href="menu_8c.html#ae2cc54ef77739b4b69166f97e08bc918">MenuPrincipal2</a></div><div class="ttdeci">MENU MenuPrincipal2[]</div><div class="ttdoc">External Struct. </div><div class="ttdef"><b>Definition:</b> menu.c:1039</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad4838609b1587b21df547518dfd8016a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4838609b1587b21df547518dfd8016a">&#9670;&nbsp;</a></span>system</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="menu_8c.html#aa7662378af00c554a224aea5560d3d97">eSystem</a> system</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97eec2c0a1145095bcc959160eb1ad7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97eec2c0a1145095bcc959160eb1ad7f">&#9670;&nbsp;</a></span>tempComp1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tempComp1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19e4d7bed953f481c3de6e2db5990e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e4d7bed953f481c3de6e2db5990e55">&#9670;&nbsp;</a></span>tempComp2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tempComp2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e92b01cbe67f8552982144dab953f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e92b01cbe67f8552982144dab953f22">&#9670;&nbsp;</a></span>tempComp3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t tempComp3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a114bcc7b7b025063d70deb7bc853d6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114bcc7b7b025063d70deb7bc853d6e9">&#9670;&nbsp;</a></span>tiempoMensaje</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int tiempoMensaje</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

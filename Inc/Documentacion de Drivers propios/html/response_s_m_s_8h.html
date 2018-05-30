@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo responseSMS.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo responseSMS.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library for response the messages through SIM800L  This library is to apply the response SMS text on SIM800L.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;fibocom.h&quot;</code><br />
+<code>#include &quot;AT.h&quot;</code><br />
+</div>
+<p><a href="response_s_m_s_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:aeb1075faf76c668b9e47311f128acab6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#aeb1075faf76c668b9e47311f128acab6">eMsj</a> { <a class="el" href="response_s_m_s_8h.html#aeb1075faf76c668b9e47311f128acab6aaea362e279f9e16c14e6daddb6a00def">fail</a>, 
+<a class="el" href="response_s_m_s_8h.html#aeb1075faf76c668b9e47311f128acab6a7825d020cc325ff6bee91897266a3aea">smsRX</a>, 
+<a class="el" href="response_s_m_s_8h.html#aeb1075faf76c668b9e47311f128acab6ac45a9a41386cb88e6002a0fa7bd173c6">smsTX</a>
+ }<tr class="memdesc:aeb1075faf76c668b9e47311f128acab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion eMsj la cual indica en que estado se encuentra, en envio de mensaje o recepcion de mensajes.  <a href="response_s_m_s_8h.html#aeb1075faf76c668b9e47311f128acab6">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aeb1075faf76c668b9e47311f128acab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a66a6296c0b71c4d362f9cc8e61f87e7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a66a6296c0b71c4d362f9cc8e61f87e7b">Send</a> (char *_number, char *_message)</td></tr>
+<tr class="memdesc:a66a6296c0b71c4d362f9cc8e61f87e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function Send envia el mensaje correspondiente al numero que solicito la informacion.  <a href="#a66a6296c0b71c4d362f9cc8e61f87e7b">Más...</a><br /></td></tr>
+<tr class="separator:a66a6296c0b71c4d362f9cc8e61f87e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2b43d3444915cadb343ee1fe5ecb48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#abd2b43d3444915cadb343ee1fe5ecb48">SMSquery</a> (uint8_t receiveMsj)</td></tr>
+<tr class="memdesc:abd2b43d3444915cadb343ee1fe5ecb48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function SMSquery consulta de mensaje, si es para enviar o para recibir mensajes.  <a href="#abd2b43d3444915cadb343ee1fe5ecb48">Más...</a><br /></td></tr>
+<tr class="separator:abd2b43d3444915cadb343ee1fe5ecb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a209778f36a7ce5f5754477872368313e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a209778f36a7ce5f5754477872368313e">alertaHumLow</a></td></tr>
+<tr class="memdesc:a209778f36a7ce5f5754477872368313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables externas enteras de 8 bits sin signo que indican las alertas que se activan para atenderlas.  <a href="#a209778f36a7ce5f5754477872368313e">Más...</a><br /></td></tr>
+<tr class="separator:a209778f36a7ce5f5754477872368313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72db076759fbedbf20dd6f7787adc3a6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a72db076759fbedbf20dd6f7787adc3a6">alertaTempLow</a></td></tr>
+<tr class="separator:a72db076759fbedbf20dd6f7787adc3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f04511f4043f1471b1eb09dd898759"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#af7f04511f4043f1471b1eb09dd898759">alertaTempHigh</a></td></tr>
+<tr class="separator:af7f04511f4043f1471b1eb09dd898759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900987cf4941bfb7e458819569472032"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a900987cf4941bfb7e458819569472032">alertaTempMcuHigh</a></td></tr>
+<tr class="separator:a900987cf4941bfb7e458819569472032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef30ef1daffbac4323a2ac956a54f89e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#aef30ef1daffbac4323a2ac956a54f89e">countTemp</a></td></tr>
+<tr class="separator:aef30ef1daffbac4323a2ac956a54f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a4d8181dd5fb3ad0c29a302b8ce0db"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#ae4a4d8181dd5fb3ad0c29a302b8ce0db">countHum</a></td></tr>
+<tr class="separator:ae4a4d8181dd5fb3ad0c29a302b8ce0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7df738ae9f625bebdcc5c13da80f471"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a> [2000]</td></tr>
+<tr class="memdesc:af7df738ae9f625bebdcc5c13da80f471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo de 8 bits sin signo buffRx donde se almacena la data enviada y recibida al MCU.  <a href="#af7df738ae9f625bebdcc5c13da80f471">Más...</a><br /></td></tr>
+<tr class="separator:af7df738ae9f625bebdcc5c13da80f471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7d76fc58926949fc96c30184e03392"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a4f7d76fc58926949fc96c30184e03392">numeroTelefonico</a> []</td></tr>
+<tr class="memdesc:a4f7d76fc58926949fc96c30184e03392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el numero telefonico de donde se recibio el msj.  <a href="#a4f7d76fc58926949fc96c30184e03392">Más...</a><br /></td></tr>
+<tr class="separator:a4f7d76fc58926949fc96c30184e03392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef02cb23bef9d0a8c0912ac0be22d9a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a7ef02cb23bef9d0a8c0912ac0be22d9a">temperaturaAmbiental</a> []</td></tr>
+<tr class="memdesc:a7ef02cb23bef9d0a8c0912ac0be22d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura ambiental a enviar a traves de SMS.  <a href="#a7ef02cb23bef9d0a8c0912ac0be22d9a">Más...</a><br /></td></tr>
+<tr class="separator:a7ef02cb23bef9d0a8c0912ac0be22d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23b839648f62114cdee9bcf015fb4a9"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#af23b839648f62114cdee9bcf015fb4a9">humedadAmbiental</a> []</td></tr>
+<tr class="memdesc:af23b839648f62114cdee9bcf015fb4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la humedad ambiental a enviar a traves de SMS.  <a href="#af23b839648f62114cdee9bcf015fb4a9">Más...</a><br /></td></tr>
+<tr class="separator:af23b839648f62114cdee9bcf015fb4a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada35f0489daa605375bf0d1ee5df513"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#aada35f0489daa605375bf0d1ee5df513">temperaturaSustrato</a> []</td></tr>
+<tr class="memdesc:aada35f0489daa605375bf0d1ee5df513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura del sustrato a enviar a traves de SMS.  <a href="#aada35f0489daa605375bf0d1ee5df513">Más...</a><br /></td></tr>
+<tr class="separator:aada35f0489daa605375bf0d1ee5df513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8dc3e8627195947b2b6a99ee8586a32"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#ac8dc3e8627195947b2b6a99ee8586a32">humedadSustrato</a> []</td></tr>
+<tr class="memdesc:ac8dc3e8627195947b2b6a99ee8586a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la humedad del sustrato a enviar a traves de SMS.  <a href="#ac8dc3e8627195947b2b6a99ee8586a32">Más...</a><br /></td></tr>
+<tr class="separator:ac8dc3e8627195947b2b6a99ee8586a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ddc9a8c6938c9a697f16a7d939eb5b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a99ddc9a8c6938c9a697f16a7d939eb5b">iluminacion</a> []</td></tr>
+<tr class="memdesc:a99ddc9a8c6938c9a697f16a7d939eb5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la iluminacion a enviar a traves de SMS.  <a href="#a99ddc9a8c6938c9a697f16a7d939eb5b">Más...</a><br /></td></tr>
+<tr class="separator:a99ddc9a8c6938c9a697f16a7d939eb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0122a51bc4fac057eb924e993632767"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#ac0122a51bc4fac057eb924e993632767">nivelTanque</a> []</td></tr>
+<tr class="memdesc:ac0122a51bc4fac057eb924e993632767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de los niveles del tanque a enviar a traves de SMS.  <a href="#ac0122a51bc4fac057eb924e993632767">Más...</a><br /></td></tr>
+<tr class="separator:ac0122a51bc4fac057eb924e993632767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a599cd30b8de4f104af885f23702b094b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a599cd30b8de4f104af885f23702b094b">temperaturaSim800</a> []</td></tr>
+<tr class="memdesc:a599cd30b8de4f104af885f23702b094b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura del modulo SIM800L a enviar a traves de SMS.  <a href="#a599cd30b8de4f104af885f23702b094b">Más...</a><br /></td></tr>
+<tr class="separator:a599cd30b8de4f104af885f23702b094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1266ac532784fddf2b4368f1068b3b7"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#ae1266ac532784fddf2b4368f1068b3b7">temperaturaMCU</a> []</td></tr>
+<tr class="memdesc:ae1266ac532784fddf2b4368f1068b3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura del MCU a enviar a traves de SMS.  <a href="#ae1266ac532784fddf2b4368f1068b3b7">Más...</a><br /></td></tr>
+<tr class="separator:ae1266ac532784fddf2b4368f1068b3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2fdf23812b1c180b86641a5ddc7e98"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a5a2fdf23812b1c180b86641a5ddc7e98">msjAllVariables</a> []</td></tr>
+<tr class="memdesc:a5a2fdf23812b1c180b86641a5ddc7e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de todas las variables implicadas en el sistema a enviar a traves de SMS.  <a href="#a5a2fdf23812b1c180b86641a5ddc7e98">Más...</a><br /></td></tr>
+<tr class="separator:a5a2fdf23812b1c180b86641a5ddc7e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1153d6f3e1abaa34200074794f425dc8"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a1153d6f3e1abaa34200074794f425dc8">errorMsj</a> []</td></tr>
+<tr class="memdesc:a1153d6f3e1abaa34200074794f425dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de error de codigo a enviar a traves de SMS.  <a href="#a1153d6f3e1abaa34200074794f425dc8">Más...</a><br /></td></tr>
+<tr class="separator:a1153d6f3e1abaa34200074794f425dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2252bb68b5197cbfd279e989bfcb4022"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a2252bb68b5197cbfd279e989bfcb4022">alertaTempAlta</a> []</td></tr>
+<tr class="memdesc:a2252bb68b5197cbfd279e989bfcb4022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de error de codigo a enviar a traves de SMS.  <a href="#a2252bb68b5197cbfd279e989bfcb4022">Más...</a><br /></td></tr>
+<tr class="separator:a2252bb68b5197cbfd279e989bfcb4022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae05e0c6e046fdc4a60aa5b5ad9091a88"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#ae05e0c6e046fdc4a60aa5b5ad9091a88">alertaTempBaja</a> []</td></tr>
+<tr class="memdesc:ae05e0c6e046fdc4a60aa5b5ad9091a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la alerta de temperatura ambiental alta a enviar a traves de SMS.  <a href="#ae05e0c6e046fdc4a60aa5b5ad9091a88">Más...</a><br /></td></tr>
+<tr class="separator:ae05e0c6e046fdc4a60aa5b5ad9091a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a85a03e5c54dd627ad635e15b7d4f7"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#af5a85a03e5c54dd627ad635e15b7d4f7">alertaHumBaja</a> []</td></tr>
+<tr class="memdesc:af5a85a03e5c54dd627ad635e15b7d4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el despliegue de la informacion de la alerta de humedad ambiental baja a enviar a traves de SMS.  <a href="#af5a85a03e5c54dd627ad635e15b7d4f7">Más...</a><br /></td></tr>
+<tr class="separator:af5a85a03e5c54dd627ad635e15b7d4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a227999cf8ea5a05d3b1a43b6f98cdd3f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#a227999cf8ea5a05d3b1a43b6f98cdd3f">numeroTelefonicoAlertas</a> []</td></tr>
+<tr class="memdesc:a227999cf8ea5a05d3b1a43b6f98cdd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el numero telefonico al cual llegaran las alarmas emitidas por el sistema.  <a href="#a227999cf8ea5a05d3b1a43b6f98cdd3f">Más...</a><br /></td></tr>
+<tr class="separator:a227999cf8ea5a05d3b1a43b6f98cdd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcffec27eb7ccb8a290f1d58f6c14bdb"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="response_s_m_s_8h.html#abcffec27eb7ccb8a290f1d58f6c14bdb">alertaTempMCU</a> []</td></tr>
+<tr class="memdesc:abcffec27eb7ccb8a290f1d58f6c14bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char donde se almacena el mensaje de alerta para temperatura excesiva de la MCU.  <a href="#abcffec27eb7ccb8a290f1d58f6c14bdb">Más...</a><br /></td></tr>
+<tr class="separator:abcffec27eb7ccb8a290f1d58f6c14bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library for response the messages through SIM800L  This library is to apply the response SMS text on SIM800L. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>22/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library response the messages </dd></dl>
+</div><h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="aeb1075faf76c668b9e47311f128acab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb1075faf76c668b9e47311f128acab6">&#9670;&nbsp;</a></span>eMsj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="response_s_m_s_8h.html#aeb1075faf76c668b9e47311f128acab6">eMsj</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion eMsj la cual indica en que estado se encuentra, en envio de mensaje o recepcion de mensajes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="aeb1075faf76c668b9e47311f128acab6aaea362e279f9e16c14e6daddb6a00def"></a>fail&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb1075faf76c668b9e47311f128acab6a7825d020cc325ff6bee91897266a3aea"></a>smsRX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aeb1075faf76c668b9e47311f128acab6ac45a9a41386cb88e6002a0fa7bd173c6"></a>smsTX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a66a6296c0b71c4d362f9cc8e61f87e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a6296c0b71c4d362f9cc8e61f87e7b">&#9670;&nbsp;</a></span>Send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Send </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_number</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>_message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function Send envia el mensaje correspondiente al numero que solicito la informacion. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_number</td><td>Número telefonico en donde se enviara la data </td></tr>
+    <tr><td class="paramname">_message</td><td>Mensaje a enviar al dispositivo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="abd2b43d3444915cadb343ee1fe5ecb48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2b43d3444915cadb343ee1fe5ecb48">&#9670;&nbsp;</a></span>SMSquery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SMSquery </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>receiveMsj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function SMSquery consulta de mensaje, si es para enviar o para recibir mensajes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">receiveMsj</td><td>Variable que indica si se necesita leer o enviar mensaje </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="af5a85a03e5c54dd627ad635e15b7d4f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a85a03e5c54dd627ad635e15b7d4f7">&#9670;&nbsp;</a></span>alertaHumBaja</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char alertaHumBaja[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la alerta de humedad ambiental baja a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="a209778f36a7ce5f5754477872368313e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209778f36a7ce5f5754477872368313e">&#9670;&nbsp;</a></span>alertaHumLow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaHumLow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variables externas enteras de 8 bits sin signo que indican las alertas que se activan para atenderlas. </p>
+
+</div>
+</div>
+<a id="a2252bb68b5197cbfd279e989bfcb4022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2252bb68b5197cbfd279e989bfcb4022">&#9670;&nbsp;</a></span>alertaTempAlta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char alertaTempAlta[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de error de codigo a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="ae05e0c6e046fdc4a60aa5b5ad9091a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae05e0c6e046fdc4a60aa5b5ad9091a88">&#9670;&nbsp;</a></span>alertaTempBaja</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char alertaTempBaja[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la alerta de temperatura ambiental alta a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="af7f04511f4043f1471b1eb09dd898759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f04511f4043f1471b1eb09dd898759">&#9670;&nbsp;</a></span>alertaTempHigh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTempHigh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72db076759fbedbf20dd6f7787adc3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72db076759fbedbf20dd6f7787adc3a6">&#9670;&nbsp;</a></span>alertaTempLow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTempLow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcffec27eb7ccb8a290f1d58f6c14bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcffec27eb7ccb8a290f1d58f6c14bdb">&#9670;&nbsp;</a></span>alertaTempMCU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char alertaTempMCU[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el mensaje de alerta para temperatura excesiva de la MCU. </p>
+
+</div>
+</div>
+<a id="a900987cf4941bfb7e458819569472032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900987cf4941bfb7e458819569472032">&#9670;&nbsp;</a></span>alertaTempMcuHigh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTempMcuHigh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7df738ae9f625bebdcc5c13da80f471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7df738ae9f625bebdcc5c13da80f471">&#9670;&nbsp;</a></span>buffRx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t buffRx[2000]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo de 8 bits sin signo buffRx donde se almacena la data enviada y recibida al MCU. </p>
+
+</div>
+</div>
+<a id="ae4a4d8181dd5fb3ad0c29a302b8ce0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a4d8181dd5fb3ad0c29a302b8ce0db">&#9670;&nbsp;</a></span>countHum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t countHum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef30ef1daffbac4323a2ac956a54f89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef30ef1daffbac4323a2ac956a54f89e">&#9670;&nbsp;</a></span>countTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t countTemp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1153d6f3e1abaa34200074794f425dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1153d6f3e1abaa34200074794f425dc8">&#9670;&nbsp;</a></span>errorMsj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char errorMsj[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de error de codigo a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="af23b839648f62114cdee9bcf015fb4a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23b839648f62114cdee9bcf015fb4a9">&#9670;&nbsp;</a></span>humedadAmbiental</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char humedadAmbiental[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la humedad ambiental a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="ac8dc3e8627195947b2b6a99ee8586a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8dc3e8627195947b2b6a99ee8586a32">&#9670;&nbsp;</a></span>humedadSustrato</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char humedadSustrato[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la humedad del sustrato a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="a99ddc9a8c6938c9a697f16a7d939eb5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ddc9a8c6938c9a697f16a7d939eb5b">&#9670;&nbsp;</a></span>iluminacion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char iluminacion[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la iluminacion a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="a5a2fdf23812b1c180b86641a5ddc7e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2fdf23812b1c180b86641a5ddc7e98">&#9670;&nbsp;</a></span>msjAllVariables</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char msjAllVariables[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de todas las variables implicadas en el sistema a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="ac0122a51bc4fac057eb924e993632767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0122a51bc4fac057eb924e993632767">&#9670;&nbsp;</a></span>nivelTanque</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char nivelTanque[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de los niveles del tanque a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="a4f7d76fc58926949fc96c30184e03392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7d76fc58926949fc96c30184e03392">&#9670;&nbsp;</a></span>numeroTelefonico</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char numeroTelefonico[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el numero telefonico de donde se recibio el msj. </p>
+
+</div>
+</div>
+<a id="a227999cf8ea5a05d3b1a43b6f98cdd3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a227999cf8ea5a05d3b1a43b6f98cdd3f">&#9670;&nbsp;</a></span>numeroTelefonicoAlertas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char numeroTelefonicoAlertas[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el numero telefonico al cual llegaran las alarmas emitidas por el sistema. </p>
+
+</div>
+</div>
+<a id="a7ef02cb23bef9d0a8c0912ac0be22d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef02cb23bef9d0a8c0912ac0be22d9a">&#9670;&nbsp;</a></span>temperaturaAmbiental</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char temperaturaAmbiental[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura ambiental a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="ae1266ac532784fddf2b4368f1068b3b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1266ac532784fddf2b4368f1068b3b7">&#9670;&nbsp;</a></span>temperaturaMCU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char temperaturaMCU[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura del MCU a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="a599cd30b8de4f104af885f23702b094b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a599cd30b8de4f104af885f23702b094b">&#9670;&nbsp;</a></span>temperaturaSim800</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char temperaturaSim800[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura del modulo SIM800L a enviar a traves de SMS. </p>
+
+</div>
+</div>
+<a id="aada35f0489daa605375bf0d1ee5df513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada35f0489daa605375bf0d1ee5df513">&#9670;&nbsp;</a></span>temperaturaSustrato</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char temperaturaSustrato[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char donde se almacena el despliegue de la informacion de la temperatura del sustrato a enviar a traves de SMS. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

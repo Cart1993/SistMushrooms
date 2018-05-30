@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DHT11: Fichero Fuente DHT11.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DHT11
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Configuracion y trasnferencia de datos DHT11</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DHT11.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_d_h_t11_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifndef DHT11_H_</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define DHT11_H_</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include&lt;stdint.h&gt;</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a3c584ad5b5c9aa7ff34d830c01c89f2d">   39</a></span>&#160;<span class="preprocessor">#define DHT11_RETRY_DELAY 1000  // 1000ms</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000ae310c909d76b003d016bef8bdf16936a">   47</a></span>&#160;    <a class="code" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000ae310c909d76b003d016bef8bdf16936a">INPUT</a>,</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000a2ab08d3e103968f5f4f26b66a52e99d6">   48</a></span>&#160;    <a class="code" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000a2ab08d3e103968f5f4f26b66a52e99d6">OUTPUT</a>,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <a class="code" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">   55</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a6a226f4143ca3b18999551694cdb72a8">   57</a></span>&#160;    <a class="code" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a6a226f4143ca3b18999551694cdb72a8">LOW</a>,</div><div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a0c3a1dacf94061154b3ee354359c5893">   58</a></span>&#160;    <a class="code" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a0c3a1dacf94061154b3ee354359c5893">HIGH</a>,</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <a class="code" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_h_t11_8h.html#a8abce6c7e9d43ef02203fcc7a750a505">DHT11</a>( uint16_t pin_number ) ;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;int8_t <a class="code" href="_d_h_t11_8h.html#adf2a034c8b6e404d7d0ce0503f8021f6">read</a>( uint8_t *humidity1,uint8_t *humidity2 , uint8_t *temperature1 , uint8_t *temperature2 ) ;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_h_t11_8h.html#ae6a9bc9a3e12bc2805f4c1d54593ce24">pinMode</a>( uint16_t <a class="code" href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a> , <a class="code" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a> mode );</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_d_h_t11_8h.html#a709a764bc4b5c6200d3432ce8fe4efe4">digitalWrite</a>( uint16_t <a class="code" href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a>, <a class="code" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a> estado );</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<a class="code" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a> <a class="code" href="_d_h_t11_8h.html#acfb71f9450262d5bbacf2a4a18a580ad">digitalRead</a>( uint16_t <a class="code" href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a> );</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DHT11_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="_d_h_t11_8h_html_a715e2b213b99c7533f23a724be024000ae310c909d76b003d016bef8bdf16936a"><div class="ttname"><a href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000ae310c909d76b003d016bef8bdf16936a">INPUT</a></div><div class="ttdef"><b>Definition:</b> DHT11.h:47</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a709a764bc4b5c6200d3432ce8fe4efe4"><div class="ttname"><a href="_d_h_t11_8h.html#a709a764bc4b5c6200d3432ce8fe4efe4">digitalWrite</a></div><div class="ttdeci">void digitalWrite(uint16_t pin, eEstado estado)</div><div class="ttdoc">digitalWrite Funcion para escribir en los pines seleccionados </div><div class="ttdef"><b>Definition:</b> DHT11.c:32</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_adf2a034c8b6e404d7d0ce0503f8021f6"><div class="ttname"><a href="_d_h_t11_8h.html#adf2a034c8b6e404d7d0ce0503f8021f6">read</a></div><div class="ttdeci">int8_t read(uint8_t *humidity1, uint8_t *humidity2, uint8_t *temperature1, uint8_t *temperature2)</div><div class="ttdoc">read Realiza la lectura de los datos provenientes del sensor DHT11 </div><div class="ttdef"><b>Definition:</b> DHT11.c:99</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_ae6a9bc9a3e12bc2805f4c1d54593ce24"><div class="ttname"><a href="_d_h_t11_8h.html#ae6a9bc9a3e12bc2805f4c1d54593ce24">pinMode</a></div><div class="ttdeci">void pinMode(uint16_t pin, eMode mode)</div><div class="ttdoc">pinMode Funcion para configurar el modo del pin </div><div class="ttdef"><b>Definition:</b> DHT11.c:21</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a5ed6c715e121d83d7eddb67c6aec78b5a6a226f4143ca3b18999551694cdb72a8"><div class="ttname"><a href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a6a226f4143ca3b18999551694cdb72a8">LOW</a></div><div class="ttdef"><b>Definition:</b> DHT11.h:57</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a715e2b213b99c7533f23a724be024000a2ab08d3e103968f5f4f26b66a52e99d6"><div class="ttname"><a href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000a2ab08d3e103968f5f4f26b66a52e99d6">OUTPUT</a></div><div class="ttdef"><b>Definition:</b> DHT11.h:48</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a5ed6c715e121d83d7eddb67c6aec78b5"><div class="ttname"><a href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a></div><div class="ttdeci">eEstado</div><div class="ttdoc">Estructura de enumeracion para alto y bajo. </div><div class="ttdef"><b>Definition:</b> DHT11.h:55</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_acfb71f9450262d5bbacf2a4a18a580ad"><div class="ttname"><a href="_d_h_t11_8h.html#acfb71f9450262d5bbacf2a4a18a580ad">digitalRead</a></div><div class="ttdeci">eEstado digitalRead(uint16_t pin)</div><div class="ttdoc">digitalRead Funcion para escribir en los pines seleccionados </div><div class="ttdef"><b>Definition:</b> DHT11.c:37</div></div>
+<div class="ttc" id="_d_h_t11_8c_html_a4144813adfa4dfe7e7cbeea17d1b06eb"><div class="ttname"><a href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a></div><div class="ttdeci">uint16_t pin</div><div class="ttdef"><b>Definition:</b> DHT11.c:14</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a5ed6c715e121d83d7eddb67c6aec78b5a0c3a1dacf94061154b3ee354359c5893"><div class="ttname"><a href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a0c3a1dacf94061154b3ee354359c5893">HIGH</a></div><div class="ttdef"><b>Definition:</b> DHT11.h:58</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a8abce6c7e9d43ef02203fcc7a750a505"><div class="ttname"><a href="_d_h_t11_8h.html#a8abce6c7e9d43ef02203fcc7a750a505">DHT11</a></div><div class="ttdeci">void DHT11(uint16_t pin_number)</div><div class="ttdoc">DHT11 Realiza toda la configuracion para la conexion con el sensor DHT11. </div><div class="ttdef"><b>Definition:</b> DHT11.c:42</div></div>
+<div class="ttc" id="_d_h_t11_8h_html_a715e2b213b99c7533f23a724be024000"><div class="ttname"><a href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a></div><div class="ttdeci">eMode</div><div class="ttdoc">Estructura de enumeracion para entrada y salida. </div><div class="ttdef"><b>Definition:</b> DHT11.h:45</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente tempMCU.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tempMCU.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="temp_m_c_u_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _tempMCU_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _tempMCU_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;STM_MY_LCD16X2.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">   25</a></span>&#160;<span class="preprocessor">#define tam 6</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="temp_m_c_u_8h.html#a900987cf4941bfb7e458819569472032">alertaTempMcuHigh</a>, <a class="code" href="temp_m_c_u_8h.html#a8c2163e9cd7671201227fbd87cbbb9e0">process</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">char</span> <a class="code" href="temp_m_c_u_8h.html#abcffec27eb7ccb8a290f1d58f6c14bdb">alertaTempMCU</a>[];</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="temp_m_c_u_8h.html#afc65092996dd01dc3d464580289eec5a">buffer</a>[ <a class="code" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a> ];</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> int16_t <a class="code" href="temp_m_c_u_8h.html#a0824bceb6ba0f40e93f0ffd514f2153c">tempSensorMCU</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">float</span> <a class="code" href="temp_m_c_u_8h.html#ae679b256fafda3f19ff852a0b3fbe7f7">V25</a>, <a class="code" href="temp_m_c_u_8h.html#a38f9eb6c15f89e5831b04df6c235641d">Avg_Slope</a>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="temp_m_c_u_8h.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a>( <span class="keywordtype">char</span>* text, <span class="keywordtype">int</span> linea );</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp_m_c_u_8h.html#a9a90a8a16a5396631daaf7624a5e7f07">tempSensor</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _tempMCU_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="temp_m_c_u_8h_html_ae90f234cade2cdd2d1c4801cac915617"><div class="ttname"><a href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a></div><div class="ttdeci">#define tam</div><div class="ttdoc">Constante tam que define la cantidad de canales que se estan ejecutando en el ADC del MCU...</div><div class="ttdef"><b>Definition:</b> tempMCU.h:25</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_ae679b256fafda3f19ff852a0b3fbe7f7"><div class="ttname"><a href="temp_m_c_u_8h.html#ae679b256fafda3f19ff852a0b3fbe7f7">V25</a></div><div class="ttdeci">float V25</div><div class="ttdoc">Variables externas tipo flotante V25, Avg_Slope que convierten el valor obtenido a niveles de grados ...</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_a38f9eb6c15f89e5831b04df6c235641d"><div class="ttname"><a href="temp_m_c_u_8h.html#a38f9eb6c15f89e5831b04df6c235641d">Avg_Slope</a></div><div class="ttdeci">float Avg_Slope</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_a8c2163e9cd7671201227fbd87cbbb9e0"><div class="ttname"><a href="temp_m_c_u_8h.html#a8c2163e9cd7671201227fbd87cbbb9e0">process</a></div><div class="ttdeci">uint8_t process</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_a900987cf4941bfb7e458819569472032"><div class="ttname"><a href="temp_m_c_u_8h.html#a900987cf4941bfb7e458819569472032">alertaTempMcuHigh</a></div><div class="ttdeci">uint8_t alertaTempMcuHigh</div><div class="ttdoc">Variable externa de 8 bits sin signo llamada alertaTempMcuHigh que activa la alarma por temperatura e...</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_afc65092996dd01dc3d464580289eec5a"><div class="ttname"><a href="temp_m_c_u_8h.html#afc65092996dd01dc3d464580289eec5a">buffer</a></div><div class="ttdeci">uint8_t buffer[tam]</div><div class="ttdoc">Array externo de 8 bits sin signo llamado buffer en donde se almacenan los valores del ADC...</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_abcffec27eb7ccb8a290f1d58f6c14bdb"><div class="ttname"><a href="temp_m_c_u_8h.html#abcffec27eb7ccb8a290f1d58f6c14bdb">alertaTempMCU</a></div><div class="ttdeci">char alertaTempMCU[]</div><div class="ttdoc">Array externo tipo char llamada alertaTempMCU en donde esta el mensaje de alerta a enviar a traves de...</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_a0824bceb6ba0f40e93f0ffd514f2153c"><div class="ttname"><a href="temp_m_c_u_8h.html#a0824bceb6ba0f40e93f0ffd514f2153c">tempSensorMCU</a></div><div class="ttdeci">int16_t tempSensorMCU</div><div class="ttdoc">Variable externa de 16 bits llamada tempSensorMCU que almacena el valor de la temperatura del MCU...</div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_a23db7933cc9f813bbabe2a6e73035c2a"><div class="ttname"><a href="temp_m_c_u_8h.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a></div><div class="ttdeci">void disp_enviar(char *text, int linea)</div><div class="ttdoc">Function extern dips_enviar Envia mensajes a traves del display LCD de 16x2. </div></div>
+<div class="ttc" id="temp_m_c_u_8h_html_a9a90a8a16a5396631daaf7624a5e7f07"><div class="ttname"><a href="temp_m_c_u_8h.html#a9a90a8a16a5396631daaf7624a5e7f07">tempSensor</a></div><div class="ttdeci">void tempSensor(void)</div><div class="ttdoc">Function tempSensor mide y reporta alarmas con respecto a la temperatura de la MCU. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

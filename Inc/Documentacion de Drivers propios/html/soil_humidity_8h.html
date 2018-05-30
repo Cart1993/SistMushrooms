@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo soilHumidity.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo soilHumidity.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library to control the soil humidity through hygrometer  This library is to control the values of the soil humidity.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+</div>
+<p><a href="soil_humidity_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ae90f234cade2cdd2d1c4801cac915617"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ae90f234cade2cdd2d1c4801cac915617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante tam que define la cantidad de canales del ADC que se estan usando.  <a href="#ae90f234cade2cdd2d1c4801cac915617">Más...</a><br /></td></tr>
+<tr class="separator:ae90f234cade2cdd2d1c4801cac915617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a39899df7553dbd6c11eafd80618b27ff"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a> { <br />
+&#160;&#160;<a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffacf3d7d9f1e2a56077471f5ecacc27bd3">humError</a> = -1, 
+<a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaabcfaedec73902b67336ebafc0a8b9c1">humLow</a> = 0, 
+<a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaa1d9ecae7c272a8a0fd3fde354b0fb34">humMedium</a>, 
+<a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa007807f11a7752386a1a14ff91cb9d09">humMediumHigh</a>, 
+<br />
+&#160;&#160;<a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa1ed45f9a7f25ae0ae40b8a97c864cb8d">humHigh</a>
+<br />
+ }<tr class="memdesc:a39899df7553dbd6c11eafd80618b27ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion eHum la cual indica en que estado se encuentra el sistema con respecto a la humedad del suelo.  <a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a39899df7553dbd6c11eafd80618b27ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a97ce58b10c6b335cd304db0a70a95ba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#a97ce58b10c6b335cd304db0a70a95ba4">getSoilHumidity</a> (void)</td></tr>
+<tr class="memdesc:a97ce58b10c6b335cd304db0a70a95ba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function getSoilHumidity toma los valores de la humedad del suelo a traves del ADC y retorna el estado del sistema.  <a href="#a97ce58b10c6b335cd304db0a70a95ba4">Más...</a><br /></td></tr>
+<tr class="separator:a97ce58b10c6b335cd304db0a70a95ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9779a5667c5f7b25a6252129cb811c4b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#a9779a5667c5f7b25a6252129cb811c4b">hum1</a></td></tr>
+<tr class="memdesc:a9779a5667c5f7b25a6252129cb811c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables enteras de 16 bits sin signo, hum1 y hum2 (almacenan los valores que miden los higrometros) y humTotal que es el valor promediado de la humedad.  <a href="#a9779a5667c5f7b25a6252129cb811c4b">Más...</a><br /></td></tr>
+<tr class="separator:a9779a5667c5f7b25a6252129cb811c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b7f8b23230c88d36bb0538591823a2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#ad7b7f8b23230c88d36bb0538591823a2">hum2</a></td></tr>
+<tr class="separator:ad7b7f8b23230c88d36bb0538591823a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061f992153677ec43873a4e728dac09d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#a061f992153677ec43873a4e728dac09d">humTotal</a></td></tr>
+<tr class="separator:a061f992153677ec43873a4e728dac09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc65092996dd01dc3d464580289eec5a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="soil_humidity_8h.html#afc65092996dd01dc3d464580289eec5a">buffer</a> [<a class="el" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a>]</td></tr>
+<tr class="memdesc:afc65092996dd01dc3d464580289eec5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo de 8 bits sin signo llamado buffer en donde se almacenan todos los valores que mide el ADC del MCU.  <a href="#afc65092996dd01dc3d464580289eec5a">Más...</a><br /></td></tr>
+<tr class="separator:afc65092996dd01dc3d464580289eec5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library to control the soil humidity through hygrometer  This library is to control the values of the soil humidity. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>8/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library Soil Humidity </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="ae90f234cade2cdd2d1c4801cac915617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90f234cade2cdd2d1c4801cac915617">&#9670;&nbsp;</a></span>tam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tam&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante tam que define la cantidad de canales del ADC que se estan usando. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a39899df7553dbd6c11eafd80618b27ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39899df7553dbd6c11eafd80618b27ff">&#9670;&nbsp;</a></span>eHum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion eHum la cual indica en que estado se encuentra el sistema con respecto a la humedad del suelo. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a39899df7553dbd6c11eafd80618b27ffacf3d7d9f1e2a56077471f5ecacc27bd3"></a>humError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39899df7553dbd6c11eafd80618b27ffaabcfaedec73902b67336ebafc0a8b9c1"></a>humLow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39899df7553dbd6c11eafd80618b27ffaa1d9ecae7c272a8a0fd3fde354b0fb34"></a>humMedium&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39899df7553dbd6c11eafd80618b27ffa007807f11a7752386a1a14ff91cb9d09"></a>humMediumHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a39899df7553dbd6c11eafd80618b27ffa1ed45f9a7f25ae0ae40b8a97c864cb8d"></a>humHigh&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a97ce58b10c6b335cd304db0a70a95ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ce58b10c6b335cd304db0a70a95ba4">&#9670;&nbsp;</a></span>getSoilHumidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a> getSoilHumidity </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function getSoilHumidity toma los valores de la humedad del suelo a traves del ADC y retorna el estado del sistema. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>eHum Estado del sistema con respecto a la humedad del suelo </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="afc65092996dd01dc3d464580289eec5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc65092996dd01dc3d464580289eec5a">&#9670;&nbsp;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t buffer[<a class="el" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo de 8 bits sin signo llamado buffer en donde se almacenan todos los valores que mide el ADC del MCU. </p>
+
+</div>
+</div>
+<a id="a9779a5667c5f7b25a6252129cb811c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9779a5667c5f7b25a6252129cb811c4b">&#9670;&nbsp;</a></span>hum1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hum1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variables enteras de 16 bits sin signo, hum1 y hum2 (almacenan los valores que miden los higrometros) y humTotal que es el valor promediado de la humedad. </p>
+
+</div>
+</div>
+<a id="ad7b7f8b23230c88d36bb0538591823a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b7f8b23230c88d36bb0538591823a2">&#9670;&nbsp;</a></span>hum2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hum2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a061f992153677ec43873a4e728dac09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061f992153677ec43873a4e728dac09d">&#9670;&nbsp;</a></span>humTotal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t humTotal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente humTemp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">humTemp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="hum_temp_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _humTemp_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _humTemp_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;STM_MY_LCD16X2.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;DHT11.h&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dac">   27</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dacadb6543cf4a20f7dbc5342db70d0b3bec">   29</a></span>&#160;    <a class="code" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dacadb6543cf4a20f7dbc5342db70d0b3bec">readSuccesfully</a> = 0,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca9a847632d10ddc9c9d1b763efd54604e">   30</a></span>&#160;    <a class="code" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca9a847632d10ddc9c9d1b763efd54604e">notReady</a>,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca7c47519cba68e3c63c7cd342a03729f4">   31</a></span>&#160;    <a class="code" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca7c47519cba68e3c63c7cd342a03729f4">checksumError</a>,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca5d6064f85cacb74dc1914e84ef31b9a8">   32</a></span>&#160;    <a class="code" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca5d6064f85cacb74dc1914e84ef31b9a8">retryLater</a>,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}<a class="code" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dac">eCase</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="hum_temp_8h.html#ad817d7c1b8040a98dfd8ff7521a0846a">humidity1</a>, <a class="code" href="hum_temp_8h.html#aff34036064416b1db607e139275ba4f3">humidity2</a>, <a class="code" href="hum_temp_8h.html#accb06297ef75d8fa6eec44580b8436e8">temperature1</a>, <a class="code" href="hum_temp_8h.html#a87a0f19e82b8b8e3a8bd53d83dca65d4">temperature2</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="hum_temp_8h.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a>( <span class="keywordtype">char</span>* text, <span class="keywordtype">int</span> linea );</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="hum_temp_8h.html#af8b25be39fd64778299bdecbf873b3e3">getTempHum</a>( uint8_t x );</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _humTemp_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="hum_temp_8h_html_a1586eb2feeba726ef8cc949ed86d4dac"><div class="ttname"><a href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dac">eCase</a></div><div class="ttdeci">eCase</div><div class="ttdoc">Estructura de enumeracion eCase la cual indica que estado de operacion resulto de la medicion del DHT...</div><div class="ttdef"><b>Definition:</b> humTemp.h:27</div></div>
+<div class="ttc" id="hum_temp_8h_html_accb06297ef75d8fa6eec44580b8436e8"><div class="ttname"><a href="hum_temp_8h.html#accb06297ef75d8fa6eec44580b8436e8">temperature1</a></div><div class="ttdeci">uint8_t temperature1</div></div>
+<div class="ttc" id="hum_temp_8h_html_ad817d7c1b8040a98dfd8ff7521a0846a"><div class="ttname"><a href="hum_temp_8h.html#ad817d7c1b8040a98dfd8ff7521a0846a">humidity1</a></div><div class="ttdeci">uint8_t humidity1</div><div class="ttdoc">Variable externa de 8 bits sin signo humidity1 (almacena la parte entera de la medicion de la humedad...</div></div>
+<div class="ttc" id="hum_temp_8h_html_a1586eb2feeba726ef8cc949ed86d4daca5d6064f85cacb74dc1914e84ef31b9a8"><div class="ttname"><a href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca5d6064f85cacb74dc1914e84ef31b9a8">retryLater</a></div><div class="ttdef"><b>Definition:</b> humTemp.h:32</div></div>
+<div class="ttc" id="hum_temp_8h_html_af8b25be39fd64778299bdecbf873b3e3"><div class="ttname"><a href="hum_temp_8h.html#af8b25be39fd64778299bdecbf873b3e3">getTempHum</a></div><div class="ttdeci">void getTempHum(uint8_t x)</div><div class="ttdoc">Function getTempHum Toma el valor de humedad y temperatura para que lo despliegues en la LCD...</div></div>
+<div class="ttc" id="hum_temp_8h_html_a23db7933cc9f813bbabe2a6e73035c2a"><div class="ttname"><a href="hum_temp_8h.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a></div><div class="ttdeci">void disp_enviar(char *text, int linea)</div><div class="ttdoc">Function disp_enviar para el envio de mensajes a traves del display LCD 16x2. </div></div>
+<div class="ttc" id="hum_temp_8h_html_a1586eb2feeba726ef8cc949ed86d4daca7c47519cba68e3c63c7cd342a03729f4"><div class="ttname"><a href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca7c47519cba68e3c63c7cd342a03729f4">checksumError</a></div><div class="ttdef"><b>Definition:</b> humTemp.h:31</div></div>
+<div class="ttc" id="hum_temp_8h_html_a1586eb2feeba726ef8cc949ed86d4daca9a847632d10ddc9c9d1b763efd54604e"><div class="ttname"><a href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca9a847632d10ddc9c9d1b763efd54604e">notReady</a></div><div class="ttdef"><b>Definition:</b> humTemp.h:30</div></div>
+<div class="ttc" id="hum_temp_8h_html_a87a0f19e82b8b8e3a8bd53d83dca65d4"><div class="ttname"><a href="hum_temp_8h.html#a87a0f19e82b8b8e3a8bd53d83dca65d4">temperature2</a></div><div class="ttdeci">uint8_t temperature2</div></div>
+<div class="ttc" id="hum_temp_8h_html_aff34036064416b1db607e139275ba4f3"><div class="ttname"><a href="hum_temp_8h.html#aff34036064416b1db607e139275ba4f3">humidity2</a></div><div class="ttdeci">uint8_t humidity2</div></div>
+<div class="ttc" id="hum_temp_8h_html_a1586eb2feeba726ef8cc949ed86d4dacadb6543cf4a20f7dbc5342db70d0b3bec"><div class="ttname"><a href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dacadb6543cf4a20f7dbc5342db70d0b3bec">readSuccesfully</a></div><div class="ttdef"><b>Definition:</b> humTemp.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

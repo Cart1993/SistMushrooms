@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente confgGPRS.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">confgGPRS.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="confg_g_p_r_s_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef _confgGPRS_H_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define _confgGPRS_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;fibocom.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3">   25</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a5f6d448017ecd0a56245e38b76596e07">   27</a></span>&#160;    <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a5f6d448017ecd0a56245e38b76596e07">SERVICE</a>,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3ae7ccc8f3170f0c22ccd83c3341f71954">   28</a></span>&#160;    <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3ae7ccc8f3170f0c22ccd83c3341f71954">REGISTRATION</a>,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a0917971ba80f3b48c7d0cf1b2da024c7">   29</a></span>&#160;    <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a0917971ba80f3b48c7d0cf1b2da024c7">SOCKET</a>,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a3bc4b55246ea2ac927ecc058364af5e4">   30</a></span>&#160;    <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a3bc4b55246ea2ac927ecc058364af5e4">WIRELESS</a>,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a172133e01e2c47a2882db46ac63a091b">   31</a></span>&#160;    <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a172133e01e2c47a2882db46ac63a091b">LOCALIP</a>,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a7647f36c5af2adfa1bfb0bc9f7c95572">   32</a></span>&#160;    <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a7647f36c5af2adfa1bfb0bc9f7c95572">BEARER</a>,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3">eStateGPRS</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#ae772fbfe4dac56a7cd7957fdb4769910">   40</a></span>&#160;int8_t <a class="code" href="confg_g_p_r_s_8h.html#ae772fbfe4dac56a7cd7957fdb4769910">retry</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="confg_g_p_r_s_8h.html#a23356e0b69d83e4c9a7f04093c18a00b">   47</a></span>&#160;<a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3">eStateGPRS</a> <a class="code" href="confg_g_p_r_s_8h.html#a23356e0b69d83e4c9a7f04093c18a00b">GPRS</a> = <a class="code" href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a5f6d448017ecd0a56245e38b76596e07">SERVICE</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="confg_g_p_r_s_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a>[ 2000 ];</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;int8_t <a class="code" href="confg_g_p_r_s_8h.html#ae94347174921c8f0ee8de2c7a82e20d2">initGPRS</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _confgGPRS_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3a3bc4b55246ea2ac927ecc058364af5e4"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a3bc4b55246ea2ac927ecc058364af5e4">WIRELESS</a></div><div class="ttdef"><b>Definition:</b> confgGPRS.h:30</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3a5f6d448017ecd0a56245e38b76596e07"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a5f6d448017ecd0a56245e38b76596e07">SERVICE</a></div><div class="ttdef"><b>Definition:</b> confgGPRS.h:27</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3a7647f36c5af2adfa1bfb0bc9f7c95572"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a7647f36c5af2adfa1bfb0bc9f7c95572">BEARER</a></div><div class="ttdef"><b>Definition:</b> confgGPRS.h:32</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a23356e0b69d83e4c9a7f04093c18a00b"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a23356e0b69d83e4c9a7f04093c18a00b">GPRS</a></div><div class="ttdeci">eStateGPRS GPRS</div><div class="ttdoc">Variable GPRS del tipo eStateGPRS, la cual inicia el flujo del programa por SERVICE. </div><div class="ttdef"><b>Definition:</b> confgGPRS.h:47</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3a0917971ba80f3b48c7d0cf1b2da024c7"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a0917971ba80f3b48c7d0cf1b2da024c7">SOCKET</a></div><div class="ttdef"><b>Definition:</b> confgGPRS.h:29</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3a172133e01e2c47a2882db46ac63a091b"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3a172133e01e2c47a2882db46ac63a091b">LOCALIP</a></div><div class="ttdef"><b>Definition:</b> confgGPRS.h:31</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3">eStateGPRS</a></div><div class="ttdeci">eStateGPRS</div><div class="ttdoc">Estructura de enumeracion para los estados de la red GPRS. </div><div class="ttdef"><b>Definition:</b> confgGPRS.h:25</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_a1fde6ef3f450879982a3ce25d5bc28f3ae7ccc8f3170f0c22ccd83c3341f71954"><div class="ttname"><a href="confg_g_p_r_s_8h.html#a1fde6ef3f450879982a3ce25d5bc28f3ae7ccc8f3170f0c22ccd83c3341f71954">REGISTRATION</a></div><div class="ttdef"><b>Definition:</b> confgGPRS.h:28</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_af7df738ae9f625bebdcc5c13da80f471"><div class="ttname"><a href="confg_g_p_r_s_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a></div><div class="ttdeci">uint8_t buffRx[2000]</div><div class="ttdoc">Array de enteros de 8 bits sin signo buffRx donde llega la data del modulo. </div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_ae772fbfe4dac56a7cd7957fdb4769910"><div class="ttname"><a href="confg_g_p_r_s_8h.html#ae772fbfe4dac56a7cd7957fdb4769910">retry</a></div><div class="ttdeci">int8_t retry</div><div class="ttdoc">Variable entera de 8 bits que almacena los reintentos de conexion por parte del modulo. </div><div class="ttdef"><b>Definition:</b> confgGPRS.h:40</div></div>
+<div class="ttc" id="confg_g_p_r_s_8h_html_ae94347174921c8f0ee8de2c7a82e20d2"><div class="ttname"><a href="confg_g_p_r_s_8h.html#ae94347174921c8f0ee8de2c7a82e20d2">initGPRS</a></div><div class="ttdeci">int8_t initGPRS(void)</div><div class="ttdoc">initGPRS Funcion de inicializacion del servicio GPRS para el modulo SIM800L </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

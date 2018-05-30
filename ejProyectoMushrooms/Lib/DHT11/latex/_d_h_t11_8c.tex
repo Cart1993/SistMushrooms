@@ -1,0 +1,214 @@
+\hypertarget{_d_h_t11_8c}{}\section{Referencia del Archivo D\+H\+T11.\+c}
+\label{_d_h_t11_8c}\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+{\ttfamily \#include \char`\"{}D\+H\+T11.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stm32f4xx\+\_\+hal.\+h\char`\"{}}\newline
+\subsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_d_h_t11_8c_ac5d7411fcdf1f2bb51fb57db9fe7c85c}{G\+P\+I\+O\+\_\+\+P\+O\+RT}~G\+P\+I\+OA
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+weak uint32\+\_\+t \hyperlink{_d_h_t11_8c_a78758a35def3e2fc57eecb07556cc416}{micros} (void)
+\item 
+\+\_\+\+\_\+weak uint32\+\_\+t \hyperlink{_d_h_t11_8c_a8121a3f2f58ea16001c3eeea99c13503}{millis} (void)
+\item 
+void \hyperlink{_d_h_t11_8c_ae6a9bc9a3e12bc2805f4c1d54593ce24}{pin\+Mode} (uint16\+\_\+t \hyperlink{_d_h_t11_8c_a4144813adfa4dfe7e7cbeea17d1b06eb}{pin}, \hyperlink{_d_h_t11_8h_a715e2b213b99c7533f23a724be024000}{e\+Mode} mode)
+\begin{DoxyCompactList}\small\item\em pin\+Mode Funcion para configurar el modo del pin \end{DoxyCompactList}\item 
+void \hyperlink{_d_h_t11_8c_a709a764bc4b5c6200d3432ce8fe4efe4}{digital\+Write} (uint16\+\_\+t \hyperlink{_d_h_t11_8c_a4144813adfa4dfe7e7cbeea17d1b06eb}{pin}, \hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado} estado)
+\begin{DoxyCompactList}\small\item\em digital\+Write Funcion para escribir en los pines seleccionados \end{DoxyCompactList}\item 
+\hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado} \hyperlink{_d_h_t11_8c_acfb71f9450262d5bbacf2a4a18a580ad}{digital\+Read} (uint16\+\_\+t \hyperlink{_d_h_t11_8c_a4144813adfa4dfe7e7cbeea17d1b06eb}{pin})
+\begin{DoxyCompactList}\small\item\em digital\+Read Funcion para escribir en los pines seleccionados \end{DoxyCompactList}\item 
+void \hyperlink{_d_h_t11_8c_a8abce6c7e9d43ef02203fcc7a750a505}{D\+H\+T11} (uint16\+\_\+t pin\+\_\+number)
+\begin{DoxyCompactList}\small\item\em D\+H\+T11 Realiza toda la configuracion para la conexion con el sensor D\+H\+T11. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{_d_h_t11_8c_a44b1e1d7e5962eb1b0e0d25d23e9de6d}{wait\+ForT} (\hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado} target, uint32\+\_\+t time\+\_\+out\+\_\+us)
+\item 
+void \hyperlink{_d_h_t11_8c_aeda4484e39ed4c0c6c3f678a342c06be}{wait\+For} (\hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado} target)
+\item 
+void \hyperlink{_d_h_t11_8c_a6a4a0f78c1eaaad96c4815b3119de153}{delay\+\_\+us} (uint32\+\_\+t b)
+\item 
+uint8\+\_\+t \hyperlink{_d_h_t11_8c_adc57c563b87d63e818c6c27b46c1121a}{read\+Byte} (void)
+\item 
+int8\+\_\+t \hyperlink{_d_h_t11_8c_adf2a034c8b6e404d7d0ce0503f8021f6}{read} (uint8\+\_\+t $\ast$humidity1, uint8\+\_\+t $\ast$humidity2, uint8\+\_\+t $\ast$temperature1, uint8\+\_\+t $\ast$temperature2)
+\begin{DoxyCompactList}\small\item\em read Realiza la lectura de los datos provenientes del sensor D\+H\+T11 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint16\_t \hyperlink{_d_h_t11_8c_a4144813adfa4dfe7e7cbeea17d1b06eb}{pin}\\
+\>uint32\_t \hyperlink{_d_h_t11_8c_a60c71fe70941b6b9c95b08f5824cfeb1}{last\_read\_time}\\
+\} \hyperlink{_d_h_t11_8c_ae91a0eebf5f17f03471b001d7bb44253}{prv}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los \textquotesingle{}defines\textquotesingle{}}
+\mbox{\Hypertarget{_d_h_t11_8c_ac5d7411fcdf1f2bb51fb57db9fe7c85c}\label{_d_h_t11_8c_ac5d7411fcdf1f2bb51fb57db9fe7c85c}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!G\+P\+I\+O\+\_\+\+P\+O\+RT@{G\+P\+I\+O\+\_\+\+P\+O\+RT}}
+\index{G\+P\+I\+O\+\_\+\+P\+O\+RT@{G\+P\+I\+O\+\_\+\+P\+O\+RT}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{G\+P\+I\+O\+\_\+\+P\+O\+RT}{GPIO\_PORT}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+RT~G\+P\+I\+OA}
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{_d_h_t11_8c_a6a4a0f78c1eaaad96c4815b3119de153}\label{_d_h_t11_8c_a6a4a0f78c1eaaad96c4815b3119de153}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!delay\+\_\+us@{delay\+\_\+us}}
+\index{delay\+\_\+us@{delay\+\_\+us}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{delay\+\_\+us()}{delay\_us()}}
+{\footnotesize\ttfamily void delay\+\_\+us (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_h_t11_8c_a8abce6c7e9d43ef02203fcc7a750a505}\label{_d_h_t11_8c_a8abce6c7e9d43ef02203fcc7a750a505}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!D\+H\+T11@{D\+H\+T11}}
+\index{D\+H\+T11@{D\+H\+T11}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{D\+H\+T11()}{DHT11()}}
+{\footnotesize\ttfamily void D\+H\+T11 (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin\+\_\+number }\end{DoxyParamCaption})}
+
+
+
+D\+H\+T11 Realiza toda la configuracion para la conexion con el sensor D\+H\+T11. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pin\+\_\+number} & Pin seleccionado para conectar el sensor con el M\+CU \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void Vacio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_h_t11_8c_acfb71f9450262d5bbacf2a4a18a580ad}\label{_d_h_t11_8c_acfb71f9450262d5bbacf2a4a18a580ad}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!digital\+Read@{digital\+Read}}
+\index{digital\+Read@{digital\+Read}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{digital\+Read()}{digitalRead()}}
+{\footnotesize\ttfamily \hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado} digital\+Read (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin }\end{DoxyParamCaption})}
+
+
+
+digital\+Read Funcion para escribir en los pines seleccionados 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pin} & Pin selecionado a configurar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+e\+Estado Estado en el que se encuentra el pin seleccionado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_h_t11_8c_a709a764bc4b5c6200d3432ce8fe4efe4}\label{_d_h_t11_8c_a709a764bc4b5c6200d3432ce8fe4efe4}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!digital\+Write@{digital\+Write}}
+\index{digital\+Write@{digital\+Write}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{digital\+Write()}{digitalWrite()}}
+{\footnotesize\ttfamily void digital\+Write (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin,  }\item[{\hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado}}]{estado }\end{DoxyParamCaption})}
+
+
+
+digital\+Write Funcion para escribir en los pines seleccionados 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pin} & Pin selecionado a configurar \\
+\hline
+{\em estado} & Estado seleccionado a escribir en el pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+void Vacio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_h_t11_8c_a78758a35def3e2fc57eecb07556cc416}\label{_d_h_t11_8c_a78758a35def3e2fc57eecb07556cc416}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!micros@{micros}}
+\index{micros@{micros}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{micros()}{micros()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+weak uint32\+\_\+t micros (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_h_t11_8c_a8121a3f2f58ea16001c3eeea99c13503}\label{_d_h_t11_8c_a8121a3f2f58ea16001c3eeea99c13503}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!millis@{millis}}
+\index{millis@{millis}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{millis()}{millis()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+weak uint32\+\_\+t millis (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_h_t11_8c_ae6a9bc9a3e12bc2805f4c1d54593ce24}\label{_d_h_t11_8c_ae6a9bc9a3e12bc2805f4c1d54593ce24}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!pin\+Mode@{pin\+Mode}}
+\index{pin\+Mode@{pin\+Mode}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{pin\+Mode()}{pinMode()}}
+{\footnotesize\ttfamily void pin\+Mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pin,  }\item[{\hyperlink{_d_h_t11_8h_a715e2b213b99c7533f23a724be024000}{e\+Mode}}]{mode }\end{DoxyParamCaption})}
+
+
+
+pin\+Mode Funcion para configurar el modo del pin 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pin} & Pin selecionado a configurar \\
+\hline
+{\em mode} & Modo seleccionado a trabajar con el pin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+int8\+\_\+t Valor entero del estado de la lectura 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_h_t11_8c_adf2a034c8b6e404d7d0ce0503f8021f6}\label{_d_h_t11_8c_adf2a034c8b6e404d7d0ce0503f8021f6}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!read@{read}}
+\index{read@{read}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int8\+\_\+t read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{humidity1,  }\item[{uint8\+\_\+t $\ast$}]{humidity2,  }\item[{uint8\+\_\+t $\ast$}]{temperature1,  }\item[{uint8\+\_\+t $\ast$}]{temperature2 }\end{DoxyParamCaption})}
+
+
+
+read Realiza la lectura de los datos provenientes del sensor D\+H\+T11 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em humidity1} & Puntero que contiene la direccion en donde se aloja la informacion entera de la humedad \\
+\hline
+{\em humidity2} & Puntero que contiene la direccion en donde se aloja la informacion decimal de la humedad \\
+\hline
+{\em temperature1} & Puntero que contiene la direccion en donde se aloja la informacion entera de la temperatura \\
+\hline
+{\em temperature2} & Puntero que contiene la direccion en donde se aloja la informacion decimal de la temperatura \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+int8\+\_\+t Valor entero del estado de la lectura 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_d_h_t11_8c_adc57c563b87d63e818c6c27b46c1121a}\label{_d_h_t11_8c_adc57c563b87d63e818c6c27b46c1121a}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!read\+Byte@{read\+Byte}}
+\index{read\+Byte@{read\+Byte}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{read\+Byte()}{readByte()}}
+{\footnotesize\ttfamily uint8\+\_\+t read\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_h_t11_8c_aeda4484e39ed4c0c6c3f678a342c06be}\label{_d_h_t11_8c_aeda4484e39ed4c0c6c3f678a342c06be}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!wait\+For@{wait\+For}}
+\index{wait\+For@{wait\+For}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{wait\+For()}{waitFor()}}
+{\footnotesize\ttfamily void wait\+For (\begin{DoxyParamCaption}\item[{\hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado}}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_d_h_t11_8c_a44b1e1d7e5962eb1b0e0d25d23e9de6d}\label{_d_h_t11_8c_a44b1e1d7e5962eb1b0e0d25d23e9de6d}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!wait\+ForT@{wait\+ForT}}
+\index{wait\+ForT@{wait\+ForT}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{wait\+For\+T()}{waitForT()}}
+{\footnotesize\ttfamily int32\+\_\+t wait\+ForT (\begin{DoxyParamCaption}\item[{\hyperlink{_d_h_t11_8h_a5ed6c715e121d83d7eddb67c6aec78b5}{e\+Estado}}]{target,  }\item[{uint32\+\_\+t}]{time\+\_\+out\+\_\+us }\end{DoxyParamCaption})}
+
+
+
+\subsection{Documentación de las variables}
+\mbox{\Hypertarget{_d_h_t11_8c_a60c71fe70941b6b9c95b08f5824cfeb1}\label{_d_h_t11_8c_a60c71fe70941b6b9c95b08f5824cfeb1}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!last\+\_\+read\+\_\+time@{last\+\_\+read\+\_\+time}}
+\index{last\+\_\+read\+\_\+time@{last\+\_\+read\+\_\+time}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{last\+\_\+read\+\_\+time}{last\_read\_time}}
+{\footnotesize\ttfamily uint32\+\_\+t last\+\_\+read\+\_\+time}
+
+\mbox{\Hypertarget{_d_h_t11_8c_a4144813adfa4dfe7e7cbeea17d1b06eb}\label{_d_h_t11_8c_a4144813adfa4dfe7e7cbeea17d1b06eb}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!pin@{pin}}
+\index{pin@{pin}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{pin}{pin}}
+{\footnotesize\ttfamily uint16\+\_\+t pin}
+
+\mbox{\Hypertarget{_d_h_t11_8c_ae91a0eebf5f17f03471b001d7bb44253}\label{_d_h_t11_8c_ae91a0eebf5f17f03471b001d7bb44253}} 
+\index{D\+H\+T11.\+c@{D\+H\+T11.\+c}!prv@{prv}}
+\index{prv@{prv}!D\+H\+T11.\+c@{D\+H\+T11.\+c}}
+\subsubsection{\texorpdfstring{prv}{prv}}
+{\footnotesize\ttfamily struct \{ ... \}  prv}
+

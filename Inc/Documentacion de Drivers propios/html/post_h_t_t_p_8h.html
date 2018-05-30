@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo postHTTP.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo postHTTP.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library to apply the method POST on HTTP  This library is to apply the method POST from HTTP on SIM800L.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;fibocom.h&quot;</code><br />
+<code>#include &quot;AT.h&quot;</code><br />
+</div>
+<p><a href="post_h_t_t_p_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:ab8a501241029313d410ff8d6094fefc7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a> { <br />
+&#160;&#160;<a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">INITPOST</a>, 
+<a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a16dfb503b6c6a2ba1ca6eb67011c3073">PARACIDPOST</a>, 
+<a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a75d438fd8b25e1ad87e8c3da7ece87b0">PARAURLPOST</a>, 
+<a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a3e6f609af9544f0957865e897f63af10">DATAPOST</a>, 
+<br />
+&#160;&#160;<a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7abb81c6dd49b116b7dbaf8f772a1ead89">ACTIONPOST</a>, 
+<a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a2c8301caa749a8b5cb50435831655b23">TERMPOST</a>
+<br />
+ }<tr class="memdesc:ab8a501241029313d410ff8d6094fefc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion eCasePOST que contiene las etapas a aplicar para implementar el metodo POST sobre HTTP.  <a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ab8a501241029313d410ff8d6094fefc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:add013d421a095fca988489ab65867685"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="post_h_t_t_p_8h.html#add013d421a095fca988489ab65867685">POSTHTTP</a> (char *CID, char *URL, char *sizeData, char *latency, char *Data)</td></tr>
+<tr class="memdesc:add013d421a095fca988489ab65867685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function POSTHTTP metodo POST sobre HTTP para el modulo SIM800L.  <a href="#add013d421a095fca988489ab65867685">Más...</a><br /></td></tr>
+<tr class="separator:add013d421a095fca988489ab65867685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9d6dd342c5ac3d3e59b1d578ec3375b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="post_h_t_t_p_8h.html#a9d6dd342c5ac3d3e59b1d578ec3375b9">action</a> = <a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">INITPOST</a></td></tr>
+<tr class="memdesc:a9d6dd342c5ac3d3e59b1d578ec3375b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable eCasePost llamada action que inicia en INITPOST, esta establece el flujo de la funcion.  <a href="#a9d6dd342c5ac3d3e59b1d578ec3375b9">Más...</a><br /></td></tr>
+<tr class="separator:a9d6dd342c5ac3d3e59b1d578ec3375b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7df738ae9f625bebdcc5c13da80f471"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="post_h_t_t_p_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a> [2000]</td></tr>
+<tr class="memdesc:af7df738ae9f625bebdcc5c13da80f471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo de 8 bits sin signo buffRx donde se almacena la data enviada al MCU.  <a href="#af7df738ae9f625bebdcc5c13da80f471">Más...</a><br /></td></tr>
+<tr class="separator:af7df738ae9f625bebdcc5c13da80f471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library to apply the method POST on HTTP  This library is to apply the method POST from HTTP on SIM800L. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>22/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library method POST HTTP </dd></dl>
+</div><h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="ab8a501241029313d410ff8d6094fefc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8a501241029313d410ff8d6094fefc7">&#9670;&nbsp;</a></span>eCasePOST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion eCasePOST que contiene las etapas a aplicar para implementar el metodo POST sobre HTTP. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a"></a>INITPOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8a501241029313d410ff8d6094fefc7a16dfb503b6c6a2ba1ca6eb67011c3073"></a>PARACIDPOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8a501241029313d410ff8d6094fefc7a75d438fd8b25e1ad87e8c3da7ece87b0"></a>PARAURLPOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8a501241029313d410ff8d6094fefc7a3e6f609af9544f0957865e897f63af10"></a>DATAPOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8a501241029313d410ff8d6094fefc7abb81c6dd49b116b7dbaf8f772a1ead89"></a>ACTIONPOST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab8a501241029313d410ff8d6094fefc7a2c8301caa749a8b5cb50435831655b23"></a>TERMPOST&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="add013d421a095fca988489ab65867685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add013d421a095fca988489ab65867685">&#9670;&nbsp;</a></span>POSTHTTP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t POSTHTTP </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>CID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>URL</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>sizeData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>latency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>Data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function POSTHTTP metodo POST sobre HTTP para el modulo SIM800L. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CID</td><td>Perfil Bearer </td></tr>
+    <tr><td class="paramname">URL</td><td>Direccion URL a la que se le aplica el metodo POST </td></tr>
+    <tr><td class="paramname">sizeData</td><td>Tamaño de la data que se enviara al servidor a traves del metodo POST </td></tr>
+    <tr><td class="paramname">latency</td><td>Tiempo de intentos de reenvio o repost de la data al servidor </td></tr>
+    <tr><td class="paramname">Data</td><td>Datos a enviar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>int8_t Entero de 8 bits (0&mdash;&gt; Good method, 1&mdash;&gt; Bad method) </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a9d6dd342c5ac3d3e59b1d578ec3375b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6dd342c5ac3d3e59b1d578ec3375b9">&#9670;&nbsp;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a> action = <a class="el" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">INITPOST</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable eCasePost llamada action que inicia en INITPOST, esta establece el flujo de la funcion. </p>
+
+</div>
+</div>
+<a id="af7df738ae9f625bebdcc5c13da80f471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7df738ae9f625bebdcc5c13da80f471">&#9670;&nbsp;</a></span>buffRx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t buffRx[2000]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo de 8 bits sin signo buffRx donde se almacena la data enviada al MCU. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

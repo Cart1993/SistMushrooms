@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DHT11: Referencia del Archivo DHT11.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DHT11
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Configuracion y trasnferencia de datos DHT11</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo DHT11.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div>
+<p><a href="_d_h_t11_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a3c584ad5b5c9aa7ff34d830c01c89f2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#a3c584ad5b5c9aa7ff34d830c01c89f2d">DHT11_RETRY_DELAY</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="memdesc:a3c584ad5b5c9aa7ff34d830c01c89f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retardo de reintento de conexion DHT11.  <a href="#a3c584ad5b5c9aa7ff34d830c01c89f2d">Más...</a><br /></td></tr>
+<tr class="separator:a3c584ad5b5c9aa7ff34d830c01c89f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a715e2b213b99c7533f23a724be024000"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a> { <a class="el" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000ae310c909d76b003d016bef8bdf16936a">INPUT</a>, 
+<a class="el" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000a2ab08d3e103968f5f4f26b66a52e99d6">OUTPUT</a>
+ }<tr class="memdesc:a715e2b213b99c7533f23a724be024000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion para entrada y salida.  <a href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a715e2b213b99c7533f23a724be024000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed6c715e121d83d7eddb67c6aec78b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a> { <a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a6a226f4143ca3b18999551694cdb72a8">LOW</a>, 
+<a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5a0c3a1dacf94061154b3ee354359c5893">HIGH</a>
+ }<tr class="memdesc:a5ed6c715e121d83d7eddb67c6aec78b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion para alto y bajo.  <a href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a5ed6c715e121d83d7eddb67c6aec78b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a8abce6c7e9d43ef02203fcc7a750a505"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#a8abce6c7e9d43ef02203fcc7a750a505">DHT11</a> (uint16_t pin_number)</td></tr>
+<tr class="memdesc:a8abce6c7e9d43ef02203fcc7a750a505"><td class="mdescLeft">&#160;</td><td class="mdescRight">DHT11 Realiza toda la configuracion para la conexion con el sensor DHT11.  <a href="#a8abce6c7e9d43ef02203fcc7a750a505">Más...</a><br /></td></tr>
+<tr class="separator:a8abce6c7e9d43ef02203fcc7a750a505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2a034c8b6e404d7d0ce0503f8021f6"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#adf2a034c8b6e404d7d0ce0503f8021f6">read</a> (uint8_t *humidity1, uint8_t *humidity2, uint8_t *temperature1, uint8_t *temperature2)</td></tr>
+<tr class="memdesc:adf2a034c8b6e404d7d0ce0503f8021f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">read Realiza la lectura de los datos provenientes del sensor DHT11  <a href="#adf2a034c8b6e404d7d0ce0503f8021f6">Más...</a><br /></td></tr>
+<tr class="separator:adf2a034c8b6e404d7d0ce0503f8021f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6a9bc9a3e12bc2805f4c1d54593ce24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#ae6a9bc9a3e12bc2805f4c1d54593ce24">pinMode</a> (uint16_t <a class="el" href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a>, <a class="el" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a> mode)</td></tr>
+<tr class="memdesc:ae6a9bc9a3e12bc2805f4c1d54593ce24"><td class="mdescLeft">&#160;</td><td class="mdescRight">pinMode Funcion para configurar el modo del pin  <a href="#ae6a9bc9a3e12bc2805f4c1d54593ce24">Más...</a><br /></td></tr>
+<tr class="separator:ae6a9bc9a3e12bc2805f4c1d54593ce24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709a764bc4b5c6200d3432ce8fe4efe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#a709a764bc4b5c6200d3432ce8fe4efe4">digitalWrite</a> (uint16_t <a class="el" href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a>, <a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a> estado)</td></tr>
+<tr class="memdesc:a709a764bc4b5c6200d3432ce8fe4efe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">digitalWrite Funcion para escribir en los pines seleccionados  <a href="#a709a764bc4b5c6200d3432ce8fe4efe4">Más...</a><br /></td></tr>
+<tr class="separator:a709a764bc4b5c6200d3432ce8fe4efe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfb71f9450262d5bbacf2a4a18a580ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_d_h_t11_8h.html#acfb71f9450262d5bbacf2a4a18a580ad">digitalRead</a> (uint16_t <a class="el" href="_d_h_t11_8c.html#a4144813adfa4dfe7e7cbeea17d1b06eb">pin</a>)</td></tr>
+<tr class="memdesc:acfb71f9450262d5bbacf2a4a18a580ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">digitalRead Funcion para escribir en los pines seleccionados  <a href="#acfb71f9450262d5bbacf2a4a18a580ad">Más...</a><br /></td></tr>
+<tr class="separator:acfb71f9450262d5bbacf2a4a18a580ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>19/10/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Rangel <div class="fragment"><div class="line"><span class="keywordtype">int</span> main</div><div class="line">{</div><div class="line">  <a class="code" href="_d_h_t11_8c.html#a8abce6c7e9d43ef02203fcc7a750a505">DHT11</a>( GPIO_PIN_8 );</div><div class="line">      <span class="keywordflow">switch</span> ( i )</div><div class="line">      {</div><div class="line">          <span class="keywordflow">case</span> 0:</div><div class="line">              HAL_GPIO_WritePin( GPIOB, GPIO_PIN_10, GPIO_PIN_RESET );</div><div class="line">              <span class="keywordflow">break</span>;</div><div class="line">          <span class="keywordflow">case</span> 1:</div><div class="line">              HAL_GPIO_WritePin( GPIOB, GPIO_PIN_10, GPIO_PIN_SET );</div><div class="line">              <span class="keywordflow">break</span>;</div><div class="line">          <span class="keywordflow">default</span>:</div><div class="line">              <span class="keywordflow">break</span>;</div><div class="line">      }</div><div class="line">      <a class="code" href="_d_h_t11_8c.html#adf2a034c8b6e404d7d0ce0503f8021f6">read</a>( &amp;humidity1,&amp;humidity2 ,&amp;temperature1 ,&amp;temperature2 );</div><div class="line">      HAL_Delay( 1000 );</div><div class="line"></div><div class="line">      <a class="code" href="_d_h_t11_8c.html#a8abce6c7e9d43ef02203fcc7a750a505">DHT11</a>( GPIO_PIN_10 );</div><div class="line">      <a class="code" href="_d_h_t11_8c.html#adf2a034c8b6e404d7d0ce0503f8021f6">read</a>( &amp;humidity1,&amp;humidity2 ,&amp;temperature1 ,&amp;temperature2 );</div><div class="line">      HAL_Delay( 1500 );</div><div class="line">}</div></div><!-- fragment --> </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a3c584ad5b5c9aa7ff34d830c01c89f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c584ad5b5c9aa7ff34d830c01c89f2d">&#9670;&nbsp;</a></span>DHT11_RETRY_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DHT11_RETRY_DELAY&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retardo de reintento de conexion DHT11. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a5ed6c715e121d83d7eddb67c6aec78b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ed6c715e121d83d7eddb67c6aec78b5">&#9670;&nbsp;</a></span>eEstado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion para alto y bajo. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a5ed6c715e121d83d7eddb67c6aec78b5a6a226f4143ca3b18999551694cdb72a8"></a>LOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5ed6c715e121d83d7eddb67c6aec78b5a0c3a1dacf94061154b3ee354359c5893"></a>HIGH&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a715e2b213b99c7533f23a724be024000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715e2b213b99c7533f23a724be024000">&#9670;&nbsp;</a></span>eMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion para entrada y salida. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a715e2b213b99c7533f23a724be024000ae310c909d76b003d016bef8bdf16936a"></a>INPUT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a715e2b213b99c7533f23a724be024000a2ab08d3e103968f5f4f26b66a52e99d6"></a>OUTPUT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a8abce6c7e9d43ef02203fcc7a750a505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8abce6c7e9d43ef02203fcc7a750a505">&#9670;&nbsp;</a></span>DHT11()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DHT11 </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pin_number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DHT11 Realiza toda la configuracion para la conexion con el sensor DHT11. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin_number</td><td>Pin seleccionado para conectar el sensor con el MCU </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="acfb71f9450262d5bbacf2a4a18a580ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfb71f9450262d5bbacf2a4a18a580ad">&#9670;&nbsp;</a></span>digitalRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a> digitalRead </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>digitalRead Funcion para escribir en los pines seleccionados </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin</td><td>Pin selecionado a configurar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>eEstado Estado en el que se encuentra el pin seleccionado </dd></dl>
+
+</div>
+</div>
+<a id="a709a764bc4b5c6200d3432ce8fe4efe4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709a764bc4b5c6200d3432ce8fe4efe4">&#9670;&nbsp;</a></span>digitalWrite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void digitalWrite </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_d_h_t11_8h.html#a5ed6c715e121d83d7eddb67c6aec78b5">eEstado</a>&#160;</td>
+          <td class="paramname"><em>estado</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>digitalWrite Funcion para escribir en los pines seleccionados </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin</td><td>Pin selecionado a configurar </td></tr>
+    <tr><td class="paramname">estado</td><td>Estado seleccionado a escribir en el pin </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="ae6a9bc9a3e12bc2805f4c1d54593ce24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a9bc9a3e12bc2805f4c1d54593ce24">&#9670;&nbsp;</a></span>pinMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void pinMode </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>pin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_d_h_t11_8h.html#a715e2b213b99c7533f23a724be024000">eMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>pinMode Funcion para configurar el modo del pin </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pin</td><td>Pin selecionado a configurar </td></tr>
+    <tr><td class="paramname">mode</td><td>Modo seleccionado a trabajar con el pin </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>int8_t Valor entero del estado de la lectura </dd></dl>
+
+</div>
+</div>
+<a id="adf2a034c8b6e404d7d0ce0503f8021f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2a034c8b6e404d7d0ce0503f8021f6">&#9670;&nbsp;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t read </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>humidity1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>humidity2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>temperature1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>temperature2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read Realiza la lectura de los datos provenientes del sensor DHT11 </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">humidity1</td><td>Puntero que contiene la direccion en donde se aloja la informacion entera de la humedad </td></tr>
+    <tr><td class="paramname">humidity2</td><td>Puntero que contiene la direccion en donde se aloja la informacion decimal de la humedad </td></tr>
+    <tr><td class="paramname">temperature1</td><td>Puntero que contiene la direccion en donde se aloja la informacion entera de la temperatura </td></tr>
+    <tr><td class="paramname">temperature2</td><td>Puntero que contiene la direccion en donde se aloja la informacion decimal de la temperatura </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>int8_t Valor entero del estado de la lectura </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

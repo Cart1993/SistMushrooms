@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente tempAmb.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tempAmb.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="temp_amb_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _tempAmb_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _tempAmb_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fase_8h.html">fase.h</a>&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;DHT11.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="temp_amb_8h.html#a0e182a7f804b91c352981419e1334927">   27</a></span>&#160;<span class="preprocessor">#define desocupado 0</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="temp_amb_8h.html#a59fb23f96c5482013de5401823ef98fb">   34</a></span>&#160;<span class="preprocessor">#define ocupado 1</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="temp_amb_8h.html#ae6c5811c029a6ee1565195f9e17ddec2">   41</a></span>&#160;<span class="preprocessor">#define timeout 20</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="temp_amb_8h.html#aef30ef1daffbac4323a2ac956a54f89e">countTemp</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="temp_amb_8h.html#a209778f36a7ce5f5754477872368313e">alertaHumLow</a>, <a class="code" href="temp_amb_8h.html#a72db076759fbedbf20dd6f7787adc3a6">alertaTempLow</a>, <a class="code" href="temp_amb_8h.html#af7f04511f4043f1471b1eb09dd898759">alertaTempHigh</a>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="temp_amb_8h.html#ad817d7c1b8040a98dfd8ff7521a0846a">humidity1</a>, <a class="code" href="temp_amb_8h.html#aff34036064416b1db607e139275ba4f3">humidity2</a>, <a class="code" href="temp_amb_8h.html#accb06297ef75d8fa6eec44580b8436e8">temperature1</a>, <a class="code" href="temp_amb_8h.html#aa90b29e9ece20567add57c75e2a5050c">temperature11</a>, <a class="code" href="temp_amb_8h.html#a87a0f19e82b8b8e3a8bd53d83dca65d4">temperature2</a>, <a class="code" href="temp_amb_8h.html#adc5ac08f0fb67616e734e4320e7cba42">cntAA</a>, <a class="code" href="temp_amb_8h.html#a75553720a2589c2aed1154f06308b318">cntLight</a>, <a class="code" href="temp_amb_8h.html#acac0af143e8e976eb47d773182e24725">cntHum</a>, <a class="code" href="temp_amb_8h.html#a5cf5edc50f184ea56f38417ec18b730d">alertaTemp</a>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp_amb_8h.html#a292120d136274182e910b281a3465e1e">controlTempAmb</a>( <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> x );</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _tempAmb_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="temp_amb_8h_html_a72db076759fbedbf20dd6f7787adc3a6"><div class="ttname"><a href="temp_amb_8h.html#a72db076759fbedbf20dd6f7787adc3a6">alertaTempLow</a></div><div class="ttdeci">uint8_t alertaTempLow</div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932a"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a></div><div class="ttdeci">eFase</div><div class="ttdoc">Estructura de enumeracion para las fases de cultivacion en la que se encuentran los champiñones...</div><div class="ttdef"><b>Definition:</b> fase.h:21</div></div>
+<div class="ttc" id="temp_amb_8h_html_aa90b29e9ece20567add57c75e2a5050c"><div class="ttname"><a href="temp_amb_8h.html#aa90b29e9ece20567add57c75e2a5050c">temperature11</a></div><div class="ttdeci">uint8_t temperature11</div></div>
+<div class="ttc" id="temp_amb_8h_html_a292120d136274182e910b281a3465e1e"><div class="ttname"><a href="temp_amb_8h.html#a292120d136274182e910b281a3465e1e">controlTempAmb</a></div><div class="ttdeci">void controlTempAmb(eFase x)</div><div class="ttdoc">Function controlTempAmb para el control de la temperatura ambiental segun el periodo de cultivo...</div></div>
+<div class="ttc" id="temp_amb_8h_html_a5cf5edc50f184ea56f38417ec18b730d"><div class="ttname"><a href="temp_amb_8h.html#a5cf5edc50f184ea56f38417ec18b730d">alertaTemp</a></div><div class="ttdeci">uint8_t alertaTemp</div></div>
+<div class="ttc" id="temp_amb_8h_html_af7f04511f4043f1471b1eb09dd898759"><div class="ttname"><a href="temp_amb_8h.html#af7f04511f4043f1471b1eb09dd898759">alertaTempHigh</a></div><div class="ttdeci">uint8_t alertaTempHigh</div></div>
+<div class="ttc" id="temp_amb_8h_html_acac0af143e8e976eb47d773182e24725"><div class="ttname"><a href="temp_amb_8h.html#acac0af143e8e976eb47d773182e24725">cntHum</a></div><div class="ttdeci">uint8_t cntHum</div></div>
+<div class="ttc" id="temp_amb_8h_html_accb06297ef75d8fa6eec44580b8436e8"><div class="ttname"><a href="temp_amb_8h.html#accb06297ef75d8fa6eec44580b8436e8">temperature1</a></div><div class="ttdeci">uint8_t temperature1</div></div>
+<div class="ttc" id="temp_amb_8h_html_aff34036064416b1db607e139275ba4f3"><div class="ttname"><a href="temp_amb_8h.html#aff34036064416b1db607e139275ba4f3">humidity2</a></div><div class="ttdeci">uint8_t humidity2</div></div>
+<div class="ttc" id="temp_amb_8h_html_a75553720a2589c2aed1154f06308b318"><div class="ttname"><a href="temp_amb_8h.html#a75553720a2589c2aed1154f06308b318">cntLight</a></div><div class="ttdeci">uint8_t cntLight</div></div>
+<div class="ttc" id="temp_amb_8h_html_ad817d7c1b8040a98dfd8ff7521a0846a"><div class="ttname"><a href="temp_amb_8h.html#ad817d7c1b8040a98dfd8ff7521a0846a">humidity1</a></div><div class="ttdeci">uint8_t humidity1</div><div class="ttdoc">Variables externas de 8 bits sin signo. </div></div>
+<div class="ttc" id="fase_8h_html"><div class="ttname"><a href="fase_8h.html">fase.h</a></div><div class="ttdoc">Fases de cultivacion del champiñon. </div></div>
+<div class="ttc" id="temp_amb_8h_html_aef30ef1daffbac4323a2ac956a54f89e"><div class="ttname"><a href="temp_amb_8h.html#aef30ef1daffbac4323a2ac956a54f89e">countTemp</a></div><div class="ttdeci">uint8_t countTemp</div><div class="ttdoc">Variable externa de 8 bits sin signo que lleva el conteo de la tolerancia de una variable fuera de ra...</div></div>
+<div class="ttc" id="temp_amb_8h_html_a87a0f19e82b8b8e3a8bd53d83dca65d4"><div class="ttname"><a href="temp_amb_8h.html#a87a0f19e82b8b8e3a8bd53d83dca65d4">temperature2</a></div><div class="ttdeci">uint8_t temperature2</div></div>
+<div class="ttc" id="temp_amb_8h_html_a209778f36a7ce5f5754477872368313e"><div class="ttname"><a href="temp_amb_8h.html#a209778f36a7ce5f5754477872368313e">alertaHumLow</a></div><div class="ttdeci">uint8_t alertaHumLow</div><div class="ttdoc">Variable externa de 8 bits sin signo que activa la alerta por temperaturas y/o humedad elevadas y baj...</div></div>
+<div class="ttc" id="temp_amb_8h_html_adc5ac08f0fb67616e734e4320e7cba42"><div class="ttname"><a href="temp_amb_8h.html#adc5ac08f0fb67616e734e4320e7cba42">cntAA</a></div><div class="ttdeci">uint8_t cntAA</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

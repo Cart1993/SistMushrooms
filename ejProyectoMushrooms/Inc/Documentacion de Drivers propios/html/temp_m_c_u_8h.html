@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo tempMCU.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo tempMCU.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library to control the temperature of the microcontroller  This library is to control the values of the temperature of the soil at the microcontroller.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;STM_MY_LCD16X2.h&quot;</code><br />
+</div>
+<p><a href="temp_m_c_u_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ae90f234cade2cdd2d1c4801cac915617"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ae90f234cade2cdd2d1c4801cac915617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante tam que define la cantidad de canales que se estan ejecutando en el ADC del MCU.  <a href="#ae90f234cade2cdd2d1c4801cac915617">Más...</a><br /></td></tr>
+<tr class="separator:ae90f234cade2cdd2d1c4801cac915617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a23db7933cc9f813bbabe2a6e73035c2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a> (char *text, int linea)</td></tr>
+<tr class="memdesc:a23db7933cc9f813bbabe2a6e73035c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function extern dips_enviar Envia mensajes a traves del display LCD de 16x2.  <a href="#a23db7933cc9f813bbabe2a6e73035c2a">Más...</a><br /></td></tr>
+<tr class="separator:a23db7933cc9f813bbabe2a6e73035c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a90a8a16a5396631daaf7624a5e7f07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#a9a90a8a16a5396631daaf7624a5e7f07">tempSensor</a> (void)</td></tr>
+<tr class="memdesc:a9a90a8a16a5396631daaf7624a5e7f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function tempSensor mide y reporta alarmas con respecto a la temperatura de la MCU.  <a href="#a9a90a8a16a5396631daaf7624a5e7f07">Más...</a><br /></td></tr>
+<tr class="separator:a9a90a8a16a5396631daaf7624a5e7f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a900987cf4941bfb7e458819569472032"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#a900987cf4941bfb7e458819569472032">alertaTempMcuHigh</a></td></tr>
+<tr class="memdesc:a900987cf4941bfb7e458819569472032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 8 bits sin signo llamada alertaTempMcuHigh que activa la alarma por temperatura excesiva del MCU.  <a href="#a900987cf4941bfb7e458819569472032">Más...</a><br /></td></tr>
+<tr class="separator:a900987cf4941bfb7e458819569472032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2163e9cd7671201227fbd87cbbb9e0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#a8c2163e9cd7671201227fbd87cbbb9e0">process</a></td></tr>
+<tr class="separator:a8c2163e9cd7671201227fbd87cbbb9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcffec27eb7ccb8a290f1d58f6c14bdb"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#abcffec27eb7ccb8a290f1d58f6c14bdb">alertaTempMCU</a> []</td></tr>
+<tr class="memdesc:abcffec27eb7ccb8a290f1d58f6c14bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo tipo char llamada alertaTempMCU en donde esta el mensaje de alerta a enviar a traves del SIM800L.  <a href="#abcffec27eb7ccb8a290f1d58f6c14bdb">Más...</a><br /></td></tr>
+<tr class="separator:abcffec27eb7ccb8a290f1d58f6c14bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc65092996dd01dc3d464580289eec5a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#afc65092996dd01dc3d464580289eec5a">buffer</a> [<a class="el" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a>]</td></tr>
+<tr class="memdesc:afc65092996dd01dc3d464580289eec5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array externo de 8 bits sin signo llamado buffer en donde se almacenan los valores del ADC.  <a href="#afc65092996dd01dc3d464580289eec5a">Más...</a><br /></td></tr>
+<tr class="separator:afc65092996dd01dc3d464580289eec5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0824bceb6ba0f40e93f0ffd514f2153c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#a0824bceb6ba0f40e93f0ffd514f2153c">tempSensorMCU</a></td></tr>
+<tr class="memdesc:a0824bceb6ba0f40e93f0ffd514f2153c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 16 bits llamada tempSensorMCU que almacena el valor de la temperatura del MCU.  <a href="#a0824bceb6ba0f40e93f0ffd514f2153c">Más...</a><br /></td></tr>
+<tr class="separator:a0824bceb6ba0f40e93f0ffd514f2153c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae679b256fafda3f19ff852a0b3fbe7f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#ae679b256fafda3f19ff852a0b3fbe7f7">V25</a></td></tr>
+<tr class="memdesc:ae679b256fafda3f19ff852a0b3fbe7f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables externas tipo flotante V25, Avg_Slope que convierten el valor obtenido a niveles de grados celsius.  <a href="#ae679b256fafda3f19ff852a0b3fbe7f7">Más...</a><br /></td></tr>
+<tr class="separator:ae679b256fafda3f19ff852a0b3fbe7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f9eb6c15f89e5831b04df6c235641d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_m_c_u_8h.html#a38f9eb6c15f89e5831b04df6c235641d">Avg_Slope</a></td></tr>
+<tr class="separator:a38f9eb6c15f89e5831b04df6c235641d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library to control the temperature of the microcontroller  This library is to control the values of the temperature of the soil at the microcontroller. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>29/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library Temperature of the MCU </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="ae90f234cade2cdd2d1c4801cac915617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae90f234cade2cdd2d1c4801cac915617">&#9670;&nbsp;</a></span>tam</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define tam&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante tam que define la cantidad de canales que se estan ejecutando en el ADC del MCU. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a23db7933cc9f813bbabe2a6e73035c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23db7933cc9f813bbabe2a6e73035c2a">&#9670;&nbsp;</a></span>disp_enviar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disp_enviar </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function extern dips_enviar Envia mensajes a traves del display LCD de 16x2. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Variable tipo char que contiene el mensaje a desplegar en la display </td></tr>
+    <tr><td class="paramname">linea</td><td>Variable tipo entera que indica en que linea del display se mostrara la informacion </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a9a90a8a16a5396631daaf7624a5e7f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a90a8a16a5396631daaf7624a5e7f07">&#9670;&nbsp;</a></span>tempSensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tempSensor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function tempSensor mide y reporta alarmas con respecto a la temperatura de la MCU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="abcffec27eb7ccb8a290f1d58f6c14bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcffec27eb7ccb8a290f1d58f6c14bdb">&#9670;&nbsp;</a></span>alertaTempMCU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char alertaTempMCU[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo tipo char llamada alertaTempMCU en donde esta el mensaje de alerta a enviar a traves del SIM800L. </p>
+
+</div>
+</div>
+<a id="a900987cf4941bfb7e458819569472032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900987cf4941bfb7e458819569472032">&#9670;&nbsp;</a></span>alertaTempMcuHigh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTempMcuHigh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 8 bits sin signo llamada alertaTempMcuHigh que activa la alarma por temperatura excesiva del MCU. </p>
+
+</div>
+</div>
+<a id="a38f9eb6c15f89e5831b04df6c235641d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f9eb6c15f89e5831b04df6c235641d">&#9670;&nbsp;</a></span>Avg_Slope</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Avg_Slope</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc65092996dd01dc3d464580289eec5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc65092996dd01dc3d464580289eec5a">&#9670;&nbsp;</a></span>buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t buffer[<a class="el" href="temp_m_c_u_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Array externo de 8 bits sin signo llamado buffer en donde se almacenan los valores del ADC. </p>
+
+</div>
+</div>
+<a id="a8c2163e9cd7671201227fbd87cbbb9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2163e9cd7671201227fbd87cbbb9e0">&#9670;&nbsp;</a></span>process</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t process</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0824bceb6ba0f40e93f0ffd514f2153c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0824bceb6ba0f40e93f0ffd514f2153c">&#9670;&nbsp;</a></span>tempSensorMCU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t tempSensorMCU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 16 bits llamada tempSensorMCU que almacena el valor de la temperatura del MCU. </p>
+
+</div>
+</div>
+<a id="ae679b256fafda3f19ff852a0b3fbe7f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae679b256fafda3f19ff852a0b3fbe7f7">&#9670;&nbsp;</a></span>V25</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float V25</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variables externas tipo flotante V25, Avg_Slope que convierten el valor obtenido a niveles de grados celsius. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

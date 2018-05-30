@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente funcionInicializacion.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">funcionInicializacion.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="funcion_inicializacion_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef _funcionInicializacion_H_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define _funcionInicializacion_H_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;fibocom.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a6bc729a7c800545da8542c93f14473f2">   26</a></span>&#160;    <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a6bc729a7c800545da8542c93f14473f2">EchoMode</a>,</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a8d1fceaf988a60a92dc8cd320efecd3f">   27</a></span>&#160;    <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a8d1fceaf988a60a92dc8cd320efecd3f">connection</a>,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a3c1180b3d20f5106ed8c2fa03dfe3bbd">   28</a></span>&#160;    <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a3c1180b3d20f5106ed8c2fa03dfe3bbd">BaudRate</a>,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a3df70e1237d5ec0ee520f2a2c557abd9">   29</a></span>&#160;    <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a3df70e1237d5ec0ee520f2a2c557abd9">TempSim</a>,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a0875376cb85cbf43dc1ba763dc938d5e">   30</a></span>&#160;    <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a0875376cb85cbf43dc1ba763dc938d5e">functionality</a>,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42acdcf860685c403c7236461cbe102f08e">   31</a></span>&#160;    <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42acdcf860685c403c7236461cbe102f08e">registration</a>,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a2ef07f4bcdf6a5edd6c9f6572836abb7">   32</a></span>&#160;    <span class="keyword">operator</span>,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42">eState</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#aedf431b352f8929ec58eb168d7fe5df8">   40</a></span>&#160;int8_t <a class="code" href="funcion_inicializacion_8h.html#aedf431b352f8929ec58eb168d7fe5df8">intento</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="funcion_inicializacion_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a>[ 2000 ];</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="funcion_inicializacion_8h.html#a29b353d59c54630d8d08955d54cffc82">   54</a></span>&#160;<a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42">eState</a> <a class="code" href="funcion_inicializacion_8h.html#a29b353d59c54630d8d08955d54cffc82">ctrl</a> = <a class="code" href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a6bc729a7c800545da8542c93f14473f2">EchoMode</a>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;int8_t <a class="code" href="funcion_inicializacion_8h.html#a0abb4742af91c9b4954454cbf5c54d81">Inicializacion</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _funcionInicializacion_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42a6bc729a7c800545da8542c93f14473f2"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a6bc729a7c800545da8542c93f14473f2">EchoMode</a></div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:26</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42a8d1fceaf988a60a92dc8cd320efecd3f"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a8d1fceaf988a60a92dc8cd320efecd3f">connection</a></div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:27</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42a0875376cb85cbf43dc1ba763dc938d5e"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a0875376cb85cbf43dc1ba763dc938d5e">functionality</a></div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:30</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42">eState</a></div><div class="ttdeci">eState</div><div class="ttdoc">Estructura de enumeracion para las fases las etapas de inicializacion del modulo. ...</div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:24</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42a3df70e1237d5ec0ee520f2a2c557abd9"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a3df70e1237d5ec0ee520f2a2c557abd9">TempSim</a></div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:29</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_aedf431b352f8929ec58eb168d7fe5df8"><div class="ttname"><a href="funcion_inicializacion_8h.html#aedf431b352f8929ec58eb168d7fe5df8">intento</a></div><div class="ttdeci">int8_t intento</div><div class="ttdoc">Variable entera de 8 bits llamada intento, que lleva la cuenta de los intentos de la inicializacion...</div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:40</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af7df738ae9f625bebdcc5c13da80f471"><div class="ttname"><a href="funcion_inicializacion_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a></div><div class="ttdeci">uint8_t buffRx[2000]</div><div class="ttdoc">Array externo de 8 bits sin signo buffRx que almacena todo lo que responde el modulo al MCU...</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_a29b353d59c54630d8d08955d54cffc82"><div class="ttname"><a href="funcion_inicializacion_8h.html#a29b353d59c54630d8d08955d54cffc82">ctrl</a></div><div class="ttdeci">eState ctrl</div><div class="ttdoc">Variable llamada ctrl del tipo eState que inicia el flujo de la inicializacion en EchoMode...</div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:54</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42acdcf860685c403c7236461cbe102f08e"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42acdcf860685c403c7236461cbe102f08e">registration</a></div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:31</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_af13698210d209ef8cae10ff537e68b42a3c1180b3d20f5106ed8c2fa03dfe3bbd"><div class="ttname"><a href="funcion_inicializacion_8h.html#af13698210d209ef8cae10ff537e68b42a3c1180b3d20f5106ed8c2fa03dfe3bbd">BaudRate</a></div><div class="ttdef"><b>Definition:</b> funcionInicializacion.h:28</div></div>
+<div class="ttc" id="funcion_inicializacion_8h_html_a0abb4742af91c9b4954454cbf5c54d81"><div class="ttname"><a href="funcion_inicializacion_8h.html#a0abb4742af91c9b4954454cbf5c54d81">Inicializacion</a></div><div class="ttdeci">int8_t Inicializacion(void)</div><div class="ttdoc">Function Inicializacion. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

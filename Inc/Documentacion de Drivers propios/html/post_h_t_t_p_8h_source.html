@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente postHTTP.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">postHTTP.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="post_h_t_t_p_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _postHTTP_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _postHTTP_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;fibocom.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">   28</a></span>&#160;    <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">INITPOST</a>,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a16dfb503b6c6a2ba1ca6eb67011c3073">   29</a></span>&#160;    <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a16dfb503b6c6a2ba1ca6eb67011c3073">PARACIDPOST</a>,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a75d438fd8b25e1ad87e8c3da7ece87b0">   30</a></span>&#160;    <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a75d438fd8b25e1ad87e8c3da7ece87b0">PARAURLPOST</a>,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a3e6f609af9544f0957865e897f63af10">   31</a></span>&#160;    <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a3e6f609af9544f0957865e897f63af10">DATAPOST</a>,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7abb81c6dd49b116b7dbaf8f772a1ead89">   32</a></span>&#160;    <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7abb81c6dd49b116b7dbaf8f772a1ead89">ACTIONPOST</a>,</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a2c8301caa749a8b5cb50435831655b23">   33</a></span>&#160;    <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a2c8301caa749a8b5cb50435831655b23">TERMPOST</a>,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}<a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="post_h_t_t_p_8h.html#a9d6dd342c5ac3d3e59b1d578ec3375b9">   41</a></span>&#160;<a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a> <a class="code" href="post_h_t_t_p_8h.html#a9d6dd342c5ac3d3e59b1d578ec3375b9">action</a> = <a class="code" href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">INITPOST</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="post_h_t_t_p_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a>[ 2000 ];</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;int8_t <a class="code" href="post_h_t_t_p_8h.html#add013d421a095fca988489ab65867685">POSTHTTP</a>( <span class="keywordtype">char</span> *CID, <span class="keywordtype">char</span> *URL, <span class="keywordtype">char</span> *sizeData, <span class="keywordtype">char</span> *latency, <span class="keywordtype">char</span> *Data );</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _postHTTP_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="post_h_t_t_p_8h_html_a9d6dd342c5ac3d3e59b1d578ec3375b9"><div class="ttname"><a href="post_h_t_t_p_8h.html#a9d6dd342c5ac3d3e59b1d578ec3375b9">action</a></div><div class="ttdeci">eCasePOST action</div><div class="ttdoc">Variable eCasePost llamada action que inicia en INITPOST, esta establece el flujo de la funcion...</div><div class="ttdef"><b>Definition:</b> postHTTP.h:41</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7a2c8301caa749a8b5cb50435831655b23"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a2c8301caa749a8b5cb50435831655b23">TERMPOST</a></div><div class="ttdef"><b>Definition:</b> postHTTP.h:33</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7abb81c6dd49b116b7dbaf8f772a1ead89"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7abb81c6dd49b116b7dbaf8f772a1ead89">ACTIONPOST</a></div><div class="ttdef"><b>Definition:</b> postHTTP.h:32</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_add013d421a095fca988489ab65867685"><div class="ttname"><a href="post_h_t_t_p_8h.html#add013d421a095fca988489ab65867685">POSTHTTP</a></div><div class="ttdeci">int8_t POSTHTTP(char *CID, char *URL, char *sizeData, char *latency, char *Data)</div><div class="ttdoc">Function POSTHTTP metodo POST sobre HTTP para el modulo SIM800L. </div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_af7df738ae9f625bebdcc5c13da80f471"><div class="ttname"><a href="post_h_t_t_p_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a></div><div class="ttdeci">uint8_t buffRx[2000]</div><div class="ttdoc">Array externo de 8 bits sin signo buffRx donde se almacena la data enviada al MCU. </div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7a75d438fd8b25e1ad87e8c3da7ece87b0"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a75d438fd8b25e1ad87e8c3da7ece87b0">PARAURLPOST</a></div><div class="ttdef"><b>Definition:</b> postHTTP.h:30</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7a16dfb503b6c6a2ba1ca6eb67011c3073"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a16dfb503b6c6a2ba1ca6eb67011c3073">PARACIDPOST</a></div><div class="ttdef"><b>Definition:</b> postHTTP.h:29</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7aa6a920ed8b0b64b2d05f79025379d50a">INITPOST</a></div><div class="ttdef"><b>Definition:</b> postHTTP.h:28</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7">eCasePOST</a></div><div class="ttdeci">eCasePOST</div><div class="ttdoc">Estructura de enumeracion eCasePOST que contiene las etapas a aplicar para implementar el metodo POST...</div><div class="ttdef"><b>Definition:</b> postHTTP.h:26</div></div>
+<div class="ttc" id="post_h_t_t_p_8h_html_ab8a501241029313d410ff8d6094fefc7a3e6f609af9544f0957865e897f63af10"><div class="ttname"><a href="post_h_t_t_p_8h.html#ab8a501241029313d410ff8d6094fefc7a3e6f609af9544f0957865e897f63af10">DATAPOST</a></div><div class="ttdef"><b>Definition:</b> postHTTP.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

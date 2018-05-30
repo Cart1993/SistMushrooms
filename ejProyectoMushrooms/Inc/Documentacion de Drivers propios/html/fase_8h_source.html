@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente fase.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">fase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fase_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef _fase_H_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define _fase_H_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aad606e435413ea0944dd00d49e901e4ed">   23</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aad606e435413ea0944dd00d49e901e4ed">error</a> = -1,</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aa0f50a4ac88d73719be3a0089ae290e1d">   24</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aa0f50a4ac88d73719be3a0089ae290e1d">faseGerminacion</a> = 0,</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aae59b836afa2aeea3c5cc5daa70753e0c">   25</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aae59b836afa2aeea3c5cc5daa70753e0c">fasePreFructificacion</a>,</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aa86eb980bca18c4c7d3ac4c2d47dc136c">   26</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aa86eb980bca18c4c7d3ac4c2d47dc136c">faseIndFructificacion</a>,</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaaa33b9cf852a0affed58e21147c52d4e">   27</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaaa33b9cf852a0affed58e21147c52d4e">fasePlFructificacion</a>,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaaf1b70a529c2d761df02135b7696bffb">   28</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaaf1b70a529c2d761df02135b7696bffb">faseResFructificacion</a>,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaa73e6a18e05760ba88b411420b184d8a">   29</a></span>&#160;  <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaa73e6a18e05760ba88b411420b184d8a">faseMax</a>,</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}<a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="fase_8h.html#a06f7c2145f6043ed1f12ac9bae79110c">Date</a>[4];</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> <a class="code" href="fase_8h.html#a279e2b6ebdb0af81d83d1988cd62ec38">fase</a>( <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> <a class="code" href="control_ambiental_8h.html#afc975884939c6f9ccdb78deb23ba878a">date</a>);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _fase_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932a"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a></div><div class="ttdeci">eFase</div><div class="ttdoc">Estructura de enumeracion para las fases de cultivacion en la que se encuentran los champiñones...</div><div class="ttdef"><b>Definition:</b> fase.h:21</div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aaaa33b9cf852a0affed58e21147c52d4e"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaaa33b9cf852a0affed58e21147c52d4e">fasePlFructificacion</a></div><div class="ttdef"><b>Definition:</b> fase.h:27</div></div>
+<div class="ttc" id="fase_8h_html_a06f7c2145f6043ed1f12ac9bae79110c"><div class="ttname"><a href="fase_8h.html#a06f7c2145f6043ed1f12ac9bae79110c">Date</a></div><div class="ttdeci">uint8_t Date[4]</div><div class="ttdoc">Array externo entero de 8 bits en el cual se encuentra la fecha almacenada de la siembra. </div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aad606e435413ea0944dd00d49e901e4ed"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aad606e435413ea0944dd00d49e901e4ed">error</a></div><div class="ttdef"><b>Definition:</b> fase.h:23</div></div>
+<div class="ttc" id="fase_8h_html_a279e2b6ebdb0af81d83d1988cd62ec38"><div class="ttname"><a href="fase_8h.html#a279e2b6ebdb0af81d83d1988cd62ec38">fase</a></div><div class="ttdeci">eFase fase(eFase date)</div><div class="ttdoc">fase Funcion que controla las fases de cultivacion del sistema </div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aa0f50a4ac88d73719be3a0089ae290e1d"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aa0f50a4ac88d73719be3a0089ae290e1d">faseGerminacion</a></div><div class="ttdef"><b>Definition:</b> fase.h:24</div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aae59b836afa2aeea3c5cc5daa70753e0c"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aae59b836afa2aeea3c5cc5daa70753e0c">fasePreFructificacion</a></div><div class="ttdef"><b>Definition:</b> fase.h:25</div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aa86eb980bca18c4c7d3ac4c2d47dc136c"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aa86eb980bca18c4c7d3ac4c2d47dc136c">faseIndFructificacion</a></div><div class="ttdef"><b>Definition:</b> fase.h:26</div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aaaf1b70a529c2d761df02135b7696bffb"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaaf1b70a529c2d761df02135b7696bffb">faseResFructificacion</a></div><div class="ttdef"><b>Definition:</b> fase.h:28</div></div>
+<div class="ttc" id="control_ambiental_8h_html_afc975884939c6f9ccdb78deb23ba878a"><div class="ttname"><a href="control_ambiental_8h.html#afc975884939c6f9ccdb78deb23ba878a">date</a></div><div class="ttdeci">eFase date</div><div class="ttdoc">Variable externa de tipo eFase llamada &quot;date&quot;. </div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932aaa73e6a18e05760ba88b411420b184d8a"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932aaa73e6a18e05760ba88b411420b184d8a">faseMax</a></div><div class="ttdef"><b>Definition:</b> fase.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

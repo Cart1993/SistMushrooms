@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente light.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">light.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="light_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _light_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _light_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3ad31c83eb28ded09044bf532ac08c68a3">   25</a></span>&#160;  <a class="code" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3ad31c83eb28ded09044bf532ac08c68a3">LightError</a> = -1,</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aedbe1bd1184c5e14b9cffa70b4837cfd">   26</a></span>&#160;  <a class="code" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aedbe1bd1184c5e14b9cffa70b4837cfd">LightLow</a> = 0,</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aeee0cc822685f03a62f9046e30156a9d">   27</a></span>&#160;  <a class="code" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aeee0cc822685f03a62f9046e30156a9d">LightMedium</a>,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aca10a31311eebeb99b158c280ffc4d35">   28</a></span>&#160;  <a class="code" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aca10a31311eebeb99b158c280ffc4d35">LightHigh</a>,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}<a class="code" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3">eLight</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3">eLight</a> <a class="code" href="light_8h.html#ace4290b07a9b534409bc6b664ec2271d">getLight</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _light_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="light_8h_html_a808b50a28689714fff6778fd461b7ee3"><div class="ttname"><a href="light_8h.html#a808b50a28689714fff6778fd461b7ee3">eLight</a></div><div class="ttdeci">eLight</div><div class="ttdoc">Estructura de enumeracion eLight la cual indica en que estado se encuentra la iluminacion del entorno...</div><div class="ttdef"><b>Definition:</b> light.h:24</div></div>
+<div class="ttc" id="light_8h_html_ace4290b07a9b534409bc6b664ec2271d"><div class="ttname"><a href="light_8h.html#ace4290b07a9b534409bc6b664ec2271d">getLight</a></div><div class="ttdeci">eLight getLight(void)</div><div class="ttdoc">Function getLight verifica y devuelve el estado actual de la iluminacion del entorno del cultivo...</div></div>
+<div class="ttc" id="light_8h_html_a808b50a28689714fff6778fd461b7ee3aca10a31311eebeb99b158c280ffc4d35"><div class="ttname"><a href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aca10a31311eebeb99b158c280ffc4d35">LightHigh</a></div><div class="ttdef"><b>Definition:</b> light.h:28</div></div>
+<div class="ttc" id="light_8h_html_a808b50a28689714fff6778fd461b7ee3aedbe1bd1184c5e14b9cffa70b4837cfd"><div class="ttname"><a href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aedbe1bd1184c5e14b9cffa70b4837cfd">LightLow</a></div><div class="ttdef"><b>Definition:</b> light.h:26</div></div>
+<div class="ttc" id="light_8h_html_a808b50a28689714fff6778fd461b7ee3aeee0cc822685f03a62f9046e30156a9d"><div class="ttname"><a href="light_8h.html#a808b50a28689714fff6778fd461b7ee3aeee0cc822685f03a62f9046e30156a9d">LightMedium</a></div><div class="ttdef"><b>Definition:</b> light.h:27</div></div>
+<div class="ttc" id="light_8h_html_a808b50a28689714fff6778fd461b7ee3ad31c83eb28ded09044bf532ac08c68a3"><div class="ttname"><a href="light_8h.html#a808b50a28689714fff6778fd461b7ee3ad31c83eb28ded09044bf532ac08c68a3">LightError</a></div><div class="ttdef"><b>Definition:</b> light.h:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

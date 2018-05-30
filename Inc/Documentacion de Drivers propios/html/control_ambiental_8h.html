@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo controlAmbiental.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo controlAmbiental.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Control de todas las variables del sistema.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="fase_8h_source.html">fase.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="light_8h_source.html">Light.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hum_comp_8h_source.html">humComp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="temp_comp_8h_source.html">tempComp.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="temp_m_c_u_8h_source.html">tempMCU.h</a>&quot;</code><br />
+</div>
+<p><a href="control_ambiental_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0e182a7f804b91c352981419e1334927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a0e182a7f804b91c352981419e1334927">desocupado</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a0e182a7f804b91c352981419e1334927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicion de una constante "desocupado" igual a 0 (desocupado el sistema para controlar)  <a href="#a0e182a7f804b91c352981419e1334927">Más...</a><br /></td></tr>
+<tr class="separator:a0e182a7f804b91c352981419e1334927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fb23f96c5482013de5401823ef98fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a59fb23f96c5482013de5401823ef98fb">ocupado</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a59fb23f96c5482013de5401823ef98fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definicion de una constante "ocupado" igual a 1 (ocupado el sistema para controlar)  <a href="#a59fb23f96c5482013de5401823ef98fb">Más...</a><br /></td></tr>
+<tr class="separator:a59fb23f96c5482013de5401823ef98fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:aa7662378af00c554a224aea5560d3d97"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97">eSystem</a> { <a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97aac132f2982b98bcaa3445e535a03ff75">OFF</a>, 
+<a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97a977d478dacaae531f95695750d1e9d03">ON</a>, 
+<a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97a439c688a4e9ed31638d5922a50680a8e">RUN</a>
+ }<tr class="memdesc:aa7662378af00c554a224aea5560d3d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion para los estados del sistema.  <a href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aa7662378af00c554a224aea5560d3d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db3b525975f4d7be6a00f842a1b059e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a> { <br />
+&#160;&#160;<a class="el" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059eadb31f5ef7acca5e1131fcc0fbfa6911d">VOID</a> = 0, 
+<a class="el" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059ea5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a>, 
+<a class="el" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059ead08f8ac0aa8dfb59589824359772459e">FULL</a>, 
+<a class="el" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059eaa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 
+<br />
+&#160;&#160;<a class="el" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea9c8803d292250442fde79c701a50e139">levelError</a> = -1, 
+<a class="el" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea99da0e84856cabf75716f99179fd7793">levelVoid</a> = 0, 
+<a class="el" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea452c990729cee040cc2f87b5deee9b87">levelLow</a>, 
+<a class="el" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea88f4fc1eae6a7a5ddd7472c160897336">levelMedium</a>, 
+<br />
+&#160;&#160;<a class="el" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea030debeede6dfe34b0955c0b2e3bb8b0">levelHigh</a>
+<br />
+ }<tr class="memdesc:a3db3b525975f4d7be6a00f842a1b059e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion para los estados de los niveles del tanque.  <a href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059e">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a3db3b525975f4d7be6a00f842a1b059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a32144f0e6da2584d72c7961149e9c65c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3">eLight</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a32144f0e6da2584d72c7961149e9c65c">Get_Light</a> (void)</td></tr>
+<tr class="memdesc:a32144f0e6da2584d72c7961149e9c65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion externa de tipo eLight llamada Get_Light.  <a href="#a32144f0e6da2584d72c7961149e9c65c">Más...</a><br /></td></tr>
+<tr class="separator:a32144f0e6da2584d72c7961149e9c65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292120d136274182e910b281a3465e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a292120d136274182e910b281a3465e1e">controlTempAmb</a> (<a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> x)</td></tr>
+<tr class="memdesc:a292120d136274182e910b281a3465e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion externa de tipo void controlTempAmb la temperatura ambiental.  <a href="#a292120d136274182e910b281a3465e1e">Más...</a><br /></td></tr>
+<tr class="separator:a292120d136274182e910b281a3465e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc8c9640af5ce473c7ff412959b5192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#acdc8c9640af5ce473c7ff412959b5192">controlHumAmb</a> (<a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> x)</td></tr>
+<tr class="memdesc:acdc8c9640af5ce473c7ff412959b5192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion externa de tipo void controlHumAmb que controla la humedad ambiental.  <a href="#acdc8c9640af5ce473c7ff412959b5192">Más...</a><br /></td></tr>
+<tr class="separator:acdc8c9640af5ce473c7ff412959b5192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4085bc91f195c6fd22b146b37d4cf80f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a4085bc91f195c6fd22b146b37d4cf80f">controlAmbiental</a> (void)</td></tr>
+<tr class="memdesc:a4085bc91f195c6fd22b146b37d4cf80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">controlAmbiental Funcion que controla las variables del sistema  <a href="#a4085bc91f195c6fd22b146b37d4cf80f">Más...</a><br /></td></tr>
+<tr class="separator:a4085bc91f195c6fd22b146b37d4cf80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afc975884939c6f9ccdb78deb23ba878a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#afc975884939c6f9ccdb78deb23ba878a">date</a></td></tr>
+<tr class="memdesc:afc975884939c6f9ccdb78deb23ba878a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de tipo eFase llamada "date".  <a href="#afc975884939c6f9ccdb78deb23ba878a">Más...</a><br /></td></tr>
+<tr class="separator:afc975884939c6f9ccdb78deb23ba878a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4838609b1587b21df547518dfd8016a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97">eSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#ad4838609b1587b21df547518dfd8016a">system</a></td></tr>
+<tr class="memdesc:ad4838609b1587b21df547518dfd8016a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa llamada system del tipo eSystem.  <a href="#ad4838609b1587b21df547518dfd8016a">Más...</a><br /></td></tr>
+<tr class="separator:ad4838609b1587b21df547518dfd8016a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c17ffd31ec4e8308d8d664d98123e1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#ad9c17ffd31ec4e8308d8d664d98123e1">sensorOptic</a></td></tr>
+<tr class="memdesc:ad9c17ffd31ec4e8308d8d664d98123e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables externas llamadas sensorOptic, levelTank, cntLight. Todas del tipo entero de 8 bits sin signo.  <a href="#ad9c17ffd31ec4e8308d8d664d98123e1">Más...</a><br /></td></tr>
+<tr class="separator:ad9c17ffd31ec4e8308d8d664d98123e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae45e2cb850e2b6634a226053c2f724"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a4ae45e2cb850e2b6634a226053c2f724">levelTank</a></td></tr>
+<tr class="separator:a4ae45e2cb850e2b6634a226053c2f724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75553720a2589c2aed1154f06308b318"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="control_ambiental_8h.html#a75553720a2589c2aed1154f06308b318">cntLight</a></td></tr>
+<tr class="separator:a75553720a2589c2aed1154f06308b318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Control de todas las variables del sistema. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>10/10/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Rangel </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a0e182a7f804b91c352981419e1334927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e182a7f804b91c352981419e1334927">&#9670;&nbsp;</a></span>desocupado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define desocupado&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicion de una constante "desocupado" igual a 0 (desocupado el sistema para controlar) </p>
+
+</div>
+</div>
+<a id="a59fb23f96c5482013de5401823ef98fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fb23f96c5482013de5401823ef98fb">&#9670;&nbsp;</a></span>ocupado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ocupado&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definicion de una constante "ocupado" igual a 1 (ocupado el sistema para controlar) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a3db3b525975f4d7be6a00f842a1b059e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db3b525975f4d7be6a00f842a1b059e">&#9670;&nbsp;</a></span>eLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion para los estados de los niveles del tanque. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059eadb31f5ef7acca5e1131fcc0fbfa6911d"></a>VOID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea5340ec7ecef6cc3886684a3bd3450d64"></a>MEDIUM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ead08f8ac0aa8dfb59589824359772459e"></a>FULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059eaa1e095cc966dbecf6a0d8aad75348d1a"></a>FALSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea9c8803d292250442fde79c701a50e139"></a>levelError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea99da0e84856cabf75716f99179fd7793"></a>levelVoid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea452c990729cee040cc2f87b5deee9b87"></a>levelLow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea88f4fc1eae6a7a5ddd7472c160897336"></a>levelMedium&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3db3b525975f4d7be6a00f842a1b059ea030debeede6dfe34b0955c0b2e3bb8b0"></a>levelHigh&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa7662378af00c554a224aea5560d3d97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7662378af00c554a224aea5560d3d97">&#9670;&nbsp;</a></span>eSystem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97">eSystem</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion para los estados del sistema. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="aa7662378af00c554a224aea5560d3d97aac132f2982b98bcaa3445e535a03ff75"></a>OFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa7662378af00c554a224aea5560d3d97a977d478dacaae531f95695750d1e9d03"></a>ON&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa7662378af00c554a224aea5560d3d97a439c688a4e9ed31638d5922a50680a8e"></a>RUN&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a4085bc91f195c6fd22b146b37d4cf80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4085bc91f195c6fd22b146b37d4cf80f">&#9670;&nbsp;</a></span>controlAmbiental()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controlAmbiental </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>controlAmbiental Funcion que controla las variables del sistema </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void Vacio </dd></dl>
+
+</div>
+</div>
+<a id="acdc8c9640af5ce473c7ff412959b5192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc8c9640af5ce473c7ff412959b5192">&#9670;&nbsp;</a></span>controlHumAmb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controlHumAmb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion externa de tipo void controlHumAmb que controla la humedad ambiental. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eFase</td><td>variable que indica el periodo en el que se encuentra el sistema </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a292120d136274182e910b281a3465e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292120d136274182e910b281a3465e1e">&#9670;&nbsp;</a></span>controlTempAmb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controlTempAmb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion externa de tipo void controlTempAmb la temperatura ambiental. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eFase</td><td>variable que indica el periodo en el que se encuentra el sistema </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a32144f0e6da2584d72c7961149e9c65c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32144f0e6da2584d72c7961149e9c65c">&#9670;&nbsp;</a></span>Get_Light()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="light_8h.html#a808b50a28689714fff6778fd461b7ee3">eLight</a> Get_Light </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funcion externa de tipo eLight llamada Get_Light. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">void</td><td>Vacio </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>eLight Valor de tipo eLight (Estado de la iluminacion) </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a75553720a2589c2aed1154f06308b318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75553720a2589c2aed1154f06308b318">&#9670;&nbsp;</a></span>cntLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t cntLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc975884939c6f9ccdb78deb23ba878a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc975884939c6f9ccdb78deb23ba878a">&#9670;&nbsp;</a></span>date</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> date</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de tipo eFase llamada "date". </p>
+
+</div>
+</div>
+<a id="a4ae45e2cb850e2b6634a226053c2f724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae45e2cb850e2b6634a226053c2f724">&#9670;&nbsp;</a></span>levelTank</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t levelTank</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9c17ffd31ec4e8308d8d664d98123e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c17ffd31ec4e8308d8d664d98123e1">&#9670;&nbsp;</a></span>sensorOptic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t sensorOptic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variables externas llamadas sensorOptic, levelTank, cntLight. Todas del tipo entero de 8 bits sin signo. </p>
+
+</div>
+</div>
+<a id="ad4838609b1587b21df547518dfd8016a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4838609b1587b21df547518dfd8016a">&#9670;&nbsp;</a></span>system</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="control_ambiental_8h.html#aa7662378af00c554a224aea5560d3d97">eSystem</a> system</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa llamada system del tipo eSystem. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

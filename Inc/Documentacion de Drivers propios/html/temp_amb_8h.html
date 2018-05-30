@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo tempAmb.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo tempAmb.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library to control the ambiental humidity and temperature  This library is to control the values of ambiental humidity and ambiental temperature.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="fase_8h_source.html">fase.h</a>&quot;</code><br />
+<code>#include &quot;DHT11.h&quot;</code><br />
+<code>#include &quot;AT.h&quot;</code><br />
+</div>
+<p><a href="temp_amb_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0e182a7f804b91c352981419e1334927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a0e182a7f804b91c352981419e1334927">desocupado</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a0e182a7f804b91c352981419e1334927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante desocupado 0, para poder realizar control.  <a href="#a0e182a7f804b91c352981419e1334927">Más...</a><br /></td></tr>
+<tr class="separator:a0e182a7f804b91c352981419e1334927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fb23f96c5482013de5401823ef98fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a59fb23f96c5482013de5401823ef98fb">ocupado</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a59fb23f96c5482013de5401823ef98fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante ocupado 1, para poder realizar control.  <a href="#a59fb23f96c5482013de5401823ef98fb">Más...</a><br /></td></tr>
+<tr class="separator:a59fb23f96c5482013de5401823ef98fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c5811c029a6ee1565195f9e17ddec2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#ae6c5811c029a6ee1565195f9e17ddec2">timeout</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:ae6c5811c029a6ee1565195f9e17ddec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante timeout 20, para culminar los intentos de equilibrio tanto en la temperatura como en la humedad.  <a href="#ae6c5811c029a6ee1565195f9e17ddec2">Más...</a><br /></td></tr>
+<tr class="separator:ae6c5811c029a6ee1565195f9e17ddec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a292120d136274182e910b281a3465e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a292120d136274182e910b281a3465e1e">controlTempAmb</a> (<a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> x)</td></tr>
+<tr class="memdesc:a292120d136274182e910b281a3465e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function controlTempAmb para el control de la temperatura ambiental segun el periodo de cultivo.  <a href="#a292120d136274182e910b281a3465e1e">Más...</a><br /></td></tr>
+<tr class="separator:a292120d136274182e910b281a3465e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aef30ef1daffbac4323a2ac956a54f89e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#aef30ef1daffbac4323a2ac956a54f89e">countTemp</a></td></tr>
+<tr class="memdesc:aef30ef1daffbac4323a2ac956a54f89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 8 bits sin signo que lleva el conteo de la tolerancia de una variable fuera de rango.  <a href="#aef30ef1daffbac4323a2ac956a54f89e">Más...</a><br /></td></tr>
+<tr class="separator:aef30ef1daffbac4323a2ac956a54f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209778f36a7ce5f5754477872368313e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a209778f36a7ce5f5754477872368313e">alertaHumLow</a></td></tr>
+<tr class="memdesc:a209778f36a7ce5f5754477872368313e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 8 bits sin signo que activa la alerta por temperaturas y/o humedad elevadas y bajas.  <a href="#a209778f36a7ce5f5754477872368313e">Más...</a><br /></td></tr>
+<tr class="separator:a209778f36a7ce5f5754477872368313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72db076759fbedbf20dd6f7787adc3a6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a72db076759fbedbf20dd6f7787adc3a6">alertaTempLow</a></td></tr>
+<tr class="separator:a72db076759fbedbf20dd6f7787adc3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f04511f4043f1471b1eb09dd898759"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#af7f04511f4043f1471b1eb09dd898759">alertaTempHigh</a></td></tr>
+<tr class="separator:af7f04511f4043f1471b1eb09dd898759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad817d7c1b8040a98dfd8ff7521a0846a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#ad817d7c1b8040a98dfd8ff7521a0846a">humidity1</a></td></tr>
+<tr class="memdesc:ad817d7c1b8040a98dfd8ff7521a0846a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables externas de 8 bits sin signo.  <a href="#ad817d7c1b8040a98dfd8ff7521a0846a">Más...</a><br /></td></tr>
+<tr class="separator:ad817d7c1b8040a98dfd8ff7521a0846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff34036064416b1db607e139275ba4f3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#aff34036064416b1db607e139275ba4f3">humidity2</a></td></tr>
+<tr class="separator:aff34036064416b1db607e139275ba4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb06297ef75d8fa6eec44580b8436e8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#accb06297ef75d8fa6eec44580b8436e8">temperature1</a></td></tr>
+<tr class="separator:accb06297ef75d8fa6eec44580b8436e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90b29e9ece20567add57c75e2a5050c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#aa90b29e9ece20567add57c75e2a5050c">temperature11</a></td></tr>
+<tr class="separator:aa90b29e9ece20567add57c75e2a5050c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a0f19e82b8b8e3a8bd53d83dca65d4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a87a0f19e82b8b8e3a8bd53d83dca65d4">temperature2</a></td></tr>
+<tr class="separator:a87a0f19e82b8b8e3a8bd53d83dca65d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5ac08f0fb67616e734e4320e7cba42"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#adc5ac08f0fb67616e734e4320e7cba42">cntAA</a></td></tr>
+<tr class="separator:adc5ac08f0fb67616e734e4320e7cba42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75553720a2589c2aed1154f06308b318"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a75553720a2589c2aed1154f06308b318">cntLight</a></td></tr>
+<tr class="separator:a75553720a2589c2aed1154f06308b318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acac0af143e8e976eb47d773182e24725"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#acac0af143e8e976eb47d773182e24725">cntHum</a></td></tr>
+<tr class="separator:acac0af143e8e976eb47d773182e24725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf5edc50f184ea56f38417ec18b730d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="temp_amb_8h.html#a5cf5edc50f184ea56f38417ec18b730d">alertaTemp</a></td></tr>
+<tr class="separator:a5cf5edc50f184ea56f38417ec18b730d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library to control the ambiental humidity and temperature  This library is to control the values of ambiental humidity and ambiental temperature. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>21/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library Humidity and Temperature Ambiental </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a0e182a7f804b91c352981419e1334927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e182a7f804b91c352981419e1334927">&#9670;&nbsp;</a></span>desocupado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define desocupado&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante desocupado 0, para poder realizar control. </p>
+
+</div>
+</div>
+<a id="a59fb23f96c5482013de5401823ef98fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fb23f96c5482013de5401823ef98fb">&#9670;&nbsp;</a></span>ocupado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ocupado&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante ocupado 1, para poder realizar control. </p>
+
+</div>
+</div>
+<a id="ae6c5811c029a6ee1565195f9e17ddec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c5811c029a6ee1565195f9e17ddec2">&#9670;&nbsp;</a></span>timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define timeout&#160;&#160;&#160;20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante timeout 20, para culminar los intentos de equilibrio tanto en la temperatura como en la humedad. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a292120d136274182e910b281a3465e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292120d136274182e910b281a3465e1e">&#9670;&nbsp;</a></span>controlTempAmb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controlTempAmb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function controlTempAmb para el control de la temperatura ambiental segun el periodo de cultivo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Variable tipo eFase que indica en que periodo de cultivo se encuentra el sistema </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a209778f36a7ce5f5754477872368313e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a209778f36a7ce5f5754477872368313e">&#9670;&nbsp;</a></span>alertaHumLow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaHumLow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 8 bits sin signo que activa la alerta por temperaturas y/o humedad elevadas y bajas. </p>
+
+</div>
+</div>
+<a id="a5cf5edc50f184ea56f38417ec18b730d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cf5edc50f184ea56f38417ec18b730d">&#9670;&nbsp;</a></span>alertaTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTemp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7f04511f4043f1471b1eb09dd898759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f04511f4043f1471b1eb09dd898759">&#9670;&nbsp;</a></span>alertaTempHigh</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTempHigh</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72db076759fbedbf20dd6f7787adc3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72db076759fbedbf20dd6f7787adc3a6">&#9670;&nbsp;</a></span>alertaTempLow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t alertaTempLow</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc5ac08f0fb67616e734e4320e7cba42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc5ac08f0fb67616e734e4320e7cba42">&#9670;&nbsp;</a></span>cntAA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t cntAA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acac0af143e8e976eb47d773182e24725"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acac0af143e8e976eb47d773182e24725">&#9670;&nbsp;</a></span>cntHum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t cntHum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75553720a2589c2aed1154f06308b318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75553720a2589c2aed1154f06308b318">&#9670;&nbsp;</a></span>cntLight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t cntLight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef30ef1daffbac4323a2ac956a54f89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef30ef1daffbac4323a2ac956a54f89e">&#9670;&nbsp;</a></span>countTemp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t countTemp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 8 bits sin signo que lleva el conteo de la tolerancia de una variable fuera de rango. </p>
+
+</div>
+</div>
+<a id="ad817d7c1b8040a98dfd8ff7521a0846a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad817d7c1b8040a98dfd8ff7521a0846a">&#9670;&nbsp;</a></span>humidity1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t humidity1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variables externas de 8 bits sin signo. </p>
+<p>humidity1 (almacena la parte entera de la medicion de humedad ambiental) y humidity2 (almacena la parte decimal de la humedad ambiental) temperature1 (almacena la parte entera de la medicion de la temperatura ambiental) y temperature2 (almacena la parte decimal de la temperatura ambiental) cntAA, cntLight y cntHum es para llevar el orden de prioridades de control del sistema </p>
+
+</div>
+</div>
+<a id="aff34036064416b1db607e139275ba4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff34036064416b1db607e139275ba4f3">&#9670;&nbsp;</a></span>humidity2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t humidity2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accb06297ef75d8fa6eec44580b8436e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb06297ef75d8fa6eec44580b8436e8">&#9670;&nbsp;</a></span>temperature1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t temperature1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa90b29e9ece20567add57c75e2a5050c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90b29e9ece20567add57c75e2a5050c">&#9670;&nbsp;</a></span>temperature11</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t temperature11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87a0f19e82b8b8e3a8bd53d83dca65d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a0f19e82b8b8e3a8bd53d83dca65d4">&#9670;&nbsp;</a></span>temperature2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t temperature2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

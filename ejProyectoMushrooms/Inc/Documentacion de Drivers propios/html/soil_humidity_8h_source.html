@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente soilHumidity.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">soilHumidity.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="soil_humidity_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _soilHumidity_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _soilHumidity_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#ae90f234cade2cdd2d1c4801cac915617">   24</a></span>&#160;<span class="preprocessor">#define tam 6</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">   31</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffacf3d7d9f1e2a56077471f5ecacc27bd3">   32</a></span>&#160;  <a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffacf3d7d9f1e2a56077471f5ecacc27bd3">humError</a> = -1,</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaabcfaedec73902b67336ebafc0a8b9c1">   33</a></span>&#160;  <a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaabcfaedec73902b67336ebafc0a8b9c1">humLow</a> = 0,</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaa1d9ecae7c272a8a0fd3fde354b0fb34">   34</a></span>&#160;  <a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaa1d9ecae7c272a8a0fd3fde354b0fb34">humMedium</a>,</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa007807f11a7752386a1a14ff91cb9d09">   35</a></span>&#160;  <a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa007807f11a7752386a1a14ff91cb9d09">humMediumHigh</a>,</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa1ed45f9a7f25ae0ae40b8a97c864cb8d">   36</a></span>&#160;  <a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa1ed45f9a7f25ae0ae40b8a97c864cb8d">humHigh</a>,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}<a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> uint16_t <a class="code" href="soil_humidity_8h.html#a9779a5667c5f7b25a6252129cb811c4b">hum1</a>, <a class="code" href="soil_humidity_8h.html#ad7b7f8b23230c88d36bb0538591823a2">hum2</a>, <a class="code" href="soil_humidity_8h.html#a061f992153677ec43873a4e728dac09d">humTotal</a>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="soil_humidity_8h.html#afc65092996dd01dc3d464580289eec5a">buffer</a>[ <a class="code" href="soil_humidity_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a> ];</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a> <a class="code" href="soil_humidity_8h.html#a97ce58b10c6b335cd304db0a70a95ba4">getSoilHumidity</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _soilHumidity_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="soil_humidity_8h_html_a061f992153677ec43873a4e728dac09d"><div class="ttname"><a href="soil_humidity_8h.html#a061f992153677ec43873a4e728dac09d">humTotal</a></div><div class="ttdeci">uint16_t humTotal</div></div>
+<div class="ttc" id="soil_humidity_8h_html_ad7b7f8b23230c88d36bb0538591823a2"><div class="ttname"><a href="soil_humidity_8h.html#ad7b7f8b23230c88d36bb0538591823a2">hum2</a></div><div class="ttdeci">uint16_t hum2</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a9779a5667c5f7b25a6252129cb811c4b"><div class="ttname"><a href="soil_humidity_8h.html#a9779a5667c5f7b25a6252129cb811c4b">hum1</a></div><div class="ttdeci">uint16_t hum1</div><div class="ttdoc">Variables enteras de 16 bits sin signo, hum1 y hum2 (almacenan los valores que miden los higrometros)...</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a39899df7553dbd6c11eafd80618b27ffaabcfaedec73902b67336ebafc0a8b9c1"><div class="ttname"><a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaabcfaedec73902b67336ebafc0a8b9c1">humLow</a></div><div class="ttdef"><b>Definition:</b> soilHumidity.h:33</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a39899df7553dbd6c11eafd80618b27ffa007807f11a7752386a1a14ff91cb9d09"><div class="ttname"><a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa007807f11a7752386a1a14ff91cb9d09">humMediumHigh</a></div><div class="ttdef"><b>Definition:</b> soilHumidity.h:35</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a39899df7553dbd6c11eafd80618b27ff"><div class="ttname"><a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ff">eHum</a></div><div class="ttdeci">eHum</div><div class="ttdoc">Estructura de enumeracion eHum la cual indica en que estado se encuentra el sistema con respecto a la...</div><div class="ttdef"><b>Definition:</b> soilHumidity.h:31</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a39899df7553dbd6c11eafd80618b27ffaa1d9ecae7c272a8a0fd3fde354b0fb34"><div class="ttname"><a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffaa1d9ecae7c272a8a0fd3fde354b0fb34">humMedium</a></div><div class="ttdef"><b>Definition:</b> soilHumidity.h:34</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a39899df7553dbd6c11eafd80618b27ffa1ed45f9a7f25ae0ae40b8a97c864cb8d"><div class="ttname"><a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffa1ed45f9a7f25ae0ae40b8a97c864cb8d">humHigh</a></div><div class="ttdef"><b>Definition:</b> soilHumidity.h:36</div></div>
+<div class="ttc" id="soil_humidity_8h_html_afc65092996dd01dc3d464580289eec5a"><div class="ttname"><a href="soil_humidity_8h.html#afc65092996dd01dc3d464580289eec5a">buffer</a></div><div class="ttdeci">uint8_t buffer[tam]</div><div class="ttdoc">Array externo de 8 bits sin signo llamado buffer en donde se almacenan todos los valores que mide el ...</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a39899df7553dbd6c11eafd80618b27ffacf3d7d9f1e2a56077471f5ecacc27bd3"><div class="ttname"><a href="soil_humidity_8h.html#a39899df7553dbd6c11eafd80618b27ffacf3d7d9f1e2a56077471f5ecacc27bd3">humError</a></div><div class="ttdef"><b>Definition:</b> soilHumidity.h:32</div></div>
+<div class="ttc" id="soil_humidity_8h_html_a97ce58b10c6b335cd304db0a70a95ba4"><div class="ttname"><a href="soil_humidity_8h.html#a97ce58b10c6b335cd304db0a70a95ba4">getSoilHumidity</a></div><div class="ttdeci">eHum getSoilHumidity(void)</div><div class="ttdoc">Function getSoilHumidity toma los valores de la humedad del suelo a traves del ADC y retorna el estad...</div></div>
+<div class="ttc" id="soil_humidity_8h_html_ae90f234cade2cdd2d1c4801cac915617"><div class="ttname"><a href="soil_humidity_8h.html#ae90f234cade2cdd2d1c4801cac915617">tam</a></div><div class="ttdeci">#define tam</div><div class="ttdoc">Constante tam que define la cantidad de canales del ADC que se estan usando. </div><div class="ttdef"><b>Definition:</b> soilHumidity.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente levelTank.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">levelTank.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="level_tank_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _levelTank_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _levelTank_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059e">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea9c8803d292250442fde79c701a50e139">    9</a></span>&#160;  <a class="code" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea9c8803d292250442fde79c701a50e139">levelError</a> = -1,</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea99da0e84856cabf75716f99179fd7793">   10</a></span>&#160;  <a class="code" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea99da0e84856cabf75716f99179fd7793">levelVoid</a> = 0,</div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea452c990729cee040cc2f87b5deee9b87">   11</a></span>&#160;    <a class="code" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea452c990729cee040cc2f87b5deee9b87">levelLow</a>,</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea88f4fc1eae6a7a5ddd7472c160897336">   12</a></span>&#160;  <a class="code" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea88f4fc1eae6a7a5ddd7472c160897336">levelMedium</a>,</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea030debeede6dfe34b0955c0b2e3bb8b0">   13</a></span>&#160;  <a class="code" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea030debeede6dfe34b0955c0b2e3bb8b0">levelHigh</a>,</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}<a class="code" href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a> <a class="code" href="level_tank_8h.html#a46afc17728f5cc1d94753e665cf21c56">getlevelTank</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _levelTank_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="level_tank_8h_html_a3db3b525975f4d7be6a00f842a1b059ea030debeede6dfe34b0955c0b2e3bb8b0"><div class="ttname"><a href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea030debeede6dfe34b0955c0b2e3bb8b0">levelHigh</a></div><div class="ttdef"><b>Definition:</b> levelTank.h:13</div></div>
+<div class="ttc" id="level_tank_8h_html_a3db3b525975f4d7be6a00f842a1b059ea88f4fc1eae6a7a5ddd7472c160897336"><div class="ttname"><a href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea88f4fc1eae6a7a5ddd7472c160897336">levelMedium</a></div><div class="ttdef"><b>Definition:</b> levelTank.h:12</div></div>
+<div class="ttc" id="level_tank_8h_html_a3db3b525975f4d7be6a00f842a1b059e"><div class="ttname"><a href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a></div><div class="ttdeci">eLevel</div><div class="ttdef"><b>Definition:</b> levelTank.h:7</div></div>
+<div class="ttc" id="level_tank_8h_html_a46afc17728f5cc1d94753e665cf21c56"><div class="ttname"><a href="level_tank_8h.html#a46afc17728f5cc1d94753e665cf21c56">getlevelTank</a></div><div class="ttdeci">eLevel getlevelTank(void)</div></div>
+<div class="ttc" id="level_tank_8h_html_a3db3b525975f4d7be6a00f842a1b059ea452c990729cee040cc2f87b5deee9b87"><div class="ttname"><a href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea452c990729cee040cc2f87b5deee9b87">levelLow</a></div><div class="ttdef"><b>Definition:</b> levelTank.h:11</div></div>
+<div class="ttc" id="level_tank_8h_html_a3db3b525975f4d7be6a00f842a1b059ea9c8803d292250442fde79c701a50e139"><div class="ttname"><a href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea9c8803d292250442fde79c701a50e139">levelError</a></div><div class="ttdef"><b>Definition:</b> levelTank.h:9</div></div>
+<div class="ttc" id="level_tank_8h_html_a3db3b525975f4d7be6a00f842a1b059ea99da0e84856cabf75716f99179fd7793"><div class="ttname"><a href="level_tank_8h.html#a3db3b525975f4d7be6a00f842a1b059ea99da0e84856cabf75716f99179fd7793">levelVoid</a></div><div class="ttdef"><b>Definition:</b> levelTank.h:10</div></div>
+<div class="ttc" id="control_ambiental_8h_html_a3db3b525975f4d7be6a00f842a1b059e"><div class="ttname"><a href="control_ambiental_8h.html#a3db3b525975f4d7be6a00f842a1b059e">eLevel</a></div><div class="ttdeci">eLevel</div><div class="ttdoc">Estructura de enumeracion para los estados de los niveles del tanque. </div><div class="ttdef"><b>Definition:</b> controlAmbiental.h:55</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

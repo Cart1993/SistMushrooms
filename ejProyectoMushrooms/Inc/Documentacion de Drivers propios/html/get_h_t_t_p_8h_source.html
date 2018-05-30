@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente getHTTP.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">getHTTP.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="get_h_t_t_p_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _getHTTP_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _getHTTP_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;fibocom.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5">   26</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a66b395539ac72e3ca6fd83c35764f112">   28</a></span>&#160;    <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a66b395539ac72e3ca6fd83c35764f112">INITGET</a>,</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a0d504d531b0843308aa30c6d7385d96a">   29</a></span>&#160;    <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a0d504d531b0843308aa30c6d7385d96a">PARACIDGET</a>,</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5ab5a31e1e04438d6b2753fe74a634d916">   30</a></span>&#160;    <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5ab5a31e1e04438d6b2753fe74a634d916">PARAURLGET</a>,</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5aaef78bb61b8cb1c18a07505031ef7637">   31</a></span>&#160;    <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5aaef78bb61b8cb1c18a07505031ef7637">ACTIONGET</a>,</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a3c581d1dd485b96fde92ea73ad804278">   32</a></span>&#160;    <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a3c581d1dd485b96fde92ea73ad804278">READGET</a>,</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5addfce0380075e716eb1859e7da04bcf0">   33</a></span>&#160;    <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5addfce0380075e716eb1859e7da04bcf0">TERMGET</a>,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}<a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5">eCaseGET</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#ad9db84d4f4645211166b13d2e4ca8ddf">   41</a></span>&#160;<a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5">eCaseGET</a> <a class="code" href="get_h_t_t_p_8h.html#ad9db84d4f4645211166b13d2e4ca8ddf">paso</a> = <a class="code" href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a66b395539ac72e3ca6fd83c35764f112">INITGET</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="get_h_t_t_p_8h.html#aae04ad987a21b789518aaae9825b668c">   48</a></span>&#160;uint8_t <a class="code" href="get_h_t_t_p_8h.html#af27e3188294c2df66d975b74a09c001d">i</a>, <a class="code" href="get_h_t_t_p_8h.html#aa5c82199da68dcbb954f8a8ff651293d">j</a>, <a class="code" href="get_h_t_t_p_8h.html#aae04ad987a21b789518aaae9825b668c">k</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <a class="code" href="get_h_t_t_p_8h.html#ab08c1d41be46c6873b4622911e7c73c0">Module_Write_str</a>( <span class="keywordtype">char</span> *str );</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="get_h_t_t_p_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a>[ 2000 ];</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="get_h_t_t_p_8h.html#afefd59395178e1733c500f0ad1706626">buffRxRead</a>[ 500 ];</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;int8_t <a class="code" href="get_h_t_t_p_8h.html#aa1fb1dc36aceece48feaae26178cc74c">GETHTTP</a>( <span class="keywordtype">char</span> *CID, <span class="keywordtype">char</span> *URL );</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _getHTTP_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5aaef78bb61b8cb1c18a07505031ef7637"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5aaef78bb61b8cb1c18a07505031ef7637">ACTIONGET</a></div><div class="ttdef"><b>Definition:</b> getHTTP.h:31</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5">eCaseGET</a></div><div class="ttdeci">eCaseGET</div><div class="ttdoc">Estructura de enumeracion eCaseGET que contiene las etapas a aplicar para implementar el metodo GET s...</div><div class="ttdef"><b>Definition:</b> getHTTP.h:26</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_ab08c1d41be46c6873b4622911e7c73c0"><div class="ttname"><a href="get_h_t_t_p_8h.html#ab08c1d41be46c6873b4622911e7c73c0">Module_Write_str</a></div><div class="ttdeci">bool Module_Write_str(char *str)</div><div class="ttdoc">Function Module_Write_str enviar string a traves del UART del MCU hacia el modulo SIM800L...</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_ad9db84d4f4645211166b13d2e4ca8ddf"><div class="ttname"><a href="get_h_t_t_p_8h.html#ad9db84d4f4645211166b13d2e4ca8ddf">paso</a></div><div class="ttdeci">eCaseGET paso</div><div class="ttdoc">Variable eCaseGet llamada paso que inicia en INITGET, esta establece el flujo de la funcion...</div><div class="ttdef"><b>Definition:</b> getHTTP.h:41</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_aa5c82199da68dcbb954f8a8ff651293d"><div class="ttname"><a href="get_h_t_t_p_8h.html#aa5c82199da68dcbb954f8a8ff651293d">j</a></div><div class="ttdeci">uint8_t j</div><div class="ttdef"><b>Definition:</b> getHTTP.h:48</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5a66b395539ac72e3ca6fd83c35764f112"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a66b395539ac72e3ca6fd83c35764f112">INITGET</a></div><div class="ttdef"><b>Definition:</b> getHTTP.h:28</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5ab5a31e1e04438d6b2753fe74a634d916"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5ab5a31e1e04438d6b2753fe74a634d916">PARAURLGET</a></div><div class="ttdef"><b>Definition:</b> getHTTP.h:30</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_af7df738ae9f625bebdcc5c13da80f471"><div class="ttname"><a href="get_h_t_t_p_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a></div><div class="ttdeci">uint8_t buffRx[2000]</div><div class="ttdoc">Array externo de 8 bits sin signo buffRx donde se almacena la data enviada al MCU. </div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_aa1fb1dc36aceece48feaae26178cc74c"><div class="ttname"><a href="get_h_t_t_p_8h.html#aa1fb1dc36aceece48feaae26178cc74c">GETHTTP</a></div><div class="ttdeci">int8_t GETHTTP(char *CID, char *URL)</div><div class="ttdoc">Function GETHTTP metodo GET sobre HTTP para el modulo SIM800L. </div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_af27e3188294c2df66d975b74a09c001d"><div class="ttname"><a href="get_h_t_t_p_8h.html#af27e3188294c2df66d975b74a09c001d">i</a></div><div class="ttdeci">uint8_t i</div><div class="ttdoc">Variables enteras de 8 bits sin signo i, j, k que sirven para leer y almacenar lo enviado por servido...</div><div class="ttdef"><b>Definition:</b> getHTTP.h:48</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5a3c581d1dd485b96fde92ea73ad804278"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a3c581d1dd485b96fde92ea73ad804278">READGET</a></div><div class="ttdef"><b>Definition:</b> getHTTP.h:32</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5addfce0380075e716eb1859e7da04bcf0"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5addfce0380075e716eb1859e7da04bcf0">TERMGET</a></div><div class="ttdef"><b>Definition:</b> getHTTP.h:33</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_afefd59395178e1733c500f0ad1706626"><div class="ttname"><a href="get_h_t_t_p_8h.html#afefd59395178e1733c500f0ad1706626">buffRxRead</a></div><div class="ttdeci">uint8_t buffRxRead[500]</div><div class="ttdoc">Array externo de sombra de 8 bits sin signo buffRxRead donde se almacena la data enviada al MCU...</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_aae04ad987a21b789518aaae9825b668c"><div class="ttname"><a href="get_h_t_t_p_8h.html#aae04ad987a21b789518aaae9825b668c">k</a></div><div class="ttdeci">uint8_t k</div><div class="ttdef"><b>Definition:</b> getHTTP.h:48</div></div>
+<div class="ttc" id="get_h_t_t_p_8h_html_a6583a49d057ce4a99b47ad6c9994a9a5a0d504d531b0843308aa30c6d7385d96a"><div class="ttname"><a href="get_h_t_t_p_8h.html#a6583a49d057ce4a99b47ad6c9994a9a5a0d504d531b0843308aa30c6d7385d96a">PARACIDGET</a></div><div class="ttdef"><b>Definition:</b> getHTTP.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

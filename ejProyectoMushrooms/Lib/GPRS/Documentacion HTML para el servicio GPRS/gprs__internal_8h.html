@@ -1,0 +1,417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GPRS Library: Referencia del Archivo C:/Users/Usuario/Dropbox/STM32F401RE-Nucleo64ARM/ejProyectoMushrooms/Lib/GPRS/inc/gprs_internal.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GPRS Library
+   </div>
+   <div id="projectbrief">GPRS and AT Commands for fibocoom and SIM800L</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_ff752323f068676eb8e6a95cb65e1d48.html">GPRS</a></li><li class="navelem"><a class="el" href="dir_0d4cbae7a67dcc1985195ef59250eafe.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#define-members">defines</a> &#124;
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo gprs_internal.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;queue.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_a_t_8h_source.html">AT.h</a>&quot;</code><br />
+</div>
+<p><a href="gprs__internal_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gprs_task__t.html">GprsTask_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_socket__t.html">Socket_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gprs_status__t.html">GprsStatus_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_type__p_task_func__t.html">Type_pTaskFunc_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a7dd1c67b5687b18b7a37039e3daa47d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a7dd1c67b5687b18b7a37039e3daa47d8">MAX_ESPERA</a>&#160;&#160;&#160;60000</td></tr>
+<tr class="separator:a7dd1c67b5687b18b7a37039e3daa47d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e72059aadaaebd7c30be91ee3894ff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a81e72059aadaaebd7c30be91ee3894ff">MIN_ESPERA</a>&#160;&#160;&#160;500</td></tr>
+<tr class="separator:a81e72059aadaaebd7c30be91ee3894ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a03719ae1cb6a34049f1b5425fe29f3e7"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a03719ae1cb6a34049f1b5425fe29f3e7">pTaskFunc_t</a>) (void *_arg)</td></tr>
+<tr class="separator:a03719ae1cb6a34049f1b5425fe29f3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4bd26e1e41eb241216bdbfe294a073"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#add4bd26e1e41eb241216bdbfe294a073">Gprs_fin_cb</a>) (void)</td></tr>
+<tr class="separator:add4bd26e1e41eb241216bdbfe294a073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a8dda0b474aec0efca5e9ff88a6a92e32"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32">TaskStatus_t</a> { <br />
+&#160;&#160;<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a51bba368c336b9b24875a5083cff351f">Ini</a> = 0, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32ab56010f66bb18aad65b6bcb8bd194461">EstadoInt1</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a16b32977b87f24da6f8500e219cc0301">EstadoInt2</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32aeca3be7722121721d27ec7d6165654b7">EstadoInt3</a>, 
+<br />
+&#160;&#160;<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a2f5e372e01453040fb158e6eb61a041e">EstadoInt4</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32ab32a42cc6b488255e1c333b5b17dfe06">EstadoInt5</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a41bee73ccfbeda463c7772d9511b0174">EstadoInt6</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a653629c03a76a2f0bd559a760c5aadb7">EstadoInt7</a>, 
+<br />
+&#160;&#160;<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a569fb898fbd2c5297800881e1d0d3562">EstadoInt8</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a200676a7dfdf03f828cddda6456ac2aa">EstadoInt9</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32afadfcd12f80b2bf9a8797734417373d2">FinOK</a>, 
+<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32a6fdb91c1999944a3a267e9a8943ef375">FinError</a>, 
+<br />
+&#160;&#160;<a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32aabb3211247fc497ed7fdd9251ca52b50">FinTimeOut</a>
+<br />
+ }</td></tr>
+<tr class="separator:a8dda0b474aec0efca5e9ff88a6a92e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e2aa2db343643977eb962dbec6cc17"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17">tCOMMON_TASK</a> { <br />
+&#160;&#160;<a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17a9104dae4332bb2f72c69b89201f51012">COMMON_INIT</a> = 0, 
+<a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17abfe53b682ff18e86ba254d5717e87042">COMMON_OFF</a>, 
+<a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17ab1fa14790a73ecb257006503014bd1aa">COMMON_SIGNAL</a>, 
+<a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17ad1d05debb2b0bcd3b8439d4002cf52a5">COMMON_CMD</a>, 
+<br />
+&#160;&#160;<a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17a699b0a8878d8c321538d2837be9231b3">COMMON_AT</a>
+<br />
+ }</td></tr>
+<tr class="separator:a54e2aa2db343643977eb962dbec6cc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc1cde0664656075319ac3d43439fbb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbb">tTCPIP_TASK</a> { <a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbba3b8bf68c687f12dbfb913a8c7b1d56e6">TCPIP_OPEN</a> = 0, 
+<a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbba53be86746ad9fce09c25a3742885bf8b">TCPIP_SEND</a>, 
+<a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbba43f7039dc343381801e5811bd05bf3d1">TCP_CLOSE</a>
+ }</td></tr>
+<tr class="separator:abdc1cde0664656075319ac3d43439fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae77f1f4d2bb5471166eb3c06e04476e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#ae77f1f4d2bb5471166eb3c06e04476e0">gprs_task_init</a> (<a class="el" href="gprs__internal_8h.html#add4bd26e1e41eb241216bdbfe294a073">Gprs_fin_cb</a> Fin_ok, <a class="el" href="gprs__internal_8h.html#add4bd26e1e41eb241216bdbfe294a073">Gprs_fin_cb</a> Fin_error)</td></tr>
+<tr class="separator:ae77f1f4d2bb5471166eb3c06e04476e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7bf3738d0e50dbd6e9aa4623ff94772"><td class="memItemLeft" align="right" valign="top">QueueHandler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#ab7bf3738d0e50dbd6e9aa4623ff94772">gprs_get_queue</a> (void)</td></tr>
+<tr class="separator:ab7bf3738d0e50dbd6e9aa4623ff94772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ad9cb0a1430f3f47f6ce035fa35fa1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a3ad9cb0a1430f3f47f6ce035fa35fa1b">gprs_common_set_queue</a> (QueueHandler QueueInternal, <a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17">tCOMMON_TASK</a> eTypeTask)</td></tr>
+<tr class="separator:a3ad9cb0a1430f3f47f6ce035fa35fa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d077afbc6f5c65c79c631ce5199b798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a6d077afbc6f5c65c79c631ce5199b798">gprs_tcpip_set_queue</a> (QueueHandler QueueInternal, <a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbb">tTCPIP_TASK</a> eTypeTask)</td></tr>
+<tr class="separator:a6d077afbc6f5c65c79c631ce5199b798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0b5b78bc7d604ea545876a6d9fce33a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_gprs_status__t.html">GprsStatus_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gprs__internal_8h.html#a0b5b78bc7d604ea545876a6d9fce33a2">Fibocom_Sys</a></td></tr>
+<tr class="separator:a0b5b78bc7d604ea545876a6d9fce33a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a7dd1c67b5687b18b7a37039e3daa47d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd1c67b5687b18b7a37039e3daa47d8">&#9670;&nbsp;</a></span>MAX_ESPERA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_ESPERA&#160;&#160;&#160;60000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81e72059aadaaebd7c30be91ee3894ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81e72059aadaaebd7c30be91ee3894ff">&#9670;&nbsp;</a></span>MIN_ESPERA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MIN_ESPERA&#160;&#160;&#160;500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="add4bd26e1e41eb241216bdbfe294a073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4bd26e1e41eb241216bdbfe294a073">&#9670;&nbsp;</a></span>Gprs_fin_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* Gprs_fin_cb) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03719ae1cb6a34049f1b5425fe29f3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03719ae1cb6a34049f1b5425fe29f3e7">&#9670;&nbsp;</a></span>pTaskFunc_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* pTaskFunc_t) (void *_arg)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a8dda0b474aec0efca5e9ff88a6a92e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dda0b474aec0efca5e9ff88a6a92e32">&#9670;&nbsp;</a></span>TaskStatus_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="gprs__internal_8h.html#a8dda0b474aec0efca5e9ff88a6a92e32">TaskStatus_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a51bba368c336b9b24875a5083cff351f"></a>Ini&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32ab56010f66bb18aad65b6bcb8bd194461"></a>EstadoInt1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a16b32977b87f24da6f8500e219cc0301"></a>EstadoInt2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32aeca3be7722121721d27ec7d6165654b7"></a>EstadoInt3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a2f5e372e01453040fb158e6eb61a041e"></a>EstadoInt4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32ab32a42cc6b488255e1c333b5b17dfe06"></a>EstadoInt5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a41bee73ccfbeda463c7772d9511b0174"></a>EstadoInt6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a653629c03a76a2f0bd559a760c5aadb7"></a>EstadoInt7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a569fb898fbd2c5297800881e1d0d3562"></a>EstadoInt8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a200676a7dfdf03f828cddda6456ac2aa"></a>EstadoInt9&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32afadfcd12f80b2bf9a8797734417373d2"></a>FinOK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32a6fdb91c1999944a3a267e9a8943ef375"></a>FinError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8dda0b474aec0efca5e9ff88a6a92e32aabb3211247fc497ed7fdd9251ca52b50"></a>FinTimeOut&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a54e2aa2db343643977eb962dbec6cc17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e2aa2db343643977eb962dbec6cc17">&#9670;&nbsp;</a></span>tCOMMON_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17">tCOMMON_TASK</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a54e2aa2db343643977eb962dbec6cc17a9104dae4332bb2f72c69b89201f51012"></a>COMMON_INIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a54e2aa2db343643977eb962dbec6cc17abfe53b682ff18e86ba254d5717e87042"></a>COMMON_OFF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a54e2aa2db343643977eb962dbec6cc17ab1fa14790a73ecb257006503014bd1aa"></a>COMMON_SIGNAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a54e2aa2db343643977eb962dbec6cc17ad1d05debb2b0bcd3b8439d4002cf52a5"></a>COMMON_CMD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a54e2aa2db343643977eb962dbec6cc17a699b0a8878d8c321538d2837be9231b3"></a>COMMON_AT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="abdc1cde0664656075319ac3d43439fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc1cde0664656075319ac3d43439fbb">&#9670;&nbsp;</a></span>tTCPIP_TASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbb">tTCPIP_TASK</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="abdc1cde0664656075319ac3d43439fbba3b8bf68c687f12dbfb913a8c7b1d56e6"></a>TCPIP_OPEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abdc1cde0664656075319ac3d43439fbba53be86746ad9fce09c25a3742885bf8b"></a>TCPIP_SEND&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abdc1cde0664656075319ac3d43439fbba43f7039dc343381801e5811bd05bf3d1"></a>TCP_CLOSE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a3ad9cb0a1430f3f47f6ce035fa35fa1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ad9cb0a1430f3f47f6ce035fa35fa1b">&#9670;&nbsp;</a></span>gprs_common_set_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gprs_common_set_queue </td>
+          <td>(</td>
+          <td class="paramtype">QueueHandler&#160;</td>
+          <td class="paramname"><em>QueueInternal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gprs__internal_8h.html#a54e2aa2db343643977eb962dbec6cc17">tCOMMON_TASK</a>&#160;</td>
+          <td class="paramname"><em>eTypeTask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7bf3738d0e50dbd6e9aa4623ff94772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7bf3738d0e50dbd6e9aa4623ff94772">&#9670;&nbsp;</a></span>gprs_get_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QueueHandler gprs_get_queue </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae77f1f4d2bb5471166eb3c06e04476e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae77f1f4d2bb5471166eb3c06e04476e0">&#9670;&nbsp;</a></span>gprs_task_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gprs_task_init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="gprs__internal_8h.html#add4bd26e1e41eb241216bdbfe294a073">Gprs_fin_cb</a>&#160;</td>
+          <td class="paramname"><em>Fin_ok</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gprs__internal_8h.html#add4bd26e1e41eb241216bdbfe294a073">Gprs_fin_cb</a>&#160;</td>
+          <td class="paramname"><em>Fin_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d077afbc6f5c65c79c631ce5199b798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d077afbc6f5c65c79c631ce5199b798">&#9670;&nbsp;</a></span>gprs_tcpip_set_queue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gprs_tcpip_set_queue </td>
+          <td>(</td>
+          <td class="paramtype">QueueHandler&#160;</td>
+          <td class="paramname"><em>QueueInternal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="gprs__internal_8h.html#abdc1cde0664656075319ac3d43439fbb">tTCPIP_TASK</a>&#160;</td>
+          <td class="paramname"><em>eTypeTask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a0b5b78bc7d604ea545876a6d9fce33a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5b78bc7d604ea545876a6d9fce33a2">&#9670;&nbsp;</a></span>Fibocom_Sys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_gprs_status__t.html">GprsStatus_t</a> Fibocom_Sys</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

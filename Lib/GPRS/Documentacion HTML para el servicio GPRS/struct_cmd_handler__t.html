@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GPRS Library: Referencia de la Estructura CmdHandler_t</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GPRS Library
+   </div>
+   <div id="projectbrief">GPRS and AT Commands for fibocoom and SIM800L</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Campos de datos</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Estructura CmdHandler_t</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Estructura que guarda un arreglo char para los comandos, una variable de 32 bits para el timeout y el hash.  
+ <a href="struct_cmd_handler__t.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_a_t_8h_source.html">AT.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Campos de datos</h2></td></tr>
+<tr class="memitem:aaf37761b58989e614be0855548e00154"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cmd_handler__t.html#aaf37761b58989e614be0855548e00154">Cmd</a> [16]</td></tr>
+<tr class="separator:aaf37761b58989e614be0855548e00154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11ecb029164e055f28f4123ce3748862"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cmd_handler__t.html#a11ecb029164e055f28f4123ce3748862">hash</a></td></tr>
+<tr class="separator:a11ecb029164e055f28f4123ce3748862"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5627d8d8b095c198e2523c44ca380ac"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cmd_handler__t.html#ab5627d8d8b095c198e2523c44ca380ac">timeout</a></td></tr>
+<tr class="separator:ab5627d8d8b095c198e2523c44ca380ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7e22ca58d2cab926859bf87f4aa1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_t_8h.html#a60b05fe8e2dc395ae1bb1db27b169ede">at_cmd_cb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_cmd_handler__t.html#add7e22ca58d2cab926859bf87f4aa1a2">Func</a></td></tr>
+<tr class="separator:add7e22ca58d2cab926859bf87f4aa1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Estructura que guarda un arreglo char para los comandos, una variable de 32 bits para el timeout y el hash. </p>
+</div><h2 class="groupheader">Documentación de los campos</h2>
+<a id="aaf37761b58989e614be0855548e00154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf37761b58989e614be0855548e00154">&#9670;&nbsp;</a></span>Cmd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Cmd[16]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add7e22ca58d2cab926859bf87f4aa1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7e22ca58d2cab926859bf87f4aa1a2">&#9670;&nbsp;</a></span>Func</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_t_8h.html#a60b05fe8e2dc395ae1bb1db27b169ede">at_cmd_cb</a> Func</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11ecb029164e055f28f4123ce3748862"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ecb029164e055f28f4123ce3748862">&#9670;&nbsp;</a></span>hash</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t hash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5627d8d8b095c198e2523c44ca380ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5627d8d8b095c198e2523c44ca380ac">&#9670;&nbsp;</a></span>timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t timeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentación para esta estructura fue generada a partir del siguiente fichero:<ul>
+<li>C:/Users/Usuario/Dropbox/STM32F401RE-Nucleo64ARM/ejProyectoMushrooms/Lib/GPRS/inc/<a class="el" href="_a_t_8h_source.html">AT.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

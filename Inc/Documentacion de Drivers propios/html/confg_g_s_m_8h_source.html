@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente confgGSM.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">confgGSM.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="confg_g_s_m_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef _confgGSM_H_</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define _confgGSM_H_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;fibocom.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;AT.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5">   24</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a9c9bc4f166617a10266a5a5b7a9786c4">   26</a></span>&#160;    <a class="code" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a9c9bc4f166617a10266a5a5b7a9786c4">format</a>,</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5afa40ef3af4fea0001b535318130960b2">   27</a></span>&#160;    <a class="code" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5afa40ef3af4fea0001b535318130960b2">character</a>,</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a71324ba53dd73faed0878ddc9cd07997">   28</a></span>&#160;    <a class="code" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a71324ba53dd73faed0878ddc9cd07997">erase</a>,</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <a class="code" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5">eStateGSM</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="confg_g_s_m_8h.html#a50a187c4a2663705f9fb571f9766a32b">   36</a></span>&#160;int8_t <a class="code" href="confg_g_s_m_8h.html#a50a187c4a2663705f9fb571f9766a32b">retryTimes</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="confg_g_s_m_8h.html#af1dd0387f8f14ddcc3deaf0ccc6c0a83">   43</a></span>&#160;<a class="code" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5">eStateGSM</a> <a class="code" href="confg_g_s_m_8h.html#af1dd0387f8f14ddcc3deaf0ccc6c0a83">caso</a> = <a class="code" href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a9c9bc4f166617a10266a5a5b7a9786c4">format</a>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="confg_g_s_m_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a>[ 2000 ];</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;int8_t <a class="code" href="confg_g_s_m_8h.html#ae4e7f04046aa83fe176052dd98ac3429">initGSM</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _confgGSM_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="confg_g_s_m_8h_html_a50a187c4a2663705f9fb571f9766a32b"><div class="ttname"><a href="confg_g_s_m_8h.html#a50a187c4a2663705f9fb571f9766a32b">retryTimes</a></div><div class="ttdeci">int8_t retryTimes</div><div class="ttdoc">Variable entera de 8 bits que almacena los reintentos de conexion por parte del modulo. </div><div class="ttdef"><b>Definition:</b> confgGSM.h:36</div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_af7df738ae9f625bebdcc5c13da80f471"><div class="ttname"><a href="confg_g_s_m_8h.html#af7df738ae9f625bebdcc5c13da80f471">buffRx</a></div><div class="ttdeci">uint8_t buffRx[2000]</div><div class="ttdoc">Array de enteros de 8 bits sin signo buffRx donde llega la data del modulo. </div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_ae4e7f04046aa83fe176052dd98ac3429"><div class="ttname"><a href="confg_g_s_m_8h.html#ae4e7f04046aa83fe176052dd98ac3429">initGSM</a></div><div class="ttdeci">int8_t initGSM(void)</div><div class="ttdoc">initGSM Funcion de inicializacion del servicio GSM para el modulo SIM800L </div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_af1dd0387f8f14ddcc3deaf0ccc6c0a83"><div class="ttname"><a href="confg_g_s_m_8h.html#af1dd0387f8f14ddcc3deaf0ccc6c0a83">caso</a></div><div class="ttdeci">eStateGSM caso</div><div class="ttdoc">Variable caso del tipo eStateGSM, la cual inicia el flujo del programa por format. </div><div class="ttdef"><b>Definition:</b> confgGSM.h:43</div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_ae1d70356f9c012bdcc7e62d75c66def5a71324ba53dd73faed0878ddc9cd07997"><div class="ttname"><a href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a71324ba53dd73faed0878ddc9cd07997">erase</a></div><div class="ttdef"><b>Definition:</b> confgGSM.h:28</div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_ae1d70356f9c012bdcc7e62d75c66def5"><div class="ttname"><a href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5">eStateGSM</a></div><div class="ttdeci">eStateGSM</div><div class="ttdoc">Estructura de enumeracion para los estados de la red GSM. </div><div class="ttdef"><b>Definition:</b> confgGSM.h:24</div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_ae1d70356f9c012bdcc7e62d75c66def5a9c9bc4f166617a10266a5a5b7a9786c4"><div class="ttname"><a href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5a9c9bc4f166617a10266a5a5b7a9786c4">format</a></div><div class="ttdef"><b>Definition:</b> confgGSM.h:26</div></div>
+<div class="ttc" id="confg_g_s_m_8h_html_ae1d70356f9c012bdcc7e62d75c66def5afa40ef3af4fea0001b535318130960b2"><div class="ttname"><a href="confg_g_s_m_8h.html#ae1d70356f9c012bdcc7e62d75c66def5afa40ef3af4fea0001b535318130960b2">character</a></div><div class="ttdef"><b>Definition:</b> confgGSM.h:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

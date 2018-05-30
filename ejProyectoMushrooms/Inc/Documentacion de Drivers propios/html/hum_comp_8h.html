@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo humComp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo humComp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library to control the soil humidity  This library is to control the values of soil humidity.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="fase_8h_source.html">fase.h</a>&quot;</code><br />
+</div>
+<p><a href="hum_comp_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a0e182a7f804b91c352981419e1334927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#a0e182a7f804b91c352981419e1334927">desocupado</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a0e182a7f804b91c352981419e1334927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante desocupado 0, para poder realizar control.  <a href="#a0e182a7f804b91c352981419e1334927">Más...</a><br /></td></tr>
+<tr class="separator:a0e182a7f804b91c352981419e1334927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fb23f96c5482013de5401823ef98fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#a59fb23f96c5482013de5401823ef98fb">ocupado</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a59fb23f96c5482013de5401823ef98fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constante ocupado 1, para poder realizar control.  <a href="#a59fb23f96c5482013de5401823ef98fb">Más...</a><br /></td></tr>
+<tr class="separator:a59fb23f96c5482013de5401823ef98fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:aa0f6eb4ec4fcc5705f8ddda161d7c995"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#aa0f6eb4ec4fcc5705f8ddda161d7c995">controlHumComp</a> (<a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> x)</td></tr>
+<tr class="memdesc:aa0f6eb4ec4fcc5705f8ddda161d7c995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function controlHumComp para el control de la humedad del suelo segun el periodo de cultivo.  <a href="#aa0f6eb4ec4fcc5705f8ddda161d7c995">Más...</a><br /></td></tr>
+<tr class="separator:aa0f6eb4ec4fcc5705f8ddda161d7c995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a9779a5667c5f7b25a6252129cb811c4b"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#a9779a5667c5f7b25a6252129cb811c4b">hum1</a></td></tr>
+<tr class="memdesc:a9779a5667c5f7b25a6252129cb811c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 16 bits sin signo hum1, hum2 (almacenan el valor de la humedad del suelo)  <a href="#a9779a5667c5f7b25a6252129cb811c4b">Más...</a><br /></td></tr>
+<tr class="separator:a9779a5667c5f7b25a6252129cb811c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7b7f8b23230c88d36bb0538591823a2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#ad7b7f8b23230c88d36bb0538591823a2">hum2</a></td></tr>
+<tr class="separator:ad7b7f8b23230c88d36bb0538591823a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae45e2cb850e2b6634a226053c2f724"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#a4ae45e2cb850e2b6634a226053c2f724">levelTank</a></td></tr>
+<tr class="memdesc:a4ae45e2cb850e2b6634a226053c2f724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 8 bits sin signo levelTank y cntHumComp para ordenar las prioridades de control.  <a href="#a4ae45e2cb850e2b6634a226053c2f724">Más...</a><br /></td></tr>
+<tr class="separator:a4ae45e2cb850e2b6634a226053c2f724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eeccbd18b07eb447ccc3957b4345b51"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#a2eeccbd18b07eb447ccc3957b4345b51">cntHumComp</a></td></tr>
+<tr class="separator:a2eeccbd18b07eb447ccc3957b4345b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c17ffd31ec4e8308d8d664d98123e1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_comp_8h.html#ad9c17ffd31ec4e8308d8d664d98123e1">sensorOptic</a></td></tr>
+<tr class="separator:ad9c17ffd31ec4e8308d8d664d98123e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library to control the soil humidity  This library is to control the values of soil humidity. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>22/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library Soil Humidity </dd></dl>
+</div><h2 class="groupheader">Documentación de los 'defines'</h2>
+<a id="a0e182a7f804b91c352981419e1334927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e182a7f804b91c352981419e1334927">&#9670;&nbsp;</a></span>desocupado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define desocupado&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante desocupado 0, para poder realizar control. </p>
+
+</div>
+</div>
+<a id="a59fb23f96c5482013de5401823ef98fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59fb23f96c5482013de5401823ef98fb">&#9670;&nbsp;</a></span>ocupado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ocupado&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constante ocupado 1, para poder realizar control. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="aa0f6eb4ec4fcc5705f8ddda161d7c995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f6eb4ec4fcc5705f8ddda161d7c995">&#9670;&nbsp;</a></span>controlHumComp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void controlHumComp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a>&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function controlHumComp para el control de la humedad del suelo segun el periodo de cultivo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Variable tipo eFase que indica en que periodo de cultivo se encuentra el sistema </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="a2eeccbd18b07eb447ccc3957b4345b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eeccbd18b07eb447ccc3957b4345b51">&#9670;&nbsp;</a></span>cntHumComp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t cntHumComp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9779a5667c5f7b25a6252129cb811c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9779a5667c5f7b25a6252129cb811c4b">&#9670;&nbsp;</a></span>hum1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hum1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 16 bits sin signo hum1, hum2 (almacenan el valor de la humedad del suelo) </p>
+
+</div>
+</div>
+<a id="ad7b7f8b23230c88d36bb0538591823a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7b7f8b23230c88d36bb0538591823a2">&#9670;&nbsp;</a></span>hum2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t hum2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ae45e2cb850e2b6634a226053c2f724"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae45e2cb850e2b6634a226053c2f724">&#9670;&nbsp;</a></span>levelTank</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t levelTank</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 8 bits sin signo levelTank y cntHumComp para ordenar las prioridades de control. </p>
+
+</div>
+</div>
+<a id="ad9c17ffd31ec4e8308d8d664d98123e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9c17ffd31ec4e8308d8d664d98123e1">&#9670;&nbsp;</a></span>sensorOptic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t sensorOptic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

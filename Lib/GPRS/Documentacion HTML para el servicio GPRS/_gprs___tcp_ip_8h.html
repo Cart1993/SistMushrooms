@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GPRS Library: Referencia del Archivo C:/Users/Usuario/Dropbox/STM32F401RE-Nucleo64ARM/ejProyectoMushrooms/Lib/GPRS/inc/Gprs_TcpIp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GPRS Library
+   </div>
+   <div id="projectbrief">GPRS and AT Commands for fibocoom and SIM800L</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f3de2ae926fecfe6abd5379fd2b6eb1.html">Lib</a></li><li class="navelem"><a class="el" href="dir_ff752323f068676eb8e6a95cb65e1d48.html">GPRS</a></li><li class="navelem"><a class="el" href="dir_0d4cbae7a67dcc1985195ef59250eafe.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">typedefs</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo Gprs_TcpIp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+</div>
+<p><a href="_gprs___tcp_ip_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a1f1770b8f9752bfc28a2ba963645ccdd"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#a1f1770b8f9752bfc28a2ba963645ccdd">connect_cb</a>) (void)</td></tr>
+<tr class="separator:a1f1770b8f9752bfc28a2ba963645ccdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f19e948a0e63f9f2870b7663c525e5a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#a6f19e948a0e63f9f2870b7663c525e5a">receive_cb</a>) (uint8_t *cBufferIn, uint16_t iLenBuffer)</td></tr>
+<tr class="separator:a6f19e948a0e63f9f2870b7663c525e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b1c95ad15c803c93a1b477695d6bc3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#a06b1c95ad15c803c93a1b477695d6bc3">close_cb</a>) (void)</td></tr>
+<tr class="separator:a06b1c95ad15c803c93a1b477695d6bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a1df490c8b89174c8b48d234d2661f7df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#a1df490c8b89174c8b48d234d2661f7df">Gprs_TcpIp_config</a> (uint8_t *Apn, uint8_t *Usr, uint8_t *Psw)</td></tr>
+<tr class="separator:a1df490c8b89174c8b48d234d2661f7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8654db6bcaafd051a3e482c5fb6784ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#a8654db6bcaafd051a3e482c5fb6784ff">Gprs_TcpIp_open</a> (uint32_t iPortNumber, uint8_t *iHostAddress, <a class="el" href="_gprs___tcp_ip_8h.html#a1f1770b8f9752bfc28a2ba963645ccdd">connect_cb</a>, <a class="el" href="_gprs___tcp_ip_8h.html#a6f19e948a0e63f9f2870b7663c525e5a">receive_cb</a>, <a class="el" href="_gprs___tcp_ip_8h.html#a06b1c95ad15c803c93a1b477695d6bc3">close_cb</a>)</td></tr>
+<tr class="separator:a8654db6bcaafd051a3e482c5fb6784ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6523fa11d6cb650f5127b3d523b46b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#adf6523fa11d6cb650f5127b3d523b46b">Gprs_TcpIp_send_data</a> (uint8_t *cBufferIn, uint16_t iLenBuffer)</td></tr>
+<tr class="separator:adf6523fa11d6cb650f5127b3d523b46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac40e9727d5f98e039707f0b78d48d046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_gprs___tcp_ip_8h.html#ac40e9727d5f98e039707f0b78d48d046">Gprs_TcpIp_close_connect</a> (void)</td></tr>
+<tr class="separator:ac40e9727d5f98e039707f0b78d48d046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><dl class="section user"><dt></dt><dd></dd></dl>
+</div><h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a id="a06b1c95ad15c803c93a1b477695d6bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b1c95ad15c803c93a1b477695d6bc3">&#9670;&nbsp;</a></span>close_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* close_cb) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f1770b8f9752bfc28a2ba963645ccdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1770b8f9752bfc28a2ba963645ccdd">&#9670;&nbsp;</a></span>connect_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  connect_cb) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f19e948a0e63f9f2870b7663c525e5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f19e948a0e63f9f2870b7663c525e5a">&#9670;&nbsp;</a></span>receive_cb</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* receive_cb) (uint8_t *cBufferIn, uint16_t iLenBuffer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="ac40e9727d5f98e039707f0b78d48d046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac40e9727d5f98e039707f0b78d48d046">&#9670;&nbsp;</a></span>Gprs_TcpIp_close_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gprs_TcpIp_close_connect </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1df490c8b89174c8b48d234d2661f7df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df490c8b89174c8b48d234d2661f7df">&#9670;&nbsp;</a></span>Gprs_TcpIp_config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gprs_TcpIp_config </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>Apn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>Usr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>Psw</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8654db6bcaafd051a3e482c5fb6784ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8654db6bcaafd051a3e482c5fb6784ff">&#9670;&nbsp;</a></span>Gprs_TcpIp_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gprs_TcpIp_open </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>iPortNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>iHostAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_gprs___tcp_ip_8h.html#a1f1770b8f9752bfc28a2ba963645ccdd">connect_cb</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_gprs___tcp_ip_8h.html#a6f19e948a0e63f9f2870b7663c525e5a">receive_cb</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_gprs___tcp_ip_8h.html#a06b1c95ad15c803c93a1b477695d6bc3">close_cb</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf6523fa11d6cb650f5127b3d523b46b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6523fa11d6cb650f5127b3d523b46b">&#9670;&nbsp;</a></span>Gprs_TcpIp_send_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gprs_TcpIp_send_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cBufferIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>iLenBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

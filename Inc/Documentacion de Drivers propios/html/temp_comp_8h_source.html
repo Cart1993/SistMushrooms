@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Fichero Fuente tempComp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">tempComp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="temp_comp_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _tempComp_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _tempComp_H_</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;stm32f4xx_hal.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fase_8h.html">fase.h</a>&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="temp_comp_8h.html#a0e182a7f804b91c352981419e1334927">   25</a></span>&#160;<span class="preprocessor">#define desocupado 0</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="temp_comp_8h.html#a59fb23f96c5482013de5401823ef98fb">   32</a></span>&#160;<span class="preprocessor">#define ocupado 1</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">extern</span> uint16_t <a class="code" href="temp_comp_8h.html#a97eec2c0a1145095bcc959160eb1ad7f">tempComp1</a>, <a class="code" href="temp_comp_8h.html#a19e4d7bed953f481c3de6e2db5990e55">tempComp2</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">extern</span> uint8_t <a class="code" href="temp_comp_8h.html#a4ae45e2cb850e2b6634a226053c2f724">levelTank</a>, <a class="code" href="temp_comp_8h.html#adc5ac08f0fb67616e734e4320e7cba42">cntAA</a>, <a class="code" href="temp_comp_8h.html#a2eeccbd18b07eb447ccc3957b4345b51">cntHumComp</a>, <a class="code" href="temp_comp_8h.html#ad9c17ffd31ec4e8308d8d664d98123e1">sensorOptic</a>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">extern</span> uint16_t <a class="code" href="temp_comp_8h.html#a6995964ba1c326be705353fcfe10115a">ReportTemperature</a> ( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="temp_comp_8h.html#a2818f72cc0dd1b49bfb0aed6aaaf0bb6">OneWire_Init</a>( <span class="keywordtype">void</span> );</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="temp_comp_8h.html#a3c0453879eae8744b23d4f582de0ddb2">controlTempComp</a>( <a class="code" href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a> x );</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _tempComp_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="temp_comp_8h_html_a3c0453879eae8744b23d4f582de0ddb2"><div class="ttname"><a href="temp_comp_8h.html#a3c0453879eae8744b23d4f582de0ddb2">controlTempComp</a></div><div class="ttdeci">void controlTempComp(eFase x)</div><div class="ttdoc">Function controlTempComp Controla y mide la temperatura del suelo del cultivo. </div></div>
+<div class="ttc" id="fase_8h_html_af5f6ba5af2ee6faff452d0fd9482932a"><div class="ttname"><a href="fase_8h.html#af5f6ba5af2ee6faff452d0fd9482932a">eFase</a></div><div class="ttdeci">eFase</div><div class="ttdoc">Estructura de enumeracion para las fases de cultivacion en la que se encuentran los champiñones...</div><div class="ttdef"><b>Definition:</b> fase.h:21</div></div>
+<div class="ttc" id="temp_comp_8h_html_a2818f72cc0dd1b49bfb0aed6aaaf0bb6"><div class="ttname"><a href="temp_comp_8h.html#a2818f72cc0dd1b49bfb0aed6aaaf0bb6">OneWire_Init</a></div><div class="ttdeci">void OneWire_Init(void)</div><div class="ttdoc">Function extern OneWire_Init Inicializacion de un timer del MCU y del sistema para leer el sensor...</div></div>
+<div class="ttc" id="temp_comp_8h_html_a19e4d7bed953f481c3de6e2db5990e55"><div class="ttname"><a href="temp_comp_8h.html#a19e4d7bed953f481c3de6e2db5990e55">tempComp2</a></div><div class="ttdeci">uint16_t tempComp2</div></div>
+<div class="ttc" id="temp_comp_8h_html_a6995964ba1c326be705353fcfe10115a"><div class="ttname"><a href="temp_comp_8h.html#a6995964ba1c326be705353fcfe10115a">ReportTemperature</a></div><div class="ttdeci">uint16_t ReportTemperature(void)</div><div class="ttdoc">Function extern ReportTemperature la cual mide y reporta el valor de la temperautra obtenido a traves...</div></div>
+<div class="ttc" id="fase_8h_html"><div class="ttname"><a href="fase_8h.html">fase.h</a></div><div class="ttdoc">Fases de cultivacion del champiñon. </div></div>
+<div class="ttc" id="temp_comp_8h_html_a2eeccbd18b07eb447ccc3957b4345b51"><div class="ttname"><a href="temp_comp_8h.html#a2eeccbd18b07eb447ccc3957b4345b51">cntHumComp</a></div><div class="ttdeci">uint8_t cntHumComp</div></div>
+<div class="ttc" id="temp_comp_8h_html_adc5ac08f0fb67616e734e4320e7cba42"><div class="ttname"><a href="temp_comp_8h.html#adc5ac08f0fb67616e734e4320e7cba42">cntAA</a></div><div class="ttdeci">uint8_t cntAA</div></div>
+<div class="ttc" id="temp_comp_8h_html_a97eec2c0a1145095bcc959160eb1ad7f"><div class="ttname"><a href="temp_comp_8h.html#a97eec2c0a1145095bcc959160eb1ad7f">tempComp1</a></div><div class="ttdeci">uint16_t tempComp1</div><div class="ttdoc">Variables externa entera de 16 bits sin signo tempComp1 y tempComp2 que almacenan el valor de la temp...</div></div>
+<div class="ttc" id="temp_comp_8h_html_ad9c17ffd31ec4e8308d8d664d98123e1"><div class="ttname"><a href="temp_comp_8h.html#ad9c17ffd31ec4e8308d8d664d98123e1">sensorOptic</a></div><div class="ttdeci">uint8_t sensorOptic</div></div>
+<div class="ttc" id="temp_comp_8h_html_a4ae45e2cb850e2b6634a226053c2f724"><div class="ttname"><a href="temp_comp_8h.html#a4ae45e2cb850e2b6634a226053c2f724">levelTank</a></div><div class="ttdeci">uint8_t levelTank</div><div class="ttdoc">Variables externa entera de 8 bits sin signo levelTank, cntAA y cntHumComp que llevan el orden de pri...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

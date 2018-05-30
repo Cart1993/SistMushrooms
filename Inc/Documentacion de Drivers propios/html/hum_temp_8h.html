@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mushrooms Project: Referencia del Archivo humTemp.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mushrooms Project
+   </div>
+   <div id="projectbrief">Sistema de control y monitoreo de un sistema de cultivo de Champiñones</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo humTemp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Library to control the ambiental humidity and temperature  This library is to control the values of ambiental humidity and the ambiental temperature.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;STM_MY_LCD16X2.h&quot;</code><br />
+<code>#include &quot;DHT11.h&quot;</code><br />
+</div>
+<p><a href="hum_temp_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a1586eb2feeba726ef8cc949ed86d4dac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dac">eCase</a> { <a class="el" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dacadb6543cf4a20f7dbc5342db70d0b3bec">readSuccesfully</a> = 0, 
+<a class="el" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca9a847632d10ddc9c9d1b763efd54604e">notReady</a>, 
+<a class="el" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca7c47519cba68e3c63c7cd342a03729f4">checksumError</a>, 
+<a class="el" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4daca5d6064f85cacb74dc1914e84ef31b9a8">retryLater</a>
+ }<tr class="memdesc:a1586eb2feeba726ef8cc949ed86d4dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura de enumeracion eCase la cual indica que estado de operacion resulto de la medicion del DHT11.  <a href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dac">Más...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a1586eb2feeba726ef8cc949ed86d4dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a23db7933cc9f813bbabe2a6e73035c2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#a23db7933cc9f813bbabe2a6e73035c2a">disp_enviar</a> (char *text, int linea)</td></tr>
+<tr class="memdesc:a23db7933cc9f813bbabe2a6e73035c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function disp_enviar para el envio de mensajes a traves del display LCD 16x2.  <a href="#a23db7933cc9f813bbabe2a6e73035c2a">Más...</a><br /></td></tr>
+<tr class="separator:a23db7933cc9f813bbabe2a6e73035c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b25be39fd64778299bdecbf873b3e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#af8b25be39fd64778299bdecbf873b3e3">getTempHum</a> (uint8_t x)</td></tr>
+<tr class="memdesc:af8b25be39fd64778299bdecbf873b3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function getTempHum Toma el valor de humedad y temperatura para que lo despliegues en la LCD.  <a href="#af8b25be39fd64778299bdecbf873b3e3">Más...</a><br /></td></tr>
+<tr class="separator:af8b25be39fd64778299bdecbf873b3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad817d7c1b8040a98dfd8ff7521a0846a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#ad817d7c1b8040a98dfd8ff7521a0846a">humidity1</a></td></tr>
+<tr class="memdesc:ad817d7c1b8040a98dfd8ff7521a0846a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable externa de 8 bits sin signo humidity1 (almacena la parte entera de la medicion de la humedad relativa del ambiente)  <a href="#ad817d7c1b8040a98dfd8ff7521a0846a">Más...</a><br /></td></tr>
+<tr class="separator:ad817d7c1b8040a98dfd8ff7521a0846a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff34036064416b1db607e139275ba4f3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#aff34036064416b1db607e139275ba4f3">humidity2</a></td></tr>
+<tr class="separator:aff34036064416b1db607e139275ba4f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accb06297ef75d8fa6eec44580b8436e8"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#accb06297ef75d8fa6eec44580b8436e8">temperature1</a></td></tr>
+<tr class="separator:accb06297ef75d8fa6eec44580b8436e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a0f19e82b8b8e3a8bd53d83dca65d4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hum_temp_8h.html#a87a0f19e82b8b8e3a8bd53d83dca65d4">temperature2</a></td></tr>
+<tr class="separator:a87a0f19e82b8b8e3a8bd53d83dca65d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Library to control the ambiental humidity and temperature  This library is to control the values of ambiental humidity and the ambiental temperature. </p>
+<dl class="section version"><dt>Versión</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>26/11/2017 </dd></dl>
+<dl class="section author"><dt>Autor</dt><dd>Christian Alberto Rangel Torres  Library Humidity Temperature Ambiental </dd></dl>
+</div><h2 class="groupheader">Documentación de las enumeraciones</h2>
+<a id="a1586eb2feeba726ef8cc949ed86d4dac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1586eb2feeba726ef8cc949ed86d4dac">&#9670;&nbsp;</a></span>eCase</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hum_temp_8h.html#a1586eb2feeba726ef8cc949ed86d4dac">eCase</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estructura de enumeracion eCase la cual indica que estado de operacion resulto de la medicion del DHT11. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a1586eb2feeba726ef8cc949ed86d4dacadb6543cf4a20f7dbc5342db70d0b3bec"></a>readSuccesfully&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1586eb2feeba726ef8cc949ed86d4daca9a847632d10ddc9c9d1b763efd54604e"></a>notReady&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1586eb2feeba726ef8cc949ed86d4daca7c47519cba68e3c63c7cd342a03729f4"></a>checksumError&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1586eb2feeba726ef8cc949ed86d4daca5d6064f85cacb74dc1914e84ef31b9a8"></a>retryLater&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a id="a23db7933cc9f813bbabe2a6e73035c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23db7933cc9f813bbabe2a6e73035c2a">&#9670;&nbsp;</a></span>disp_enviar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disp_enviar </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linea</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function disp_enviar para el envio de mensajes a traves del display LCD 16x2. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>Mensaje a desplegar a traves del display LCD </td></tr>
+    <tr><td class="paramname">linea</td><td>Línea en la cual se va a desplegar el mensaje en el display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af8b25be39fd64778299bdecbf873b3e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8b25be39fd64778299bdecbf873b3e3">&#9670;&nbsp;</a></span>getTempHum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void getTempHum </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function getTempHum Toma el valor de humedad y temperatura para que lo despliegues en la LCD. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Indica de cual sensor obtener las mediciones </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las variables</h2>
+<a id="ad817d7c1b8040a98dfd8ff7521a0846a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad817d7c1b8040a98dfd8ff7521a0846a">&#9670;&nbsp;</a></span>humidity1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t humidity1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable externa de 8 bits sin signo humidity1 (almacena la parte entera de la medicion de la humedad relativa del ambiente) </p>
+<p>Variable externa de 8 bits sin signo humidity12 (almacena la parte decimal de la medicion de la humedad relativa del ambiente) Variable externa de 8 bits sin signo temperature1 (almacena la parte entera de la medicion de la temperatura del ambiente) Variable externa de 8 bits sin signo temperature2 (almacena la parte decimal de la medicion de la humedad relativa del ambiente) </p>
+
+</div>
+</div>
+<a id="aff34036064416b1db607e139275ba4f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff34036064416b1db607e139275ba4f3">&#9670;&nbsp;</a></span>humidity2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t humidity2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="accb06297ef75d8fa6eec44580b8436e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accb06297ef75d8fa6eec44580b8436e8">&#9670;&nbsp;</a></span>temperature1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t temperature1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87a0f19e82b8b8e3a8bd53d83dca65d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a0f19e82b8b8e3a8bd53d83dca65d4">&#9670;&nbsp;</a></span>temperature2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t temperature2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
